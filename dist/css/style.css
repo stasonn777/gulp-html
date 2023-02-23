@@ -1,0 +1,11 @@
+.content {
+  background-color: aqua;
+  padding: 20px;
+}
+.content p {
+  color: white;
+  font-size: 30px;
+}
+h1 {
+  color: red;
+}
