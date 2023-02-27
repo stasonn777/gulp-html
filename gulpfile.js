@@ -1,8 +1,13 @@
-const gulp = require('gulp');
-const fileInclude = require('gulp-file-include');
-const sass = require('gulp-sass')(require('sass'));
-const concat = require('gulp-concat');
-const babel = require('gulp-babel');
+import gulp from 'gulp'
+import fileInclude from 'gulp-file-include'
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+import concat from 'gulp-concat';
+// const babel = require('gulp-babel');
+const sass = gulpSass(dartSass);
+import {deleteAsync} from "del"
+import gcmq from 'gulp-group-css-media-queries';
+
 
 gulp.task('html', function() {
   return gulp.src(['src/index.html', 'src/about.html'])
@@ -17,6 +22,7 @@ gulp.task('sass', function() {
   return gulp.src('src/scss/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('style.css'))
+    .pipe(gcmq())
     .pipe(gulp.dest('dist/css'));
 });
 
@@ -34,6 +40,10 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/img'));
 });
 
+gulp.task('clean', async function () {
+  return await deleteAsync(['dist']);
+});
+
 gulp.task('watch', function() {
   gulp.watch('src/**/*.html', gulp.series('html'));
   gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
@@ -41,4 +51,4 @@ gulp.task('watch', function() {
   gulp.watch('src/img/**/*.*', gulp.series('images'));
 });
 
-gulp.task('default', gulp.series('html', 'sass', 'js', 'images', 'watch'));
+gulp.task('default', gulp.series('clean', 'html', 'sass', 'js', 'images', 'watch'));
