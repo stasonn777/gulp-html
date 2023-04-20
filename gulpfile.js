@@ -19,7 +19,7 @@ gulp.task('connect', function () {
 
 gulp.task('html', function () {
   return gulp
-    .src(['src/index.html', 'src/about.html'])
+    .src('src/*.html')
     .pipe(
       fileInclude({
         prefix: '@@',
@@ -54,7 +54,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('images', function () {
-  return gulp.src('src/img/**/*.*').pipe(gulp.dest('dist/img').pipe(connect.reload()));
+  return gulp.src('src/img/**/*.*').pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('clean', async function () {
