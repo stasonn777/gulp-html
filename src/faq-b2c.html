@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  @@include('header.html')
+
+  <section class="cond-top b2c">
+    <div class="container">
+      <div class="flex-box">
+        <div>
+          <h1 class="center">Pytania i odpowiedzi</h1>
+        </div>
+        <img src="./assets/img/conditions.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="accordion container">
+    <div class="tabs">
+      <a href="#" class="tab b-to-c active">Pożyczka konsumencka</a>
+      <a href="#" class="tab b-to-b">Pożyczka dla firm</a>
+    </div>
+    <div class="accordion__wrapper">
+      <div class="accordion__item">
+        <div class="accordion__headind">
+          <div class="accordion__title">Jakie dokumenty są potrzebne, aby uzyskać kredyt biznesowy?</div>
+          <div class="accordion__text">
+            <p>Dla wielu kredytodawców kluczowym dokumentem jest właśnie biznesplan, który pokazuje nie tylko to, jaki
+              pomysł ma przedsiębiorca na swoją działalność, ale także to, jakie zyski może mu ona przynieść.
+              W przypadku gdy biznesplanu nie ma, serwis Ekassa szuka kredytodawców z ofertami, w których biznesplan w
+              celu otrzymania kredytu nie jest obowiązkowy.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <div class="accordion__headind">
+          <div class="accordion__title">Aby uzyskać kredyt na otwarcie i rozwój małej firmy, są potrzebne następujące
+            dokumenty:</div>
+          <div class="accordion__text">
+            <p>Tak, składając wniosek w Ekassa możesz ubiegać o kredyt nie tylko od pierwszego dnia działalności, a i
+              przed założeniem własnej działalności gospodarczej.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion__item open">
+        <div class="accordion__headind">
+          <div class="accordion__title">Na co można przeznaczyć kredyt dla samozatrudnionych?</div>
+          <div class="accordion__text">
+            <p>Kredyty na otwarcie i rozwój firmy dla przedsiębiorców jest tym samym, co kredyty na zakup samochodu czy
+              telefonu. Jest to umowa, do której należy podejść odpowiedzialnie i poważnie, jak do każdej innej
+              transakcji pieniężnej. Pomimo tego, że kwota kredytów dla przedsiębiorców jest znacznie większa niż kwota
+              kredytów na potrzeby gospodarstwa domowego, to i tak dla pożyczkobiorcy jest absolutnie bezpieczna i
+              pewna.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('footer.html')
+  <script src="./js/index.js"></script>
+  <script src="./js/accordion.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

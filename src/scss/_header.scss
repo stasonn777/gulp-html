@@ -1,0 +1,110 @@
+header {
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 7%);
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 6;
+  width: 100%;
+  .menu-icon {
+    background-image: url('../img/burger.svg');
+    width: 24px;
+    height: 26px;
+  }
+  .menu-icon.close {
+    background-image: url('../img/close-menu.svg');
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    .header__menu {
+      display: none;
+      position: absolute;
+      li {
+        list-style: none;
+        a {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #01163e;
+          text-decoration: none;
+        }
+      }
+    }
+    .cta-button {
+      width: auto;
+      font-weight: 500;
+    }
+  }
+}
+
+.menu-wrapper {
+  display: none;
+  background: #000000bf;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  height: 100vh;
+  bottom: 0;
+  .header__menu {
+    display: block;
+    &.mobile-menu {
+      position: fixed;
+      background-color: #ffff;
+      left: 0;
+      width: 100vw;
+      text-align: center;
+      top: 57px;
+      .header__menu-list {
+        margin-top: 17px;
+        margin-bottom: 28px;
+        li {
+          list-style: none;
+          margin-bottom: 13px;
+          a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #01163e;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1240px) {
+  header {
+    box-shadow: none;
+    background: #fff;
+    .header {
+      padding: 18px 0;
+      .menu-icon {
+        display: none;
+      }
+      .header__menu {
+        display: block;
+        position: relative;
+        .header__menu-list {
+          display: flex;
+          gap: 17px;
+          li {
+            list-style: none;
+            a {
+              font-family: Roboto;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 17px;
+              color: #01163e;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .cta-button {
+        padding: 13px 46px;
+      }
+    }
+  }
+}
