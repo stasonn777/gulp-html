@@ -74,7 +74,7 @@ header {
     }
   }
 }
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: $desctopWidth) {
   header {
     box-shadow: none;
     background: #fff;

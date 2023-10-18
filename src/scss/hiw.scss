@@ -5,6 +5,32 @@
   padding-top: 93px;
   padding-bottom: 90px;
   color: #fff;
+  @media screen and (min-width: $desctopWidth) {
+    margin-top: 85px;
+    background-image: url(../img/hiw-desc.svg);
+    background-size: contain;
+    padding-top: 0px;
+    h1 {
+      padding-top: 60px;
+      margin-bottom: 30px;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 123px;
+        left: 67%;
+        background-image: url(../img/hiw-1.svg);
+        background-repeat: no-repeat;
+        width: 240px;
+        height: 210px;
+      }
+    }
+    p {
+      margin-bottom: 50px;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 51px;
+    }
+  }
   h1 {
     line-height: 26.5px;
     margin-bottom: 4px;
@@ -14,13 +40,38 @@
   }
 }
 .hiw-steps {
+  @media screen and (min-width: $desctopWidth) {
+    margin-bottom: 50px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -77px;
+      background-image: url(../img/steps-bg.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 131px;
+      z-index: -1;
+    }
+    .container {
+      max-width: 1105px;
+    }
+  }
   h2 {
     text-align: left;
     margin-bottom: 19px;
+    @media screen and (min-width: $desctopWidth) {
+      font-size: 29px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
   }
   .step-descr {
     display: flex;
     gap: 15px;
+    @media screen and (min-width: $desctopWidth) {
+      align-items: center;
+    }
     .number {
       font-family: Montserrat;
       font-size: 22px;
@@ -28,23 +79,53 @@
       font-weight: 500;
       line-height: 28px;
       border-bottom: 3px solid #f85459;
+      @media screen and (min-width: $desctopWidth) {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+      }
     }
     .text {
       font-size: 12px;
       font-style: normal;
       line-height: 16px;
       position: relative;
+      @media screen and (min-width: $desctopWidth) {
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
   }
   .step-img {
     text-align: center;
     margin-bottom: 28px;
+    @media screen and (min-width: $desctopWidth) {
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
   }
   .step-one {
     position: relative;
     margin-bottom: 20px;
+    @media screen and (min-width: $desctopWidth) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 55px;
+    }
     .step-descr {
       margin-bottom: 22px;
+      @media screen and (min-width: $desctopWidth) {
+        align-items: center;
+        .number {
+          font-size: 26px;
+        }
+        .text {
+          font-size: 22px;
+          line-height: 31px;
+        }
+      }
       .text::after {
         content: '';
         width: 35px;
@@ -55,33 +136,89 @@
         position: absolute;
         right: -60px;
         top: 5px;
+        @media screen and (min-width: $desctopWidth) {
+          background-image: url(../img/arrow1-desc.svg);
+          width: 143px;
+          height: 56px;
+          right: -169px;
+          top: -16px;
+        }
+      }
+    }
+  }
+  .steps-flex {
+    @media screen and (min-width: $desctopWidth) {
+      display: flex;
+      justify-content: space-between;
+      // background-image: url(../img/steps-bg.svg);
+      // background-repeat: no-repeat;
+      // background-position: bottom;
+      // background-size: contain;
+      .step-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
       }
     }
   }
 }
 
 .sliders {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 851px;
+    right: -181px;
+    background-image: url(../img/history-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 310px;
+    height: 321px;
+    @media screen and (min-width: $desctopWidth) {
+      width: 461px;
+      height: 477px;
+      top: 305px;
+      right: -223px;
+    }
+  }
+  .container {
+    max-width: 1105px;
+  }
   .sliders-wrapper {
     .slider-item {
       margin-bottom: 20px;
+      @media screen and (min-width: $desctopWidth) {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 70px;
+      }
       &:nth-child(2) {
         .slider-wrapper {
-          background-image: url(../img/history-bg.svg);
-          background-position-x: 287px;
+          background-image: none;
+        }
+        @media screen and (min-width: $desctopWidth) {
+          flex-direction: row;
         }
       }
       .description {
         text-align: left;
+        @media screen and (min-width: $desctopWidth) {
+          margin-top: 30px;
+          flex: 1;
+        }
         h2 {
           text-align: left;
           line-height: 31px;
           margin-bottom: 15px;
-        }
-        a {
-          color: #141232;
-          font-size: 12px;
-          font-weight: 700;
-          line-height: 16px;
+          @media screen and (min-width: $desctopWidth) {
+            font-size: 29px;
+            line-height: 31px;
+            margin-bottom: 37px;
+          }
         }
         ul {
           list-style: none;
@@ -94,6 +231,10 @@
             padding-left: 20px;
             font-size: 12px;
             font-weight: 300;
+            @media screen and (min-width: $desctopWidth) {
+              font-size: 18px;
+              line-height: 22.5px;
+            }
             &::before {
               content: '';
               width: 12px;
@@ -106,15 +247,18 @@
         }
         p {
           font-size: 12px;
-          font-weight: 300;
           margin-bottom: 16px;
+          @media screen and (min-width: $desctopWidth) {
+            font-size: 18px;
+            line-height: 24px;
+          }
         }
         b {
           font-weight: 700;
         }
       }
       .slider-wrapper {
-        max-width: 1000px;
+        max-width: 570px;
         position: relative;
         overflow: hidden;
         background-image: url(../img/slider-bg.svg);
@@ -134,8 +278,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            img {
-            }
           }
         }
         .slider-controls {
@@ -158,13 +300,42 @@
       }
     }
   }
+  a {
+    color: #141232;
+    font-weight: 700;
+    line-height: 16px;
+    @media screen and (min-width: $desctopWidth) {
+      line-height: 24px;
+      color: #8566ff;
+    }
+  }
+  .small-text {
+    font-size: 10px;
+    line-height: 14px;
+    @media screen and (min-width: $desctopWidth) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
 }
 
 .video {
   margin-bottom: 56px;
+  @media screen and (min-width: $desctopWidth) {
+    background-image: url(../img/video-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 40px;
+    padding-top: 110px;
+  }
   h2 {
     margin-bottom: 21px;
     text-align: left;
+    @media screen and (min-width: $desctopWidth) {
+      font-size: 29px;
+      line-height: 31px;
+      margin-bottom: 31px;
+    }
   }
 }
 
@@ -173,12 +344,54 @@
   h2 {
     margin-bottom: 24px;
     text-align: left;
+    @media screen and (min-width: $desctopWidth) {
+      font-size: 29px;
+      line-height: 31px;
+      margin-bottom: 70px;
+      text-align: center;
+    }
   }
   .road-items {
     align-items: center;
     text-align: center;
+    @media screen and (min-width: $desctopWidth) {
+      justify-content: space-around;
+    }
     .road-map__item {
       margin-bottom: 31px;
+      position: relative;
+      @media screen and (min-width: $desctopWidth) {
+        &::after {
+          content: '';
+          width: 118px;
+          height: 114px;
+          position: absolute;
+          background-repeat: no-repeat;
+          right: -120px;
+          top: 0;
+        }
+        &:first-child {
+          &::after {
+            content: '';
+            background-image: url(../img/road-1.svg);
+          }
+        }
+        &:nth-child(2) {
+          &::after {
+            background-image: url(../img/road-2.svg);
+            top: 40px;
+            right: -140px;
+          }
+        }
+        &:nth-child(3) {
+          &::after {
+            background-image: url(../img/road-3.svg);
+            top: 40px;
+            right: -170px;
+            width: 140px;
+          }
+        }
+      }
       img {
         margin-bottom: 10px;
       }

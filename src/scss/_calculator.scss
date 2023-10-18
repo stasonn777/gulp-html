@@ -1,6 +1,7 @@
 .calculator-container {
   width: 100%;
   max-width: 577px;
+  z-index: 3;
   .calculator-head {
     font-weight: 700;
     font-size: 14px;
@@ -62,7 +63,7 @@
     }
     .show-result {
       display: none;
-      @media screen and (min-width: 1240px) {
+      @media screen and (min-width: $desctopWidth) {
         display: block;
         font-weight: 500;
         font-size: 20px;
@@ -83,7 +84,7 @@
         padding: 8px 21px;
         margin-bottom: 17px;
         .result-flex {
-          @media screen and (min-width: 1240px) {
+          @media screen and (min-width: $desctopWidth) {
             display: flex;
             justify-content: space-between;
           }
@@ -99,7 +100,7 @@
           }
         }
       }
-      @media screen and (min-width: 1240px) {
+      @media screen and (min-width: $desctopWidth) {
         display: none;
       }
     }

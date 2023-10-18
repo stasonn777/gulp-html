@@ -129,9 +129,14 @@ h3 {
     margin-top: 10px;
   }
 }
-@media screen and (min-width: 1240px) {
+@media screen and (max-width: $desctopWidth) {
+  .hide-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: $desctopWidth) {
   .container {
-    max-width: 1240px;
+    max-width: 1203px;
     margin: auto;
     padding: 0;
   }
@@ -140,6 +145,9 @@ h3 {
   }
   .cta-button {
     width: auto;
+    &.large {
+      width: 381px;
+    }
   }
   .full-width {
     width: 100%;

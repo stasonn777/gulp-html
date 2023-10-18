@@ -43,7 +43,6 @@ footer {
     color: #ffff;
     text-decoration: none;
     font-size: 14px;
-    font-family: Roboto;
   }
   .footer-logo {
     height: 25px;
@@ -63,15 +62,6 @@ footer {
         gap: 18px;
       }
     }
-    .footer-icon-box {
-      display: flex;
-      width: 165px;
-      margin: auto;
-      justify-content: space-between;
-      div {
-        margin-bottom: 15px;
-      }
-    }
   }
   .subfooter {
     padding-top: 18px;
@@ -79,7 +69,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: $desctopWidth) {
   footer {
     text-align: left;
     padding-top: 53px;
