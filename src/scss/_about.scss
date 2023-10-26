@@ -1,7 +1,7 @@
 .about-top {
   background-image: url(../img/about-mob.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 100px;
   padding-bottom: 95px;
   color: #fff;
@@ -9,6 +9,7 @@
   background-position-y: -50px;
   @media screen and (min-width: $desctopWidth) {
     background-image: url(../img/about-desc.png);
+    background-size: 100%;
     padding-bottom: 16%;
     background-position-y: 85px;
     .about-flex {
@@ -20,6 +21,16 @@
       p {
         text-align: left;
       }
+    }
+  }
+  @media screen and (min-width: 2180px) {
+    padding-bottom: 18%;
+  }
+  @media screen and (min-width: 2300px) {
+    background-image: url(../img/about-desc2.png);
+    padding-bottom: 8%;
+    .about-flex {
+      padding-top: 60px;
     }
   }
   h1 {

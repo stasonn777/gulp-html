@@ -18,9 +18,21 @@
         text-decoration: none;
         color: #141232;
         text-align: center;
-        font-size: 19px;
+        font-size: 14px;
         font-weight: 700;
         line-height: 21px;
+        text-transform: uppercase;
+        position: relative;
+        @media screen and (min-width: $desctopWidth) {
+          padding: 25px 0;
+          font-size: 19px;
+        }
+        &.b-to-c span {
+          color: #f85459;
+        }
+        &.b-to-b span {
+          color: #8566ff;
+        }
         &.active {
           background-color: #ffffff;
           border-radius: 12px 12px 0px 0px;
@@ -75,6 +87,11 @@
         justify-content: center;
         gap: 10px;
         cursor: pointer;
+        &.opened {
+          img {
+            rotate: 180deg;
+          }
+        }
       }
     }
     .result-container {
@@ -95,6 +112,7 @@
           line-height: 26px;
           color: #222222;
           margin-bottom: 1px;
+          gap: 20px;
           div:last-child {
             font-weight: 500;
           }
@@ -102,14 +120,22 @@
       }
       @media screen and (min-width: $desctopWidth) {
         display: none;
+        &.opened {
+          display: block;
+        }
       }
     }
 
-    .info a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
+    .info {
+      a {
+        color: #8566ff;
+      }
+      &.b2c a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
     }
     .range-input {
       position: relative;

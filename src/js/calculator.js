@@ -68,6 +68,8 @@ function moveRange(e) {
 showResult.addEventListener('click', onShowResult)
 
 function onShowResult() {
-  resultContainer.style.display = 'block';
-  topBanner.style.height = '1240px';
+  topBanner.classList.toggle('opened')
+  showResult.classList.toggle('opened');
+  resultContainer.classList.toggle('opened');
+  console.log(topBanner.style.height);
 }

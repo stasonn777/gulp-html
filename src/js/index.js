@@ -17,7 +17,7 @@ menuButton.addEventListener('click', () => {
 );
 function closeMenu() {
   menuWrapper.style.display = 'none';
-  header.style.position = 'relative';
+  header.style.position = 'fixed';
   document.body.style.position = 'initial';
 }
 

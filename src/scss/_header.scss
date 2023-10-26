@@ -47,6 +47,7 @@ header {
   left: 0;
   height: 100vh;
   bottom: 0;
+  z-index: 5;
   .header__menu {
     display: block;
     &.mobile-menu {
@@ -98,6 +99,10 @@ header {
               line-height: 17px;
               color: #01163e;
               text-decoration: none;
+              &.active {
+                color: #f85459;
+                font-weight: 600;
+              }
             }
           }
         }

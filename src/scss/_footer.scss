@@ -32,6 +32,15 @@ footer {
         font-size: 14px;
         font-weight: 600;
       }
+      .time {
+        font-family: Montserrat;
+        .watch-icon div {
+          margin-bottom: 6px;
+          &:first-child {
+            font-weight: 700;
+          }
+        }
+      }
     }
     .social {
       display: flex;
@@ -138,6 +147,9 @@ footer {
       .email-icon {
         position: relative;
         margin-left: 37px;
+        a {
+          text-decoration: underline;
+        }
         &::before {
           content: '';
           position: absolute;
