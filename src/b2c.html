@@ -14,10 +14,16 @@
   @@include('header.html')
   <section class="top-banner b2c">
     <div class="flex-box between top-flex">
-      <div class="img-wrapper">
-        <img class="hide-mobile" src="./img/b2c-top2.png" alt="">
-        <img class="hide-desctop" src="./img/b2c-top2-mob.png" alt="">
-      </div>
+      <a href="https://ekassa.pl/wiadomosci/nowa_usluga_od_ekassa">
+        <div class="img-wrapper">
+          <div class="mob-text">
+            <img src="./img/b2c-label.svg" alt="">
+            <h1>Weź gotówkę <b>szybko i prosto</b></h1>
+          </div>
+          <img class="hide-mobile top-img" src="./img/b2c-top2.png" alt="">
+          <img class="hide-desctop top-img" src="./img/b2c-top2-mob.png" alt="">
+        </div>
+      </a>
       <div class="calculator-container" data-aos="fade-right" data-aos-delay="100">
         <div class="text">
           <h1>EKASSA osobista </h1>
@@ -25,8 +31,10 @@
         </div>
         <div class="calculator-head">
           <div class="tabs">
-            <a href="#" class="tab b-to-c active"><img src="./img/calc-logo.svg" alt=""> Ekassa <br class="hide-desctop"><span>osobista</span></a>
-            <a href="#" class="tab b-to-b"><img src="./img/calc-logo.svg" alt=""> Ekassa <span>PRZEDSIĘBIORCZA</span></a>
+            <a href="#" class="tab b-to-c active"><img src="./img/calc-logo.svg" alt=""> Ekassa <br
+                class="hide-desctop"><span>osobista</span></a>
+            <a href="#" class="tab b-to-b"><img src="./img/calc-logo.svg" alt=""> Ekassa
+              <span>PRZEDSIĘBIORCZA</span></a>
           </div>
         </div>
         <div class="calculator-body">
@@ -71,13 +79,13 @@
                       <img class="thumb term-thumb" src="./img/thumb.svg" alt="">
                     </div>
                     <div class="range-filled term-filled"></div>
-                    <input type="range" name="" id="term" min="6" max="48" step="1" value="10">
+                    <input type="range" name="" id="term" min="1" max="36" step="1" value="10">
                   </di>
                   <img src="./img/plus.svg" alt="" class="slider-button term-up">
                 </div>
               </div>
               <div class="bottom-info between">
-                <div>Od <span>z</span> miesięcy</div>
+                <div>Od <span>1</span> miesięcy</div>
                 <div>do <span>36</span> miesięcy</div>
               </div>
             </div>
@@ -139,9 +147,9 @@
       </div>
     </div>
   </section>
-  <section class="steps">
+  <section class="steps desc">
     <div class="container">
-      <h2>3 proste kroki dla otrzymania pożyczki</h2>
+      <h2>Pożyczka w 3 prostych krokach</h2>
       <div class="steps-wrapper flex-box">
         <div class="steps-item" data-aos="fade-right" data-aos-delay="200">
           <div class="steps-item__number">#1</div>
@@ -165,48 +173,283 @@
       <div class="center"><a href="#" class="cta-button large">Weź pożyczkę</a></div>
     </div>
   </section>
-  <section class="icons" data-aos="fade-up">
+
+  <section class="steps mob">
     <div class="container">
-      <h2>Dlaczego Ekassa?</h2>
+      <h2>Pożyczka w 3 prostych krokach</h2>
+      <div class="steps-wrapper flex-box" id="steps-wrapper">
+        <div class="steps-item" data-aos="fade-right" data-aos-delay="200">
+          <div class="steps-item__number">#1</div>
+          <div>
+            <div class="steps-item__title">Wypełnij krótki wniosek</div>
+            <div class="steps-item__description">Jesteś o krok bliżej pożyczki</div>
+          </div>
+        </div>
+        <div class="steps-item" data-aos="fade-right" data-aos-delay="400">
+          <div class="steps-item__number">#2</div>
+          <div>
+            <div class="steps-item__title">Przejdź weryfikację</div>
+            <div class="steps-item__description">Pożyczka już prawie u Ciebie</div>
+          </div>
+        </div>
+        <div class="steps-item" data-aos="fade-right" data-aos-delay="600">
+          <div class="steps-item__number">#3</div>
+          <div>
+            <div class="steps-item__title">Otrzymaj pieniądze na konto</div>
+            <div class="steps-item__description">Hurra! Wydaj je na dowolny cel</div>
+          </div>
+        </div>
+      </div>
+      <div class="control">
+        <span class="control-item active"></span>
+        <span class="control-item"></span>
+        <span class="control-item"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="icons hide-mobile desc" data-aos="fade-up">
+    <div class="container">
+      <h2>Co nas wyróżnia?</h2>
       <div class="icons-wrapper">
         <div class="icon-item">
-          <img src="./img/icon1.svg" alt="">
-          <div class="icon-item__title">Korzyść</div>
-          <p>Pożyczka do <span>30 000 zł</span> <br> na okres do <span>36 miesięcy</span>!</p>
+          <img src="./img/icon4.svg" alt="">
+          <div class="icon-item__title">Prostota i szybkość</div>
+          <p>Krótki wniosek, <br><b>bez dokumentów! <br> <span class="red">+</span> szybka decyzja</b><img
+              src="./img/icon-1-1.svg" alt=""></p>
         </div>
         <div class="icon-item">
           <img src="./img/icon3.svg" alt="">
-          <div class="icon-item__title">Otwartość</div>
-          <p>Oferujemy pożyczki dostępne <span>dla każdego</span>! Udzielamy pożyczek osobom od 18 lat, studentom oraz emerytom</p>
+          <div class="icon-item__title">Zaufanie</div>
+          <p>Bez zastawu <br><b>i poręczycieli</b></p>
         </div>
         <div class="icon-item">
-          <img src="./img/icon10.svg" alt="">
-          <div class="icon-item__title">Zawsze online</div>
-          <p>Jesteśmy dostępni 24/7 – złożyć wniosek o pożyczkę możesz <span>w każdej chwili</span></p>
+          <img src="./img/icon1.svg" alt="">
+          <div class="icon-item__title">Na dowolny cel</div>
+          <p>Do <b>30 000 zł</b> <br>na <b>36 miesięcy!</b></p>
         </div>
         <div class="icon-item">
-          <img src="./img/icon4.svg" alt="">
-          <div class="icon-item__title">Prostota</div>
-          <p><span>Prosty i przejrzysty proces</span> pożyczkowy bez wychodzenia z domu, z dowolnego urządzenia i miejsca</span>
-          </p>
+          <img src="./img/icon11.svg" alt="">
+          <div class="icon-item__title">Całodobowo</div>
+          <p>Możesz składać wniosek <br> <b>online</b> w dowolnym momencie! <br> Jesteśmy <b>dostępni 24/7</b></p>
         </div>
         <div class="icon-item">
-          <img src="./img/icon5.svg" alt="">
-          <div class="icon-item__title">Brak poręczycieli</div>
-          <p>W pełni <span>Ci ufamy</span>, dlatego nie wymagamy zaangażowania poręczycieli.
-          </p>
+          <img src="./img/icon7.svg" alt="">
+          <div class="icon-item__title">Dostępność</div>
+          <p>Spłacaj pożyczkę <br> <b>małymi ratami</b> <br>przez cały okres</p>
         </div>
         <div class="icon-item">
           <img src="./img/icon8.svg" alt="">
-          <div class="icon-item__title">Przeźroczystość</div>
-          <p>Oprocentowanie pożyczki jest stałe i określone we wniosku. <span>Brak ukrytych kosztów</span> i dodatkowych
-            opłat</p>
+          <div class="icon-item__title">Przejrzystość</div>
+          <p><b>Bez ukrytych prowizji</b> <br>
+            i przepłacania</p>
         </div>
       </div>
       <div class="center"><a href="#" class="cta-button large">Weź pożyczkę</a></div>
     </div>
   </section>
-  <section class="products" data-aos="fade-up">
+
+  <section class="icons hide-desctop mob" data-aos="fade-up">
+    <div class="container">
+      <h2>Co nas wyróżnia?</h2>
+      <div class="icons-slider">
+        <div class="icons-slide">
+          <div class="icon-item">
+            <img src="./img/icon-1.svg" alt="">
+            <div>
+              <div class="icon-item__title">Prostota i szybkość</div>
+              <p>Krótki wniosek,<b> bez dokumentów!</b><br>
+                <img src="./img/icon-1-1.svg" alt=""> <b>Szybka decyzja</b>
+              </p>
+            </div>
+          </div>
+          <div class="icon-item">
+            <img src="./img/icon-2.svg" alt="">
+            <div>
+              <div class="icon-item__title">Zaufanie</div>
+              <p><b>Bez zastawu </b>i poręczycieli</p>
+            </div>
+          </div>
+          <div class="icon-item">
+            <img src="./img/icon-3.svg" alt="">
+            <div>
+              <div class="icon-item__title">Na dowolny cel</div>
+              <p>Do <b>30 000 zł</b> na <b>36 miesięcy</b>!</p>
+            </div>
+          </div>
+        </div>
+        <div class="icons-slide">
+          <div class="icon-item">
+            <img src="./img/icon-4.svg" alt="">
+            <div>
+              <div class="icon-item__title">Całodobowo</div>
+              <p>Składać wniosek <b>online 24/7</b></p>
+            </div>
+            </p>
+          </div>
+          <div class="icon-item">
+            <img src="./img/icon-5.svg" alt="">
+            <div>
+              <div class="icon-item__title">Dostępność</div>
+              <p>Spłacaj pożyczkę <b>małymi ratami</b> przez cały okres</p>
+            </div>
+          </div>
+          <div class="icon-item">
+            <img src="./img/icon-6.svg" alt="">
+            <div>
+              <div class="icon-item__title">Przejrzystość</div>
+              <p>Bez ukrytych prowizji i przepłacania</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="control">
+        <span class="control-item active"></span>
+        <span class="control-item"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="banner hide-mobile" data-aos="fade-up">
+    <div class="container">
+      <div class="banner-flex">
+        <div class="text">
+          <h2>Kontroluj swoją pożyczkę z dowolnego miejsca na ziemi w każdym momencie!</h2>
+          <p>Pełny, całodobowy dostęp online <br class="hide-desctop"> do harmonogramu spłat</p>
+        </div>
+        <img class="hide-mobile" src="./img/banner-img.png" alt="">
+      </div>
+    </div>
+  </section> -->
+  <section class="reviews" data-aos="fade-up">
+    <h2>Klienci o nas</h2>
+    <div class="reviews-wrapper">
+      <div class="review-item">
+        <div class="review-header">
+          <div class="between">
+            <div class="date">03.01.2023</div>
+            <div class="name">Monika</div>
+            <div class="stars">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="review-text">
+          Dziękuję! Naprawdę otrzymałam pieniądze szybko w ciągu kilku godzin, bez zbędnych dokumentów, w 15 minut!
+          Polecam!!!!!
+        </div>
+        <div class="review-control desctop">
+          <img src="./img/arrow-left.svg" alt="" class="left">
+          <img src="./img/arrow-right.svg" alt="" class="right">
+        </div>
+      </div>
+      <div class="review-item active">
+        <div class="review-header">
+          <div class="between">
+            <div class="date">03.01.2023</div>
+            <div class="name">M.K.</div>
+            <div class="stars">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="review-text">
+          Korzystałem już z kilku pożyczek, ale w ekassa wszystko jest proste i szybkie oraz bez zbędnych pytań...
+          Jesteście najlepsi 🙂👍
+        </div>
+        <div class="review-control desctop">
+          <img src="./img/arrow-left.svg" alt="" class="left">
+          <img src="./img/arrow-right.svg" alt="" class="right">
+        </div>
+      </div>
+      <div class="review-item">
+        <div class="review-header">
+          <div class="between">
+            <div class="date">03.01.2023</div>
+            <div class="name">Lech</div>
+            <div class="stars">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="review-text">
+          Otrzymałem pozytywną decyzję tutaj, ale zaproponowali dłuższy okres spłaty... aby płacić mniejszymi kwotami. Po dwóch spłaconych ratach mogę z pewnością powiedzieć - to jest nieuciążliwe i wygodne.
+          W innych firmach otrzymałem odmowę ☹️
+        </div>
+        <div class="review-control desctop">
+          <img src="./img/arrow-left.svg" alt="" class="left">
+          <img src="./img/arrow-right.svg" alt="" class="right">
+        </div>
+      </div>
+      <div class="review-item">
+        <div class="review-header">
+          <div class="between">
+            <div class="date">03.01.2023</div>
+            <div class="name">Szymek</div>
+            <div class="stars">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="review-text">
+          Miałem remont w domu i potrzebowałem pilnie dodatkowej kasy, dzięki ekasa wszystko się udało, mają szybką analizę wniosku i indywidualne oferty
+        </div>
+        <div class="review-control desctop">
+          <img src="./img/arrow-left.svg" alt="" class="left">
+          <img src="./img/arrow-right.svg" alt="" class="right">
+        </div>
+      </div>
+      <div class="review-item">
+        <div class="review-header">
+          <div class="between">
+            <div class="date">03.01.2023</div>
+            <div class="name">Kuba</div>
+            <div class="stars">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+              <img src="./img/star.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="review-text">
+          Wszystko fajnie, szybka kasa bez zbędnej papierologii. Ale czemu pytają o wykształcenie? Żeby pożyczyć kilka stówek trzeba mieć magistra?! 😅
+        </div>
+        <div class="review-control desctop">
+          <img src="./img/arrow-left.svg" alt="" class="left">
+          <img src="./img/arrow-right.svg" alt="" class="right">
+        </div>
+      </div>
+    </div>
+    <div class="review-control mob">
+        <span class="control-item active"></span>
+        <span class="control-item"></span>
+        <span class="control-item"></span>
+        <span class="control-item"></span>
+        <span class="control-item"></span>
+        <span class="control-item"></span>
+    </div>
+    <div class="center container"><a href="#" class="cta-button">Weź pożyczkę</a></div>
+    <div class="colored-bg"></div>
+  </section>
+  <section class="products hide-mobile" data-aos="fade-up">
     <div class="container">
       <h2>Produkty finansowe od Ekassa</h2>
       <div class="flex-box products-wrapper">
@@ -251,189 +494,7 @@
       </div>
     </div>
   </section>
-  <section class="banner" data-aos="fade-up">
-    <div class="container">
-      <div class="banner-flex">
-        <div class="text">
-          <h2>Kontroluj swoją pożyczkę z dowolnego miejsca na ziemi w każdym momencie!</h2>
-          <p>Pełny, całodobowy dostęp online <br class="hide-desctop"> do harmonogramu spłat</p>
-        </div>
-        <img class="hide-mobile" src="./img/banner-img.png" alt="">
-      </div>
-    </div>
-  </section>
-  <section class="reviews" data-aos="fade-up">
-    <h2>Co mówią nasi klienci:</h2>
-    <div class="reviews-wrapper">
-      <div class="review-item">
-        <div class="review-header">
-          <div class="between">
-            <div class="stars">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-            </div>
-            <div class="name">Damian</div>
-            <div class="date">03.01.2023</div>
-          </div>
-          <div class="location">
-            <img src="./img/location_pin.svg" alt=""> Wrocław
-          </div>
-        </div>
-        <div class="review-text">
-          Przed otwarciem własnego biznesu, a mianowicie kawiarni, wyszukałem wiele informacji na temat kosztów zakupu
-          sprzętu, zakupu samej kawy itp. Po wyliczeniu plus minus potrzebnej kwoty, zacząłem szukać pożyczki z długim
-          terminem spłaty i wysokim limitem. Zaczęłam od banków i stanęłem przed pierwszym problemem, albo wysokie
-          oprocentowanie, albo krótki termin spłaty pożyczki. Potem zaczęłam szukać pożyczki przez serwisy internetowe i
-          znalazłem ekassa, która oferuje odpowiednią stawkę i długi okres spłaty ratalnej. Po uzyskaniu odpowiedniej
-          kwoty zacząłem realizować swój plan i wszystko się udało! Mój biznes nie od razu zaczął przynosić duże zyski,
-          na początku były one bliskie zeru, ale w ostatnich miesiącach moje dochody wzrosły i pozwoliły mi bez problemu
-          spłacić kredyt. Wielkie podziękowania dla ekassa za indywidualne podejście!
-        </div>
-        <div class="review-control desctop">
-          <img src="./img/arrow-left.svg" alt="" class="left">
-          <img src="./img/arrow-right.svg" alt="" class="right">
-        </div>
-      </div>
-      <div class="review-item active">
-        <div class="review-header">
-          <div class="between">
-            <div class="stars">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-            </div>
-            <div class="name">Damian</div>
-            <div class="date">03.01.2023</div>
-          </div>
-          <div class="location">
-            <img src="./img/location_pin.svg" alt=""> Wrocław
-          </div>
-        </div>
-        <div class="review-text">
-          Przed otwarciem własnego biznesu, a mianowicie kawiarni, wyszukałem wiele informacji na temat kosztów zakupu
-          sprzętu, zakupu samej kawy itp. Po wyliczeniu plus minus potrzebnej kwoty, zacząłem szukać pożyczki z długim
-          terminem spłaty i wysokim limitem. Zaczęłam od banków i stanęłem przed pierwszym problemem, albo wysokie
-          oprocentowanie, albo krótki termin spłaty pożyczki. Potem zaczęłam szukać pożyczki przez serwisy internetowe i
-          znalazłem ekassa, która oferuje odpowiednią stawkę i długi okres spłaty ratalnej. Po uzyskaniu odpowiedniej
-          kwoty zacząłem realizować swój plan i wszystko się udało! Mój biznes nie od razu zaczął przynosić duże zyski,
-          na początku były one bliskie zeru, ale w ostatnich miesiącach moje dochody wzrosły i pozwoliły mi bez problemu
-          spłacić kredyt. Wielkie podziękowania dla ekassa za indywidualne podejście!
-        </div>
-        <div class="review-control desctop">
-          <img src="./img/arrow-left.svg" alt="" class="left">
-          <img src="./img/arrow-right.svg" alt="" class="right">
-        </div>
-      </div>
-      <div class="review-item">
-        <div class="review-header">
-          <div class="between">
-            <div class="stars">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-            </div>
-            <div class="name">Damian</div>
-            <div class="date">03.01.2023</div>
-          </div>
-          <div class="location">
-            <img src="./img/location_pin.svg" alt=""> Wrocław
-          </div>
-        </div>
-        <div class="review-text">
-          Przed otwarciem własnego biznesu, a mianowicie kawiarni, wyszukałem wiele informacji na temat kosztów zakupu
-          sprzętu, zakupu samej kawy itp. Po wyliczeniu plus minus potrzebnej kwoty, zacząłem szukać pożyczki z długim
-          terminem spłaty i wysokim limitem. Zaczęłam od banków i stanęłem przed pierwszym problemem, albo wysokie
-          oprocentowanie, albo krótki termin spłaty pożyczki. Potem zaczęłam szukać pożyczki przez serwisy internetowe i
-          znalazłem ekassa, która oferuje odpowiednią stawkę i długi okres spłaty ratalnej. Po uzyskaniu odpowiedniej
-          kwoty zacząłem realizować swój plan i wszystko się udało! Mój biznes nie od razu zaczął przynosić duże zyski,
-          na początku były one bliskie zeru, ale w ostatnich miesiącach moje dochody wzrosły i pozwoliły mi bez problemu
-          spłacić kredyt. Wielkie podziękowania dla ekassa za indywidualne podejście!
-        </div>
-        <div class="review-control desctop">
-          <img src="./img/arrow-left.svg" alt="" class="left">
-          <img src="./img/arrow-right.svg" alt="" class="right">
-        </div>
-      </div>
-      <div class="review-item">
-        <div class="review-header">
-          <div class="between">
-            <div class="stars">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-            </div>
-            <div class="name">Damian</div>
-            <div class="date">03.01.2023</div>
-          </div>
-          <div class="location">
-            <img src="./img/location_pin.svg" alt=""> Wrocław
-          </div>
-        </div>
-        <div class="review-text">
-          Przed otwarciem własnego biznesu, a mianowicie kawiarni, wyszukałem wiele informacji na temat kosztów zakupu
-          sprzętu, zakupu samej kawy itp. Po wyliczeniu plus minus potrzebnej kwoty, zacząłem szukać pożyczki z długim
-          terminem spłaty i wysokim limitem. Zaczęłam od banków i stanęłem przed pierwszym problemem, albo wysokie
-          oprocentowanie, albo krótki termin spłaty pożyczki. Potem zaczęłam szukać pożyczki przez serwisy internetowe i
-          znalazłem ekassa, która oferuje odpowiednią stawkę i długi okres spłaty ratalnej. Po uzyskaniu odpowiedniej
-          kwoty zacząłem realizować swój plan i wszystko się udało! Mój biznes nie od razu zaczął przynosić duże zyski,
-          na początku były one bliskie zeru, ale w ostatnich miesiącach moje dochody wzrosły i pozwoliły mi bez problemu
-          spłacić kredyt. Wielkie podziękowania dla ekassa za indywidualne podejście!
-        </div>
-        <div class="review-control desctop">
-          <img src="./img/arrow-left.svg" alt="" class="left">
-          <img src="./img/arrow-right.svg" alt="" class="right">
-        </div>
-      </div>
-      <div class="review-item">
-        <div class="review-header">
-          <div class="between">
-            <div class="stars">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-              <img src="./img/star.svg" alt="">
-            </div>
-            <div class="name">Damian</div>
-            <div class="date">03.01.2023</div>
-          </div>
-          <div class="location">
-            <img src="./img/location_pin.svg" alt=""> Wrocław
-          </div>
-        </div>
-        <div class="review-text">
-          Przed otwarciem własnego biznesu, a mianowicie kawiarni, wyszukałem wiele informacji na temat kosztów zakupu
-          sprzętu, zakupu samej kawy itp. Po wyliczeniu plus minus potrzebnej kwoty, zacząłem szukać pożyczki z długim
-          terminem spłaty i wysokim limitem. Zaczęłam od banków i stanęłem przed pierwszym problemem, albo wysokie
-          oprocentowanie, albo krótki termin spłaty pożyczki. Potem zaczęłam szukać pożyczki przez serwisy internetowe i
-          znalazłem ekassa, która oferuje odpowiednią stawkę i długi okres spłaty ratalnej. Po uzyskaniu odpowiedniej
-          kwoty zacząłem realizować swój plan i wszystko się udało! Mój biznes nie od razu zaczął przynosić duże zyski,
-          na początku były one bliskie zeru, ale w ostatnich miesiącach moje dochody wzrosły i pozwoliły mi bez problemu
-          spłacić kredyt. Wielkie podziękowania dla ekassa za indywidualne podejście!
-        </div>
-        <div class="review-control desctop">
-          <img src="./img/arrow-left.svg" alt="" class="left">
-          <img src="./img/arrow-right.svg" alt="" class="right">
-        </div>
-      </div>
-    </div>
-    <div class="review-control mob">
-      <img src="./img/arrow-left.svg" alt="" class="left">
-      <img src="./img/arrow-right.svg" alt="" class="right">
-    </div>
-    <div class="center container"><a href="#" class="cta-button">Weź pożyczkę</a></div>
-    <div class="colored-bg"></div>
-  </section>
-  <section class="contact-bar" data-aos="fade-up">
+  <!-- <section class="contact-bar hide-mobile" data-aos="fade-up">
     <div class="container contact-bar__container">
       <h2>Zaloguj się</h2>
       <div class="contact-item">
@@ -447,7 +508,7 @@
       </div>
     </div>
   </section>
-  <section class="subscribe" data-aos="fade-up">
+  <section class="subscribe hide-mobile" data-aos="fade-up">
     <div class="container subscribe__container">
       <h2>Subskrypcja newslettera</h2>
       <div class="flex-box subscribe-flex">
@@ -461,8 +522,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="manifest" data-aos="fade-up">
+  </section> -->
+  <!-- <section class="manifest hide-mobile" data-aos="fade-up">
     <div class="container">
       <div class="scroll">
         <h3>Ekassa - сервис онлайн-кредитования</h3>
@@ -518,7 +579,7 @@
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
   @@include('footer.html')
   <script src="./js/index.js"></script>
   <script src="./js/calculator.js"></script>

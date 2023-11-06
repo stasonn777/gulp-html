@@ -55,8 +55,9 @@ header {
       background-color: #ffff;
       left: 0;
       width: 100vw;
-      text-align: center;
+      text-align: left;
       top: 57px;
+      padding-left: 16px;
       .header__menu-list {
         margin-top: 17px;
         margin-bottom: 28px;
@@ -69,6 +70,10 @@ header {
             line-height: 17px;
             color: #01163e;
             text-decoration: none;
+            &.active {
+              color: #F85459;
+              font-weight: 600;
+            }
           }
         }
       }

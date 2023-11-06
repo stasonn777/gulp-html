@@ -74,9 +74,14 @@
       margin-bottom: 14px;
     }
     .show-result {
-      display: none;
+      color: #8566ff;
+      font-size: 17px;
+      font-weight: 400;
+      text-decoration-line: underline;
+      img {
+        display: none;
+      }
       @media screen and (min-width: $desctopWidth) {
-        display: block;
         font-weight: 500;
         font-size: 20px;
         line-height: 23px;
@@ -87,6 +92,9 @@
         justify-content: center;
         gap: 10px;
         cursor: pointer;
+        img {
+          display: block;
+        }
         &.opened {
           img {
             rotate: 180deg;
@@ -95,6 +103,10 @@
       }
     }
     .result-container {
+      display: none;
+      &.opened {
+        display: block;
+      }
       .result-wrapper {
         margin-top: 19px;
         background: #f7f8fa;
@@ -118,19 +130,13 @@
           }
         }
       }
-      @media screen and (min-width: $desctopWidth) {
-        display: none;
-        &.opened {
-          display: block;
-        }
-      }
     }
 
     .info {
       a {
         color: #8566ff;
       }
-      &.b2c a{
+      &.b2c a {
         display: flex;
         justify-content: center;
         align-items: center;

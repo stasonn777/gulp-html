@@ -1,5 +1,5 @@
 // // Fonts================================================================
-@import url(https://fonts.googleapis.com/css?family=Roboto:regular,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,300,400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,700,800);
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular,700);
 
@@ -90,6 +90,9 @@ h3 {
 }
 .bold {
   font-weight: 700;
+}
+b {
+  font-weight: 600;
 }
 .contact-item {
   background: #ffffff;
