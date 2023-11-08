@@ -13,6 +13,7 @@ const amountUp = document.querySelector('.amount-up');
 const amountDown = document.querySelector('.amount-down');
 const termUp = document.querySelector('.term-up');
 const termDown = document.querySelector('.term-down');
+const steps = document.querySelector('.steps.mob');
 const customEvent = new Event('input', { bubbles: true });
 
 window.addEventListener("load", () => {
@@ -71,5 +72,5 @@ function onShowResult() {
   topBanner.classList.toggle('opened')
   showResult.classList.toggle('opened');
   resultContainer.classList.toggle('opened');
-  console.log(topBanner.style.height);
+  steps.classList.toggle('hide');
 }

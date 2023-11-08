@@ -10,10 +10,16 @@
   background-color: #8566ff;
   margin-bottom: -1px;
   padding-bottom: 66px;
+  &.opened {
+    padding-bottom: 0;
+    .img-wrapper {
+      display: none !important;
+    }
+  }
   @media screen and (min-width: $desctopWidth) {
     background-position-y: bottom;
-    background-image: url(../img/top-pattern.svg) !important;
-    background-color: unset;
+    // background-image: url(../img/top-pattern.svg) !important;
+    // background-color: unset;
     height: 900px;
     padding-top: 105px;
     position: relative;
@@ -22,7 +28,8 @@
     &.opened {
       height: 1100px;
       .img-wrapper {
-        margin-top: 87px !important;
+        display: block !important;
+        margin-top: 190px !important;
       }
     }
   }
@@ -119,7 +126,7 @@
     // margin-bottom: -1px;
     // padding-bottom: 66px;
     @media screen and (min-width: $desctopWidth) {
-      background-color: unset;
+      // background-color: unset;
     }
     &::before {
       background-image: url(../img/b2c-top-pattern.svg);
@@ -267,14 +274,28 @@
   &.desc {
     display: none;
   }
+  &.hide {
+    display: none;
+  }
   @media screen and (min-width: $desctopWidth) {
-    background-color: #fff;
+    background-image: url(../img/Subtract.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffffff00;
+    margin-top: -247px;
+    padding-top: 200px;
+    z-index: 2;
     &.mob {
       display: none;
     }
     &.desc {
       display: block;
     }
+  }
+  @media screen and (min-width: $largeDesctopWidth) {
+    margin-top: -248px;
+    padding-top: 218px;
   }
   &::before {
     content: '';
@@ -867,7 +888,7 @@
         background: rgba(255, 255, 255, 0.7);
         border-radius: 50%;
         &.active {
-          background: #8566FF;
+          background: #8566ff;
         }
       }
     }
