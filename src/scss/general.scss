@@ -134,7 +134,7 @@ b {
 }
 @media screen and (max-width: $laptopWidth ) {
   .hide-mobile {
-    display: none;
+    display: none!important;
   }
 }
 @media screen and (min-width: $laptopWidth ) {
@@ -179,7 +179,7 @@ b {
     line-height: 23px;
   }
   .hide-desctop {
-    display: none;
+    display: none!important;
   }
   .contact-item {
     display: flex;
