@@ -26,34 +26,41 @@ class Slider {
     this.setLeftForSlides();
     // debugger;
   }
-  
-  appendSlides() {
-    console.log(this.slidesArr);
-    this.slidesArr.forEach(el => {
-      this.sliderWrapper.appendChild(el)
-    })
-  }
-  
+
+  // appendSlides() {
+  //   console.log(this.slidesArr);
+  //   this.sliderWrapper.children.forEach(el => {
+  //     this.sliderWrapper.appendChild(el)
+  //   })
+  // }
+
   setLeftForSlides() {
     this.slidesArr.forEach((slide, i) => {
-      slide.style.left = (i * this.slideWidth)+'px';
+      slide.style.left = i * this.slideWidth + 'px';
     });
-    this.appendSlides();
+    // this.appendSlides();
   }
-  
-  
+
   sliderLeft() {
-    const last = this.slidesArr.pop(0)
-    this.slidesArr.unshift(last)
+    const last = this.slidesArr.pop(0);
+    this.slidesArr.unshift(last);
     this.setLeftForSlides();
+    last.style.display = 'none';
+    setTimeout(() => {
+      last.style.display = 'block';
+    }, 0);
   }
-  
+
   sliderRight() {
-    const first = this.slidesArr.shift(0)
-    this.slidesArr.push(first)
+    const first = this.slidesArr.shift(0);
+    this.slidesArr.push(first);
     this.setLeftForSlides();
+    first.style.display = 'none';
+    setTimeout(() => {
+      first.style.display = 'block';
+    }, 0);
   }
-  
+
   // setActive() {}
   doControl(e) {
     switch (e.target.dataset.control) {
