@@ -8,14 +8,32 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <h1>Hello</h1>
-    @@include('header.html')
-  </header>
-  <div class="content">
-    <img src="./img/accord-top.png" alt="">
-    <p>Hello, world!</p>
-  </div>
-  <script src="./js/index.js"></script>
+  <section class="slider">
+    <div class="slider-wrapper">
+      <div class="slider-body" id="slider1">
+        <div class="slider-item"><div class="slider-item__body">Hello1</div></div>
+        <div class="slider-item"><div class="slider-item__body">Hello2</div></div>
+        <div class="slider-item"><div class="slider-item__body">Hello3</div></div>
+        <div class="slider-item active"><div class="slider-item__body">Hello4</div></div>
+        <div class="slider-item"><div class="slider-item__body">Hello5</div></div>
+        <div class="slider-item"><div class="slider-item__body">Hello6</div></div>
+        <div class="slider-item"><div class="slider-item__body">Hello7</div></div>
+      </div>
+    </div>
+    <div class="slider-controls" id="slider-controls">
+      <div class="control" data-control="left">Left</div>
+      <div class="control" data-control="right">Right</div>
+    </div>
+    <div class="control-status" id="control-status">
+      <!-- <div class="control-status__item"></div>
+      <div class="control-status__item"></div>
+      <div class="control-status__item"></div>
+      <div class="control-status__item active"></div>
+      <div class="control-status__item"></div>
+      <div class="control-status__item"></div>
+      <div class="control-status__item"></div> -->
+    </div>
+  </section>
+  <script src="./js/slider.js"></script>
 </body>
 </html>
