@@ -132,12 +132,12 @@ b {
     margin-top: 10px;
   }
 }
-@media screen and (max-width: $desctopWidth) {
+@media screen and (max-width: $laptopWidth ) {
   .hide-mobile {
     display: none;
   }
 }
-@media screen and (min-width: $desctopWidth) {
+@media screen and (min-width: $laptopWidth ) {
   .container {
     max-width: 1203px;
     margin: auto;

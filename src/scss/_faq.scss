@@ -4,14 +4,14 @@
   height: 525px;
   background-size: cover;
   background-repeat: no-repeat;
-  @media screen and (min-width: $desctopWidth) {
+  @media screen and (min-width: $laptopWidth ) {
     margin-top: 85px;
     padding-top: 40px;
     background-size: 100% 338px;
   }
   &.b2c {
     background-image: url(../img/faq-b2c.png);
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth ) {
       background-image: url(../img/faq-b2c-desc.png);
       .cond-top__img {
         padding-top: 0;
@@ -20,7 +20,7 @@
   }
   &.b2b {
     background-image: url(../img/faq-b2b.png);
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth ) {
       background-image: url(../img/faq-b2b-desc.png);
       position: relative;
       &::after {
@@ -44,7 +44,7 @@
     line-height: 26.5px;
     color: #fff;
     margin-top: 25px;
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth ) {
       font-size: 46px;
       line-height: 56px;
       font-weight: 500;
@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (min-width: $desctopWidth) {
+@media screen and (min-width: $laptopWidth ) {
   .cond-top {
     margin-bottom: -128px;
     h1 {
@@ -136,7 +136,7 @@
           color: #8566ff;
         }
       }
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth ) {
         a {
           font-size: 19px;
           padding: 35px;
@@ -176,7 +176,7 @@
       top: 115px;
       width: 42px;
       height: 42px;
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth ) {
         top: 63px;
       }
     }
@@ -187,7 +187,7 @@
       &::after {
         background-image: url('../img/arrow-up.svg');
         top: auto;
-        @media screen and (min-width: $desctopWidth) {
+        @media screen and (min-width: $laptopWidth ) {
           top: auto;
           bottom: 0px;
         }
@@ -237,7 +237,7 @@
   }
 }
 
-@media screen and (min-width: $desctopWidth) {
+@media screen and (min-width: $laptopWidth ) {
   .accordion {
     margin-bottom: 62px;
     h3,

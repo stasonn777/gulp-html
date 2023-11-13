@@ -55,7 +55,6 @@ termRange.addEventListener('input', (e) => {
 });
 
 function moveRange(e) {
-  console.log(e.target.value);
   return {
     min: e.target.attributes.min.value,
     max: e.target.attributes.max.value,

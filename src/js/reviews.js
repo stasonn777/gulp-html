@@ -1,8 +1,17 @@
 const reviewsWrapper = document.querySelector('.reviews-wrapper');
 const left = document.querySelectorAll('.left');
 const right = document.querySelectorAll('.right');
-let styleLeft = 0;
-const itemWidth = reviewsWrapper.children[0].clientWidth;
+let itemWidth = 0;
+let styleLeft = -1122;
+if (reviewsWrapper.clientWidth < 3000) {
+  itemWidth = reviewsWrapper.children[0].clientWidth + 16;
+} else {
+  styleLeft = -1018;
+  itemWidth = reviewsWrapper.children[0].clientWidth + 93;
+}
+
+console.log([...reviewsWrapper.children]);
+
 
 left.forEach((el) => {
   el.addEventListener('click', (e) => moveLeft(e));
@@ -14,11 +23,11 @@ right.forEach((el) => {
 
 
 function moveLeft(e) {
+  console.log('left');
   const activeControl = document.querySelector('.review-control .control-item.active');
-  console.log(activeControl);
-  e.target.parentNode.parentNode.classList.remove('active');
-  e.target.parentNode.parentNode.previousElementSibling.classList.add('active');
-  if (styleLeft < 0) {
+  // e.target.parentNode.parentNode.classList.remove('active');
+  // e.target.parentNode.parentNode.previousElementSibling.classList.add('active');
+  if (activeControl.previousElementSibling) {
     styleLeft = styleLeft + itemWidth;
     reviewsWrapper.style.left = styleLeft + 'px';
     activeControl.classList.remove('active');
@@ -28,14 +37,13 @@ function moveLeft(e) {
 
 function moveRight(e) {
   const activeControl = document.querySelector('.review-control .control-item.active');
-  console.log(activeControl);
-  e.target.parentNode.parentNode.classList.remove('active');
-  e.target.parentNode.parentNode.nextElementSibling.classList.add('active');
-  if (styleLeft > -reviewsWrapper.clientWidth + itemWidth) {
+  // e.target.parentNode.parentNode.classList.remove('active');
+  // e.target.parentNode.parentNode.nextElementSibling.classList.add('active');
+  if (activeControl.nextElementSibling) {
     styleLeft = styleLeft - itemWidth;
     reviewsWrapper.style.left = styleLeft + 'px';
     activeControl.classList.remove('active');
-    activeControl.nextElementSibling.classList.add('active')
+    activeControl.nextElementSibling.classList.add('active');
   }
 }
 
@@ -45,7 +53,6 @@ let touchEnd = 0;
 
 reviewsWrapper.addEventListener('touchstart', (e) => {
   touchStart = e.touches[0].clientX;
-  console.log(touchStart);
 });
 
 reviewsWrapper.addEventListener('touchmove', (e) => {
@@ -98,6 +105,7 @@ const iconsSlider = document.querySelector('.icons-slider');
 let touchStartIcons = 0;
 let touchEndIcons = 0;
 let iconsLeft = 0;
+const iconsStep = 91;
 
 iconsSlider.addEventListener('touchstart', (e) => {
   touchStartIcons = e.touches[0].clientX;
@@ -111,14 +119,14 @@ iconsSlider.addEventListener('touchend', () => {
   const activeControl = document.querySelector('.icons .control-item.active');
   if (touchStartIcons < touchEndIcons) {
     if (iconsLeft > 1) {
-      iconsLeft -= 83;
+      iconsLeft -= iconsStep;
       iconsSlider.style.left = `-${iconsLeft}%`;
       activeControl.classList.remove('active');
-      activeControl.previousElementSibling.classList.add('active')
-    }
+      activeControl.previsElementSibling.classList.add('active')
+    }ou
   } else {
-    if (iconsLeft < 83) {
-      iconsLeft += 83;
+    if (iconsLeft < iconsStep) {
+      iconsLeft += iconsStep;
       iconsSlider.style.left = `-${iconsLeft}%`;
       activeControl.classList.remove('active');
       activeControl.nextElementSibling.classList.add('active')

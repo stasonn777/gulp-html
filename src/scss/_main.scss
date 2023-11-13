@@ -9,14 +9,14 @@
   background-image: none;
   background-color: #8566ff;
   margin-bottom: -1px;
-  padding-bottom: 66px;
+  padding-bottom: 26px;
   &.opened {
     padding-bottom: 0;
     .img-wrapper {
       display: none !important;
     }
   }
-  @media screen and (min-width: $desctopWidth) {
+  @media screen and (min-width: $laptopWidth) {
     background-position-y: bottom;
     // background-image: url(../img/top-pattern.svg) !important;
     // background-color: unset;
@@ -33,6 +33,16 @@
       }
     }
   }
+  @media screen and (min-width: $desctopWidth) {
+    height: 866px;
+    padding-top: 120px;
+  }
+  @media screen and (min-width: $largeDesctopWidth) {
+    height: 912px;
+  }
+  @media screen and (min-width: 2400px) {
+    height: 825px;
+  }
   &::before {
     content: '';
     background-image: url(../img/top-bg.png);
@@ -44,7 +54,7 @@
     // padding: 75px 16px 0;
     h1 {
       font-size: 29px;
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         font-size: 41px;
       }
     }
@@ -54,7 +64,7 @@
       top: 19px;
       left: -51px;
       background-size: contain;
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         width: 795px;
         top: -40px;
         left: -50px;
@@ -63,7 +73,7 @@
     .top-flex {
       justify-content: center;
       align-items: flex-start;
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         gap: 40px;
       }
       a {
@@ -75,12 +85,12 @@
           position: relative;
           text-align: right;
           display: flex;
-          @media screen and (min-width: $desctopWidth) {
+          @media screen and (min-width: $laptopWidth) {
             padding-top: 56px;
           }
           .mob-text {
             text-align: left;
-            @media screen and (min-width: $desctopWidth) {
+            @media screen and (min-width: $laptopWidth) {
               display: none;
             }
             h1 {
@@ -97,7 +107,7 @@
             left: -2px;
             position: relative;
             width: 118px;
-            @media screen and (min-width: $desctopWidth) {
+            @media screen and (min-width: $laptopWidth) {
               width: auto;
               margin-bottom: -100px;
               left: auto;
@@ -105,14 +115,14 @@
               position: inherit;
             }
           }
-          @media screen and (min-width: $desctopWidth) {
+          @media screen and (min-width: $laptopWidth) {
             margin-bottom: -100px;
           }
         }
       }
       .calculator-container {
-        padding: 0 16px;
-        @media screen and (min-width: $desctopWidth) {
+        // padding: 0 16px;
+        @media screen and (min-width: $laptopWidth) {
           padding: 65px 0 0;
           // padding: unset;
         }
@@ -125,27 +135,27 @@
     // background-color: #8566ff;
     // margin-bottom: -1px;
     // padding-bottom: 66px;
-    @media screen and (min-width: $desctopWidth) {
-      // background-color: unset;
-    }
-    &::before {
-      background-image: url(../img/b2c-top-pattern.svg);
-      background-size: contain;
-      right: 30px;
-      top: 92px;
-      width: 162px;
-      height: 162px;
-      max-width: 100%;
-      @media screen and (min-width: $desctopWidth) {
-        background-image: none;
-        background-size: 694px;
-        background-position-x: 3px;
-        background-position-y: 40px;
-      }
-    }
+    // @media screen and (min-width: $laptopWidth ) {
+    //   background-color: unset;
+    // }
+    // &::before {
+    //   background-image: url(../img/b2c-top-pattern.svg);
+    //   background-size: contain;
+    //   right: 30px;
+    //   top: 92px;
+    //   width: 162px;
+    //   height: 162px;
+    //   max-width: 100%;
+    //   @media screen and (min-width: $laptopWidth ) {
+    //     background-image: none;
+    //     background-size: 694px;
+    //     background-position-x: 3px;
+    //     background-position-y: 40px;
+    //   }
+    // }
     h1 {
       font-size: 29px;
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         font-size: 50px;
       }
     }
@@ -163,7 +173,7 @@
           display: flex;
           .mob-text {
             text-align: left;
-            @media screen and (min-width: $desctopWidth) {
+            @media screen and (min-width: $laptopWidth) {
               display: none;
             }
             h1 {
@@ -178,28 +188,28 @@
             margin-top: 35px;
             left: -31px;
             position: relative;
-            @media screen and (min-width: $desctopWidth) {
+            @media screen and (min-width: $laptopWidth) {
               margin-bottom: -100px;
               left: auto;
               transform: none;
               position: inherit;
             }
           }
-          @media screen and (min-width: $desctopWidth) {
+          @media screen and (min-width: $laptopWidth) {
             margin-bottom: -100px;
           }
         }
       }
       .calculator-container {
-        padding: 0 16px;
-        @media screen and (min-width: $desctopWidth) {
+        // padding: 0 16px;
+        @media screen and (min-width: $laptopWidth) {
           padding: 65px 0 0;
           // padding: unset;
         }
       }
     }
     &::after {
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         content: '';
         z-index: 0;
         background-image: url(../img/b2c-top-pattern.svg);
@@ -224,7 +234,7 @@
       left: 50%;
       transform: translate(-50%, 0);
       display: none;
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         display: block;
         text-align: left;
         position: initial;
@@ -237,7 +247,7 @@
         font-weight: 700;
         line-height: 40px;
         text-transform: uppercase;
-        @media screen and (min-width: $desctopWidth) {
+        @media screen and (min-width: $laptopWidth) {
           line-height: 40px;
           margin-bottom: 18px;
         }
@@ -245,7 +255,7 @@
       p {
         font-size: 18px;
         line-height: 24px;
-        @media screen and (min-width: $desctopWidth) {
+        @media screen and (min-width: $laptopWidth) {
           font-size: 28px;
           line-height: 38px;
         }
@@ -257,7 +267,7 @@
       padding-top: 230px;
       margin-bottom: -70px;
       z-index: 2;
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         margin: unset;
         width: 50%;
         margin-bottom: auto;
@@ -277,7 +287,7 @@
   &.hide {
     display: none;
   }
-  @media screen and (min-width: $desctopWidth) {
+  @media screen and (min-width: $laptopWidth) {
     background-image: url(../img/Subtract.svg);
     background-position: top;
     background-repeat: no-repeat;
@@ -293,9 +303,13 @@
       display: block;
     }
   }
+  @media screen and (min-width: $desctopWidth) {
+    margin-top: -196px;
+    padding-top: 228px;
+  }
   @media screen and (min-width: $largeDesctopWidth) {
-    margin-top: -248px;
-    padding-top: 218px;
+    margin-top: -320px;
+    padding-top: 346px;
   }
   &::before {
     content: '';
@@ -308,7 +322,7 @@
     top: 28px;
     right: -203px;
     transform: rotate(-180deg);
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth) {
       display: none;
     }
   }
@@ -322,7 +336,7 @@
     position: absolute;
     top: 655px;
     z-index: -1;
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth) {
       width: 320px;
       height: 562px;
       left: 308px;
@@ -330,9 +344,10 @@
     }
   }
   h2 {
-    margin-bottom: 42px;
+    margin-bottom: 21px;
     color: #fff;
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth) {
+      margin-bottom: 42px;
       color: #141232;
     }
   }
@@ -347,7 +362,7 @@
       border-radius: 15px;
 
       &:nth-child(n + 2)::before {
-        @media screen and (min-width: $desctopWidth) {
+        @media screen and (min-width: $laptopWidth) {
           content: '';
           position: absolute;
           border: none;
@@ -382,7 +397,7 @@
         font-weight: 300;
         line-height: 20px;
       }
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         width: calc((100% / 3) - 15px);
       }
       // img {
@@ -436,7 +451,7 @@
     display: flex;
     gap: 5px;
     justify-content: center;
-    margin-top: 115px;
+    margin-top: 85px;
     .control-item {
       width: 9px;
       height: 9px;
@@ -452,25 +467,26 @@
 .icons {
   background: #8566ff;
   padding-top: 33px;
-  height: 826px;
-  // background-image: url(../img/top-bg.png);
-  // background-repeat: no-repeat;
-  // background-size: contain;
-  // background-position-x: -100px;
+  height: 800px;
+  background-image: url(../img/top-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: -100px;
   padding-bottom: 80px;
-  @media screen and (min-width: $desctopWidth) {
-    background-position-y: bottom;
-    background-image: url(../img/top-pattern.svg) !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: unset;
+  @media screen and (min-width: $laptopWidth) {
+    // background-position-y: bottom;
+    // background-image: url(../img/top-pattern.svg) !important;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-size: inherit;
+    background-position-y: -82px;
     padding-bottom: 186px;
     margin-bottom: 50px;
   }
   h2 {
     color: #fff;
     margin-bottom: 20px;
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth) {
       margin-bottom: 42px;
     }
   }
@@ -490,20 +506,19 @@
       background-position: bottom right;
       background-size: cover;
     }
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth) {
       padding: 36px 36px 58px 109px;
       background-image: none !important;
-      margin-bottom: 67px;
     }
     .icon-item {
       flex: 0 0 46%;
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         flex: 0 0 32%;
       }
       & > img {
         margin-bottom: 22px;
         height: 44px;
-        @media screen and (min-width: $desctopWidth) {
+        @media screen and (min-width: $laptopWidth) {
           height: auto;
         }
       }
@@ -514,7 +529,7 @@
         border-bottom: 2px solid #f85459;
         margin-bottom: 7px;
         width: fit-content;
-        @media screen and (min-width: $desctopWidth) {
+        @media screen and (min-width: $laptopWidth) {
           font-size: 22px;
         }
       }
@@ -522,7 +537,7 @@
         font-size: 12px;
         font-weight: 300;
         line-height: 24px;
-        @media screen and (min-width: $desctopWidth) {
+        @media screen and (min-width: $laptopWidth) {
           font-size: 18px;
         }
         span {
@@ -535,16 +550,36 @@
     }
   }
 }
+.oval-pattern {
+  background-image: url(../img/Subtract.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: -210px;
+  padding-top: 200px;
+  z-index: 2;
+  position: relative;
+  @media screen and (min-width: $largeDesctopWidth) {
+    margin-top: -271px;
+    padding-top: 258px;
+  }
+}
+.oval-pattern.colored {
+  background-image: url(../img/Subtract2.svg);
+  margin-top: -72px;
+  padding-top: 65px;
+}
 .icons.mob {
   position: relative;
-  height: 427px;
+  height: 355px;
   overflow: hidden;
   margin-bottom: 40px;
   background-size: 519px;
   background-position-x: -121px;
   background-position-y: -9px;
   padding-bottom: 100px;
-  padding-top: 55px;
+  padding-top: 5px;
   .icons-slider {
     width: 200%;
     display: flex;
@@ -563,7 +598,7 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
-      width: 85vw;
+      width: 91vw;
       .icon-item {
         display: flex;
         gap: 18px;
@@ -588,7 +623,7 @@
     display: flex;
     gap: 5px;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 279px;
     .control-item {
       width: 9px;
       height: 9px;
@@ -605,14 +640,14 @@
   margin-top: -50px;
   padding-top: 40px;
   margin-bottom: 21px;
-  @media screen and (min-width: $desctopWidth) {
+  @media screen and (min-width: $laptopWidth) {
     margin-top: -130px;
     padding-top: 80px;
     margin-bottom: 100px;
   }
   h2 {
     margin-bottom: 30px;
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth) {
       margin-bottom: 72px;
     }
   }
@@ -638,7 +673,7 @@
           color: #5c50fb;
         }
       }
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         background-position: right;
         padding: 35px;
         &.client {
@@ -652,7 +687,7 @@
         }
       }
       .content {
-        @media screen and (min-width: $desctopWidth) {
+        @media screen and (min-width: $laptopWidth) {
           width: 75%;
         }
         .upper-title {
@@ -660,7 +695,7 @@
           font-weight: 500;
           line-height: 18.5px;
           margin-bottom: 6px;
-          @media screen and (min-width: $desctopWidth) {
+          @media screen and (min-width: $laptopWidth) {
             font-size: 16px;
             margin-bottom: 9px;
           }
@@ -674,7 +709,7 @@
           display: flex;
           align-items: center;
           gap: 8px;
-          @media screen and (min-width: $desctopWidth) {
+          @media screen and (min-width: $laptopWidth) {
             font-size: 22px;
             margin-bottom: 12px;
           }
@@ -687,7 +722,7 @@
           font-size: 16px;
           line-height: 23.5px;
           margin-bottom: 18px;
-          @media screen and (min-width: $desctopWidth) {
+          @media screen and (min-width: $laptopWidth) {
             font-size: 25px;
             line-height: 33px;
             margin-bottom: 26px;
@@ -710,7 +745,7 @@
               display: block;
               margin-top: 10px;
               font-size: 18px;
-              @media screen and (min-width: $desctopWidth) {
+              @media screen and (min-width: $laptopWidth) {
                 font-size: 20px;
               }
             }
@@ -719,7 +754,7 @@
         a {
           width: 100%;
           text-align: center;
-          @media screen and (min-width: $desctopWidth) {
+          @media screen and (min-width: $laptopWidth) {
             width: 82%;
           }
         }
@@ -735,7 +770,7 @@
   height: 482px;
   display: flex;
   overflow: hidden;
-  @media screen and (min-width: $desctopWidth) {
+  @media screen and (min-width: $laptopWidth) {
     height: auto;
     margin-bottom: 100px;
     background-image: none;
@@ -769,7 +804,7 @@
     padding: 12px;
     text-align: left;
     width: 85%;
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth) {
       padding-left: 61px;
       padding-top: 50px;
       padding-bottom: 100px;
@@ -779,7 +814,7 @@
       text-align: left;
       margin-bottom: 3px;
       line-height: 26px;
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         margin-bottom: 11px;
         line-height: 48.5px;
       }
@@ -787,7 +822,7 @@
     p {
       font-size: 12px;
       font-weight: 300;
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth) {
         margin-bottom: 20px;
         line-height: 48.5px;
         font-size: 19px;
@@ -799,8 +834,13 @@
   max-width: 100%;
   overflow: hidden;
   position: relative;
-  margin-bottom: 64px;
-  padding-bottom: 48px;
+  background-image: url(../img/Subtract2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -200px;
+  @media screen and (min-width: $laptopWidth) {
+    background-image: none;
+  }
   h2 {
     font-weight: 700;
     font-size: 20px;
@@ -813,56 +853,76 @@
     display: flex;
     overflow: hidden;
     position: relative;
+    left: -1122px;
     // width: calc((100vw - 32px) * 4);
     width: max-content;
-    left: 0;
     transition: left 0.5s;
     justify-content: flex-start;
+    gap: 16px;
+    padding: 0 16px;
     .review-item {
-      padding-left: 16px;
+      padding: 11px 17px;
       padding-bottom: 16px;
       max-width: calc(100vw - 32px);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 214px;
+      height: auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 6px 0px #ebe9f4;
       .review-control {
         display: none;
       }
       .review-header {
-        background: #f7f8fa;
-        border-radius: 10px;
-        padding: 9px 11px 30px;
-        .between {
+        padding-bottom: 22px;
+        .flex-box {
+          gap: 17px;
+        }
+        .avatar {
+          background-color: #fcdde5;
+          width: 54px;
+          height: 54px;
+          display: flex;
+          justify-content: center;
           align-items: center;
-          flex-direction: row-reverse;
+          border-radius: 50%;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 800;
         }
         .date {
-          font-weight: 400;
+          font-weight: 500;
           font-size: 12px;
           line-height: 150%;
-          color: #a3a2a2;
+          color: #979797;
+          @media screen and (min-width: $laptopWidth) {
+            font-size: 16px;
+          }
         }
         .name {
           font-weight: 700;
-          font-size: 16px;
-          line-height: 150%;
-          color: #141232;
-        }
-        .location {
-          font-weight: 400;
           font-size: 12px;
           line-height: 150%;
-          color: #222222;
-          display: flex;
-          align-items: center;
+          color: #141232;
+          @media screen and (min-width: $laptopWidth) {
+            font-size: 18px;
+          }
+        }
+        .rez {
+          color: #979797;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          @media screen and (min-width: $laptopWidth) {
+            font-size: 16px;
+          }
+        }
+        hr.grey {
+          border-top: 1px solid #c4c4c4;
         }
       }
       .review-text {
-        background: #ffffff;
-        box-shadow: 0px 4px 24px #ebe9f4;
-        border-radius: 10px;
-        padding: 19px 17px;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
@@ -881,7 +941,7 @@
       display: flex;
       gap: 5px;
       justify-content: center;
-      margin-top: -20px;
+      margin-top: 24px;
       .control-item {
         width: 9px;
         height: 9px;
@@ -892,22 +952,25 @@
         }
       }
     }
+    &.desctop {
+      display: none;
+    }
   }
   .colored-bg {
     width: 100%;
     height: 189px;
-    top: 27%;
+    top: 50%;
     position: absolute;
     background-color: #f0edfe;
     z-index: -1;
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth) {
       top: 44%;
       height: 273px;
     }
   }
   .cta-button {
     display: none;
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth) {
       display: inline-block;
       width: 381px;
     }
@@ -980,7 +1043,7 @@
   }
 }
 
-@media screen and (min-width: $desctopWidth) {
+@media screen and (min-width: $laptopWidth) {
   .reviews {
     padding: 0;
     padding-bottom: 48px;
@@ -995,27 +1058,18 @@
       overflow: hidden;
       // width: calc((477px + 93px) * 4);
       width: max-content;
-      padding-bottom: 30px;
+      padding: 30px;
       justify-content: space-around;
+      left: -1018px;
+      // left: 50%;
+      // transform: translateX(-50%);
       .review-item {
         width: 477px;
-        padding-left: 0;
+        padding: 14px 26px 44px;
         position: relative;
         .review-header {
           .between {
             flex-direction: row;
-          }
-        }
-        .review-control {
-          display: none;
-          justify-content: space-between;
-          width: 585px;
-          margin: auto;
-          position: absolute;
-          left: -11%;
-          top: 63%;
-          img {
-            cursor: pointer;
           }
         }
         &.active {
@@ -1023,6 +1077,19 @@
             display: flex;
           }
         }
+      }
+    }
+    .review-control.desctop {
+      display: flex;
+      justify-content: space-between;
+      width: 599px;
+      margin: auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 52%;
+      img {
+        cursor: pointer;
       }
     }
     .review-control.mob {
@@ -1072,15 +1139,18 @@
 
 .media {
   background-color: #f0edfe;
-  @media screen and (min-width: $desctopWidth) {
+  @media screen and (min-width: $laptopWidth) {
     background-color: unset;
   }
-  h1 {
+  h2 {
+    color: #141232;
     text-align: center;
-    margin-bottom: 49px;
-    font-size: 46px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 56px;
+    @media screen and (min-width: $laptopWidth) {
+      font-size: 46px;
+    }
   }
   .carousel-inner {
     position: relative;

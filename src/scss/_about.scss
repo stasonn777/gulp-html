@@ -7,7 +7,7 @@
   color: #fff;
   text-align: center;
   background-position-y: -50px;
-  @media screen and (min-width: $desctopWidth) {
+  @media screen and (min-width: $laptopWidth ) {
     background-image: url(../img/about-desc.png);
     background-size: 100%;
     padding-bottom: 16%;
@@ -49,7 +49,7 @@
   background-position: left bottom;
   padding-left: 10px;
   position: relative;
-  @media screen and (min-width: $desctopWidth) {
+  @media screen and (min-width: $laptopWidth ) {
     background-position: left top;
     &::after {
       content: '';
@@ -66,12 +66,12 @@
   h2 {
     line-height: 56px;
     margin-bottom: 20px;
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth ) {
       margin-bottom: 60px;
     }
   }
   .history-content {
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth ) {
       max-width: 850px;
       margin: auto;
     }
@@ -87,7 +87,7 @@
         border-left: none;
       }
       .history-dot {
-        @media screen and (min-width: $desctopWidth) {
+        @media screen and (min-width: $laptopWidth ) {
           width: 36px;
           margin-left: -18px;
           flex-basis: 36px;
@@ -102,11 +102,11 @@
           margin: auto;
           left: 16px;
           position: absolute;
-          @media screen and (min-width: $desctopWidth) {
+          @media screen and (min-width: $laptopWidth ) {
             position: inherit;
           }
         }
-        @media screen and (min-width: $desctopWidth) {
+        @media screen and (min-width: $laptopWidth ) {
           &.small div {
             width: 15px;
             height: 15px;
@@ -128,7 +128,7 @@
       p {
         margin-left: 20px;
         margin-top: 0;
-        @media screen and (min-width: $desctopWidth) {
+        @media screen and (min-width: $laptopWidth ) {
           margin-left: 68px;
         }
       }
@@ -136,19 +136,19 @@
   }
 }
 .about-icons {
-  @media screen and (min-width: $desctopWidth) {
+  @media screen and (min-width: $laptopWidth ) {
     margin-bottom: 91px;
   }
   h2 {
     font-weight: 700;
     text-align: left;
     margin-bottom: 29px;
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth ) {
       margin-bottom: 91px;
     }
   }
   .about-grid {
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth ) {
       display: grid;
       grid-template-columns: 45% 45%;
       justify-items: center;
@@ -189,7 +189,7 @@
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 31px;
-  @media screen and (min-width: $desctopWidth) {
+  @media screen and (min-width: $laptopWidth ) {
     background-position-x: unset;
     font-size: 38px;
     font-weight: 500;
@@ -200,7 +200,7 @@
   .text {
     border-left: 3px solid #f85459;
     padding-left: 13px;
-    @media screen and (min-width: $desctopWidth) {
+    @media screen and (min-width: $laptopWidth ) {
       padding-left: 54px;
     }
   }

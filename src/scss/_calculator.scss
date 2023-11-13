@@ -10,11 +10,12 @@
     color: #141232;
     .tabs {
       display: flex;
-      border-radius: 12px 12px 0px 0px;
-      background: #f0edfe;
+      align-items: flex-end;
+      // border-radius: 12px 12px 0px 0px;
+      // background: #f0edfe;
       .tab {
         width: 50%;
-        padding: 15px;
+        padding: 10px;
         text-decoration: none;
         color: #141232;
         text-align: center;
@@ -23,8 +24,11 @@
         line-height: 21px;
         text-transform: uppercase;
         position: relative;
-        @media screen and (min-width: $desctopWidth) {
-          padding: 25px 0;
+        background: #f0edfe;
+        border-radius: 0 12px 0px 0px;
+        box-shadow: inset 3px -2px 5px -2px #5C50FB;
+        @media screen and (min-width: $laptopWidth ) {
+          padding: 20px 0;
           font-size: 19px;
         }
         &.b-to-c span {
@@ -33,9 +37,18 @@
         &.b-to-b span {
           color: #8566ff;
         }
+        &:first-child {
+          border-radius: 12px 0px 0px 0px;
+          box-shadow: inset -2px -2px 5px -2px #5C50FB;
+        }
         &.active {
           background-color: #ffffff;
           border-radius: 12px 12px 0px 0px;
+          padding: 15px;
+          box-shadow: none;
+          @media screen and (min-width: $laptopWidth ) {
+            padding: 25px 0;
+          }
         }
       }
     }
@@ -43,12 +56,19 @@
   .calculator-body {
     background: #ffffff;
     border-radius: 0px 0px 12px 12px;
-    padding: 9px 19px 30px;
+    padding: 9px 19px 12px;
+    margin-top: -1px;
+    @media screen and (min-width: $laptopWidth ) {
+      padding-bottom: 30px;
+    }
     .input-container {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 7px;
       margin-bottom: 8px;
+      @media screen and (min-width: $laptopWidth ) {
+        gap: 30px;
+      }
       .range-wrapper {
         .top-info {
           align-items: flex-end;
@@ -81,7 +101,7 @@
       img {
         display: none;
       }
-      @media screen and (min-width: $desctopWidth) {
+      @media screen and (min-width: $laptopWidth ) {
         font-weight: 500;
         font-size: 20px;
         line-height: 23px;
@@ -113,7 +133,7 @@
         padding: 8px 21px;
         margin-bottom: 17px;
         .result-flex {
-          @media screen and (min-width: $desctopWidth) {
+          @media screen and (min-width: $laptopWidth ) {
             display: flex;
             justify-content: space-between;
           }
