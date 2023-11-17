@@ -1,5 +1,5 @@
 class Slider {
-  sliderWrapper;
+  sliderBody;
   sliderControl;
   slideWidth;
   slidesArr = [];
@@ -12,24 +12,39 @@ class Slider {
   constructor(id, loop) {
     this.loop = loop;
     this.id = id;
-    this.sliderControl = document.querySelector('#slider-controls');
-    this.sliderStatus = document.querySelector('#control-status');
     this.initSlider();
   }
   initSlider() {
-    this.sliderWrapper = document.getElementById(this.id);
+    this.sliderBody = document.querySelector(`#${this.id} .slider-body`);
+    this.sliderControl = document.querySelector(`#${this.id} .slider-controls`);
+    this.sliderStatus = document.querySelector(`#${this.id} .control-status`);
+
     this.controlLeft = this.sliderControl.children[0];
     this.controlRight = this.sliderControl.children[1];
-    this.slidesArr = [...this.sliderWrapper.children];
+    this.combineSlides();
     this.slideWidth = this.slidesArr[0].clientWidth;
     this.sliderWidth = this.slidesArr[0].clientWidth * this.slidesArr.length;
-    this.sliderWrapper.style.width = this.sliderWidth + 'px';
+    this.sliderBody.style.width = this.sliderWidth + 'px';
 
     this.eventListenners();
     this.setLeftForSlides();
     this.initActive();
     this.doStatusBar();
-    // debugger
+  }
+
+  combineSlides() {
+    const deviceWidth = window.innerWidth
+    this.slidesArr = [...this.sliderBody.children];
+    if (this.sliderBody.children.length <= 4) {
+      this.slidesArr.forEach((el, i) => {
+        const clonedEl = el.cloneNode(true);
+        this.sliderBody.appendChild(clonedEl);
+      });
+      this.slidesArr = [...this.sliderBody.children];
+      if (deviceWidth < 600 && this.slidesArr.length % 2 == 0) {
+        this.slidesArr.pop();
+      }
+    }
   }
 
   eventListenners() {
@@ -41,15 +56,15 @@ class Slider {
     //Swipe events
     let touchStart = 0;
     let touchEnd = 0;
-    this.sliderWrapper.addEventListener(
+    this.sliderBody.addEventListener(
       'touchstart',
       (e) => (touchStart = e.touches[0].clientX)
     );
-    this.sliderWrapper.addEventListener(
+    this.sliderBody.addEventListener(
       'touchmove',
       (e) => (touchEnd = e.touches[0].clientX)
     );
-    this.sliderWrapper.addEventListener('touchend', (e) => {
+    this.sliderBody.addEventListener('touchend', (e) => {
       if (touchStart < touchEnd) {
         this.doControl('left');
       } else {
@@ -148,4 +163,5 @@ class Slider {
   }
 }
 
-const slider = new Slider('reviews', true);
+const sliderReview = new Slider('reviews', true);
+const sliderMedia = new Slider('media', true);
