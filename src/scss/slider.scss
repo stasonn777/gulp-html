@@ -28,9 +28,18 @@
           font-size: 29px;
           font-weight: 500;
           transition: all 0.5s;
-        }
-        &.active .slider-item__body {
-          background-color: red;
+          &.black {
+            background-color: black;
+          }
+          &.purple {
+            background-color: purple;
+          }
+          &.grey {
+            background-color: grey;
+          }
+          &.yellow {
+            background-color: yellow;
+          }
         }
       }
     }
