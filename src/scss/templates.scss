@@ -1,0 +1,214 @@
+.resume {
+  margin-top: 100px;
+  max-width: 707px;
+  box-shadow: 0 0 10px rgba(88, 88, 95, 0.12);
+  background-color: #fff;
+  border: 1px solid #e8ecf0;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .resume-wrapper {
+    display: flex;
+  }
+  .left-box {
+    background: #003d73;
+    color: #fff;
+    width: 207px;
+    padding: 15px;
+    .user-title {
+      .user-name {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        margin-bottom: 10px;
+      }
+      .birth,
+      .resume-title {
+        font-size: 16px;
+      }
+    }
+    .left-box__section {
+      font-size: 13px;
+      .title {
+        color: #fff;
+        font-size: 19px;
+        font-weight: 500;
+        position: relative;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 3px 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        z-index: 2;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: #003d73;
+          height: 100%;
+          width: 100%;
+          filter: brightness(0.8);
+          z-index: -1;
+        }
+      }
+    }
+    .resume-contact {
+      .contact-item {
+        margin-bottom: 5px;
+        .contact-item__title {
+          font-weight: 700;
+        }
+      }
+    }
+    .resume-portfolios {
+      ul {
+        padding-left: 15px;
+      }
+    }
+    .skills {
+      .skills-item {
+        margin-bottom: 15px;
+        .skills-item__title {
+          margin-bottom: 2px;
+        }
+        .progress-bar-wrapper {
+          background: #01284a;
+          .progress-bar {
+            background-color: #fff;
+            height: 5px;
+            position: relative;
+            z-index: 1;
+          }
+        }
+        .progress-name {
+          text-align: right;
+        }
+      }
+    }
+  }
+  .right-box {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 50px 15px;
+    font-size: 13px;
+    .title {
+      color: #003d73;
+      font-size: 19px;
+      font-weight: 700;
+      padding: 5px 0;
+      border-bottom: 1px solid #d5d6d6;
+      border-top: 1px solid #d5d6d6;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+    .flex-box {
+      display: flex;
+      gap: 40px;
+      .duration {
+        width: 70px;
+      }
+      .info {
+        flex-basis: 0;
+        flex-grow: 1;
+      }
+    }
+    .work-history,
+    .education {
+      .history-item,
+      .education-item {
+        .flex-title {
+          font-size: 16px;
+          font-weight: 700;
+        }
+        .company {
+          font-style: italic;
+        }
+        ul {
+          padding-left: 20px;
+        }
+      }
+    }
+    .certifications {
+      .cert-item {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &.skin-cascade {
+    a {
+      color: #fff;
+    }
+  }
+  &.skin-cubik {
+    font-family: Century Gothic;
+    color: #343434;
+    a {
+      color: #343434;
+    }
+    .top-box {
+      display: flex;
+      justify-content: space-between;
+      background-color: #373d48;
+      height: 130px;
+      color: #9b9b9b;
+      padding: 15px 15px 20px;
+      font-size: 20px;
+      .user-name {
+        font-size: 41px;
+        font-weight: 700;
+        padding-top: 20px;
+      }
+    }
+    .resume-wrapper {
+      flex-direction: row-reverse;
+      img {
+        margin-bottom: 20px;
+      }
+      .left-box {
+        background: #f4f4f4;
+        color: #343434;
+        padding: 15px;
+        .left-box__section {
+          .title {
+            color: #373d48;
+            font-weight: 700;
+            border-bottom: 1px solid #cacaca;
+            padding: 3px 0;
+            margin-left: unset;
+            margin-right: unset;
+            &::before {
+              content: none;
+            }
+          }
+        } 
+        .skills {
+          .skills-item {
+            .progress-dots-wrapper {
+              height: 14px;
+              text-align: right;
+              svg {
+                height: inherit;
+              }
+            }
+            .progress-name {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+      .right-box {
+        color: #343434;
+        .title {
+          color: #343434;
+        }
+        .flex-box {
+          .duration {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
