@@ -1,0 +1,60 @@
+.skin-cubik {
+  font-family: Century Gothic;
+  color: #343434;
+  a {
+    color: #343434;
+  }
+  .top-box {
+    height: 130px;
+    padding: 15px 15px 20px;
+  }
+  .resume-wrapper {
+    flex-direction: row-reverse;
+    img {
+      margin-bottom: 20px;
+    }
+    .left-box {
+      background: #f4f4f4;
+      color: #343434;
+      padding: 15px;
+      .left-box__section {
+        .title {
+          color: #373d48;
+          font-weight: 700;
+          border-bottom: 1px solid #cacaca;
+          padding: 3px 0;
+          margin-left: unset;
+          margin-right: unset;
+          &::before {
+            content: none;
+          }
+        }
+      }
+      .skills {
+        .skills-item {
+          .progress-dots-wrapper {
+            height: 14px;
+            text-align: right;
+            svg {
+              height: inherit;
+            }
+          }
+          .progress-name {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    .right-box {
+      color: #343434;
+      .title {
+        color: #343434;
+      }
+      .flex-box {
+        .duration {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

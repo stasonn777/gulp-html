@@ -1,0 +1,140 @@
+.skin-modern {
+  color: #343434;
+  font-family: Century Gothic;
+  .top-box {
+    background-color: #fff;
+    color: #343434;
+    & > div {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    .top-bg {
+      background: #003d73;
+      box-sizing: border-box;
+      color: #fff;
+      font-size: 11px;
+      margin-left: 0;
+      padding: 30px 24px 15px;
+      position: relative;
+      text-align: left;
+      vertical-align: bottom;
+      width: 98%;
+      .topbgborder {
+        bottom: -12px;
+        height: 14px;
+        left: 16px;
+        position: absolute;
+        width: 26px;
+      }
+    }
+    .user-title {
+      padding: 0 20px;
+      color: #003d73;
+      .resume-title {
+        font-style: italic;
+      }
+    }
+    .summary {
+      padding-top: 70px;
+      font-size: 13px;
+      flex-grow: 1;
+    }
+  }
+  .left-box {
+    .left-box__section {
+      .title {
+        font-weight: 700;
+        color: #003d73;
+        border-bottom: 1px solid #cacaca;
+        padding: 3px 0;
+        margin: auto;
+        margin-bottom: 10px;
+      }
+    }
+    .left-box__section {
+      .skills-item {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin-bottom: 20px;
+        .skills-item__title {
+          flex-grow: 1;
+          flex-basis: 0;
+        }
+        .progress-dots-wrapper {
+          svg {
+            display: inline-block;
+            height: 11px;
+            box-sizing: content-box;
+          }
+        }
+        .progress-name {
+          position: absolute;
+          right: 0;
+          top: 13px;
+          // width: 100%;
+        }
+      }
+    }
+    a {
+      color: #343434;
+    }
+  }
+  .right-box {
+    padding-left: 30px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      background-color: #cacaca;
+      height: 92%;
+      top: 108px;
+      left: 2px;
+    }
+    .title {
+      color: #003d73;
+      border-bottom: 1px solid #cacaca;
+      position: relative;
+      svg {
+        position: absolute;
+        left: -35px;
+        top: 10px;
+        height: 25px;
+        width: 25px;
+      }
+    }
+    .add-info {
+      margin-bottom: 50px;
+      .text {
+        padding-left: 110px;
+      }
+    }
+    .bottom-bg {
+      background: #003d73;
+      bottom: 0;
+      box-sizing: border-box;
+      color: #fff;
+      content: '';
+      font-family: 'Century Gothic';
+      padding: 30px 24px 31px;
+      position: absolute;
+      right: 0;
+      width: 70%;
+      &::after {
+        bottom: 59px;
+        color: #003d73;
+        content: '\25C6';
+        font-family: 'Century Gothic';
+        font-size: 24px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+        width: 20px;
+      }
+    }
+    .duration {
+      font-weight: 600;
+    }
+  }
+}

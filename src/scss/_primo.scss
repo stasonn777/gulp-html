@@ -1,0 +1,124 @@
+.skin-primo {
+  font-family: Century Gothic;
+  .resume-wrapper {
+    flex-direction: row-reverse;
+    .user-title {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 20px;
+      svg {
+        font-size: 28px;
+        font-style: italic;
+        font-weight: 400;
+        text-transform: lowercase;
+      }
+      .user-name {
+        font-size: 41px;
+      }
+      .birth,
+      .resume-title {
+        font-size: 19px;
+      }
+    }
+    .right-box {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        background-color: #cacaca;
+        height: 87%;
+        top: 205px;
+        left: 90px;
+      }
+      > div {
+        &:nth-child(n + 2) {
+          padding-left: 100px;
+        }
+      }
+      .title {
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        svg {
+          height: 30px;
+          width: 30px;
+          position: absolute;
+          top: 0;
+          left: -40px;
+          circle {
+            fill: #373d48;
+          }
+          path {
+            fill: #fff;
+          }
+        }
+      }
+      .links,
+      .skills-item,
+      .history-item,
+      .cert-item,
+      .education-item,
+      .add-info .text {
+        position: relative;
+      }
+      .links::before,
+      .skills-item::before,
+      .history-item::before,
+      .cert-item::before,
+      .education-item::before,
+      .add-info .text::before {
+        background: #373d48;
+        border: 0;
+        border-radius: 100%;
+        content: '';
+        display: block;
+        height: 8px;
+        top: 6px;
+        left: -29px;
+        position: absolute;
+        width: 8px;
+        z-index: 2;
+      }
+      .history-item,
+      .education-item,
+      .cert-item {
+        position: relative;
+        .duration {
+          position: absolute;
+          left: -100px;
+        }
+      }
+    }
+    .left-box {
+      max-width: 178px;
+      .title {
+        display: flex;
+        gap: 10px;
+        font-weight: 700;
+        svg {
+          fill: #373d48;
+          height: 30px;
+          width: 30px;
+          top: 0;
+          left: -50px;
+          path {
+            fill: #fff;
+          }
+        }
+      }
+      .skills-item {
+        .progress-dots-wrapper {
+          height: 14px;
+          text-align: right;
+          svg {
+            height: inherit;
+          }
+        }
+      }
+    }
+  }
+  a {
+    color: #343434;
+  }
+}
