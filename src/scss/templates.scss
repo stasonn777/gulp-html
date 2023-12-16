@@ -1,9 +1,23 @@
+// .resume-container {
+//   display: flex;
+//   justify-content: center;
+//   position: relative;
+// }
 .resume {
+  margin: auto;
   margin-top: 100px;
   max-width: 707px;
   box-shadow: 0 0 10px rgba(88, 88, 95, 0.12);
   background-color: #fff;
   border: 1px solid #e8ecf0;
+  @media screen and (max-width: 450px) {
+    overflow: visible !important;
+    width: 595px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0 0;
+  }
   img {
     max-width: 100%;
     max-height: 100%;

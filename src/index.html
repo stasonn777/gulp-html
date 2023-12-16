@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,19 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Resume</title>
 </head>
+
 <body>
-  @@include('primo.html')
-  @@include('modern.html')
-  @@include('diamond.html')
-  @@include('cubic.html')
-  @@include('cascade.html')
+  <div class="container">
+    @@include('template-settings.html')
+  </div>
+  <div class="container">
+    <!-- @@include('primo.html')
+    @@include('modern.html')
+    @@include('diamond.html')
+    @@include('cubic.html') -->
+    @@include('cascade.html')
+  </div>
   <script src="./js/index.js"></script>
 </body>
+
 </html>
