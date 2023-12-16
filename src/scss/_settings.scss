@@ -6,24 +6,43 @@
   gap: 10px;
   .setting-item {
     flex-grow: 1;
+    flex-basis: 0;
     position: relative;
     cursor: pointer;
     .setting-title {
+      padding: 10px 15px;
       box-shadow: 0 0 10px rgba(88, 88, 95, 0.12);
       background-color: #fff;
       border-radius: 5px;
       border: 1px solid #e8ecf0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
       img {
         width: 40px;
         height: 40px;
       }
     }
     .colors-wrapper {
+      padding: 10px 15px;
+      box-shadow: 0 0 10px rgba(88, 88, 95, 0.12);
+      background-color: #fff;
+      border-radius: 5px;
+      border: 1px solid #e8ecf0;
       .colors-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
         .color-item {
           width: 23px;
           height: 23px;
           cursor: pointer;
+          padding: 1px;
+          border-radius: 50px;
+          border: 2px dotted white;
+          &.active {
+            border: 2px dotted blue;
+          }
           span {
             display: block;
             width: 100%;

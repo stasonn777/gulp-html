@@ -11,6 +11,7 @@
         font-style: italic;
         font-weight: 400;
         text-transform: lowercase;
+        fill: #373d48;
       }
       .user-name {
         font-size: 41px;
@@ -46,8 +47,8 @@
           position: absolute;
           top: 0;
           left: -40px;
+          fill: #373d48;
           circle {
-            fill: #373d48;
           }
           path {
             fill: #fff;

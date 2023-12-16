@@ -44,10 +44,43 @@ function createColorItem(color) {
   const colorItem = document.createElement('div');
   colorItem.classList.add('color-item');
   const innerColor = document.createElement('span');
-  innerColor.style.background = color.color
-  colorItem.appendChild(innerColor)
-  colorsBody.appendChild(colorItem)
-  colorItem.addEventListener('click', e => {
-    console.log(color);
+  innerColor.style.background = color.color;
+  colorItem.appendChild(innerColor);
+  colorsBody.appendChild(colorItem);
+  colorItem.addEventListener('click', () => {
+    removeActive();
+    colorItem.classList.add('active');
+    changeColor(color.color)
+  });
+}
+
+function removeActive() {
+  const colorItems = document.querySelectorAll('.color-item');
+
+  colorItems.forEach((el) => {
+    el.classList.remove('active');
+  });
+}
+
+function changeColor(color) {
+  const titles = document.querySelectorAll('.title');
+  const userName = document.querySelector('.user-name');
+  const svgAll = document.querySelectorAll('svg');
+  const before = document.querySelectorAll('.history-item');
+
+  titles.forEach(title => {
+    title.style.color = color
   })
+  svgAll.forEach(svg => {
+    svg.style.fill = color;
+  })
+  before.forEach(svg => {
+    console.log(svg);
+    console.log(svg.querySelector('::before'));
+    // svg.querySelector('::before').style.backgroundColor = color
+  })
+  document.querySelectorAll('.default-fill').forEach(svg => {
+    svg.style.fill = color;
+  })
+  userName.style.color = color
 }
