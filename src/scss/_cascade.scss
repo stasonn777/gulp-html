@@ -1,6 +1,6 @@
 .skin-cascade {
   .left-box {
-    background: #003d73;
+    background: var(--cascade-main-color);
     color: #fff;
     .left-box__section {
       .title {
@@ -17,7 +17,7 @@
           position: absolute;
           left: 0;
           top: 0;
-          background: #003d73;
+          background: var(--cascade-main-color);
           height: 100%;
           width: 100%;
           filter: brightness(0.8);
@@ -25,19 +25,22 @@
         }
       }
       .progress-bar-wrapper {
-        background: #01284a;
-        .progress-bar {
-          background-color: #fff;
-          height: 5px;
-          position: relative;
-          z-index: 1;
-        }
+        background: var(--cascade-main-color);
+        filter: brightness(0.8);
+        height: 5px;
+      }
+      .progress-bar {
+        top: -5px;
+        background-color: #fff;
+        height: 5px;
+        position: relative;
+        z-index: 1;
       }
     }
   }
   .right-box {
     .title {
-      color: #003d73;
+      color: var(--cascade-main-color);
       border-bottom: 1px solid #d5d6d6;
       border-top: 1px solid #d5d6d6;
     }

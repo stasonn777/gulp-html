@@ -1,5 +1,4 @@
 .skin-diamond {
-  font-family: Century Gothic;
   .top-box {
     padding: 27px;
     .top-flex {
@@ -16,6 +15,9 @@
     }
     img {
       height: 150px;
+      @media screen and (max-width: 760px) {
+        height: auto;
+      }
     }
   }
   .resume-wrapper {
@@ -38,7 +40,7 @@
         height: 100%;
       }
       .title {
-        color: #373d48;
+        color: var(--main-color);
         font-weight: 700;
         border: none;
         position: relative;
@@ -49,7 +51,7 @@
           top: 0;
           left: -50px;
           rect {
-            fill: #373d48;
+            fill: var(--main-color);
             transform: rotate(45deg);
           }
           path {
@@ -77,6 +79,14 @@
               margin-top: -10px;
               width: 100%;
               text-align: right;
+            }
+            .progress-dots-wrapper {
+              rect {
+                fill: #d5d6d6;
+              }
+              .default-fill {
+                fill: var(--main-color);
+              }
             }
           }
         }
@@ -107,7 +117,7 @@
       height: 9px;
       width: 9px;
       border: 0;
-      background: #373d48;
+      background: var(--main-color);
       z-index: 2;
       transform: rotate(45deg);
     }

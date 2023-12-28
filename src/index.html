@@ -11,14 +11,17 @@
 
 <body>
   <div class="container">
-    @@include('template-settings.html')
+    @@include('templates-select.html')
   </div>
+  @@include('template-settings.html')
   <div class="container">
-    @@include('primo.html')
-    <!-- @@include('modern.html')
-    @@include('diamond.html')
-    @@include('cubic.html') -->
-    <!-- @@include('cascade.html') -->
+    <div class="scale-wrapper">
+      @@include('cascade.html')
+      @@include('primo.html')
+      @@include('modern.html')
+      @@include('diamond.html')
+      @@include('cubic.html')
+    </div>
   </div>
   <script src="./js/index.js"></script>
 </body>

@@ -1,12 +1,139 @@
-<div class="settings-wrapper">
-  <div class="color setting-item">
-    <div class="setting-title"><img src="../img/more-circle-image.png" alt="">Change the color</div>
-    <div class="colors-wrapper">
-      <div class="colors-body">
+<div class="container">
+  <div class="settings-wrapper">
+    <div class="color setting-item">
+      <div class="setting-title" onClick="showColors()"><img src="../img/more-circle-image.png" alt="">Change the color
+      </div>
+      <div class="setting-wraper colors">
+        <div class="colors-body">
+        </div>
+      </div>
+    </div>
+    <div class="formatting setting-item">
+      <div class="setting-title" onClick="showSettings()"><img src="../img/text-format.png" alt="">Formatting Tools
+      </div>
+      <div class="setting-wraper format">
+        <div class="format-body">
+          <div class="format-item">
+            <div class="format-title">Font Style</div>
+            <div class="format-input">
+              <select id="fontSelector">
+                <option value=""></option>
+                <option value="Arial">Arial</option>
+                <option value="Blinker">Blinker</option>
+                <option value="Bodoni MT">Bodoni MT</option>
+                <option value="Century Gothic" selected="selected">Century Gothic</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Fira Sans">Fira Sans</option>
+                <option value="Georgia">Georgia</option>
+                <option value="PT Sans">PT Sans</option>
+                <option value="PT Sans Caption">PT Sans Caption</option>
+                <option value="Palatino Linotype">Palatino Linotype</option>
+                <option value="Saira">Saira</option>
+                <option value="Source Sans 3">Source Sans 3</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Verdana">Verdana</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="format-item">
+              <div class="format-title">Font Size</div>
+              <div class="format-input">
+                <select id="fontSizeSelector">
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13" selected="selected">13</option>
+                  <option value="14">14</option>
+                </select>
+              </div>
+            </div>
+            <div class="format-item">
+              <div class="format-title">Heading Size</div>
+              <div class="format-input">
+                <select id="headingSizeSelector">
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19" selected="selected">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="format-item">
+            <div class="format-title">Section Spacing</div>
+            <div class="format-input">
+              <input type="range" class="slider" id="sectionSpacing" min="0" max="34" value="0">
+            </div>
+          </div>
+          <div class="format-item">
+            <div class="format-title">Paragraph Spacing</div>
+            <div class="format-input">
+              <input type="range" class="slider" id="paragraphSpacing" min="0" max="23" value="12">
+            </div>
+          </div>
+          <div class="format-item">
+            <div class="format-title">Line Spacing</div>
+            <div class="format-input">
+              <input type="range" class="slider" id="lineSpacing" min="20" max="35" value="25">
+            </div>
+          </div>
+        </div>
+        <button type="button" class="reset-formating link" onClick="resetSettings()">Reset formatting</button>
       </div>
     </div>
   </div>
-  <div class="formatting setting-item">
-    <div class="setting-title"><img src="../img/text-format.png" alt="">Formatting Tools</div>
+  <div class="flex-box download-print">
+    <div class="item" onclick="showDownloadPopup()"><img src="../img/download.png" alt="">Download</div>
+    <div class="item"><img src="../img/print.png" alt="">Print</div>
+  </div>
+</div>
+<div class="download-popup">
+  <div class="popup-wrapper">
+    <div class="popup-body">
+      <div class="close" onclick="hideDownloadPopup()">&#x2715;</div>
+      <h3>Download resume as</h3>
+      <form>
+        <label for="pdf">
+          <input type="radio" name="download" id="pdf" checked>
+          Adobe PDF (.pdf)
+        </label>
+        <label for="word">
+          <input type="radio" name="download" id="word">
+          MS Word Document (.docx)
+        </label>
+        <label for="txt">
+          <input type="radio" name="download" id="txt">
+          Plain Text (.txt)
+        </label>
+        <label for="resName" class="input">
+          <span class="title">Resume Name</span>
+          <input type="text" name="resName" id="resName">
+          <span class="info">Tip: Don't use numbers when naming your file.</span>
+        </label>
+        <div class="buttons flex-box">
+          <button class="cancel" onclick="hideDownloadPopup()">Cancel</button>
+          <button class="download" type="submit">Download</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>

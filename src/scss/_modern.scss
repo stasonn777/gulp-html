@@ -1,6 +1,5 @@
 .skin-modern {
   color: #343434;
-  font-family: Century Gothic;
   .top-box {
     background-color: #fff;
     color: #343434;
@@ -9,7 +8,7 @@
       flex-basis: 0;
     }
     .top-bg {
-      background: #003d73;
+      background: var(--cascade-main-color);
       box-sizing: border-box;
       color: #fff;
       font-size: 11px;
@@ -25,11 +24,16 @@
         left: 16px;
         position: absolute;
         width: 26px;
+        svg {
+          polyline {
+            fill: var(--cascade-main-color);
+          }
+        }
       }
     }
     .user-title {
       padding: 0 20px;
-      color: #003d73;
+      color: var(--cascade-main-color);
       .resume-title {
         font-style: italic;
       }
@@ -41,10 +45,11 @@
     }
   }
   .left-box {
+    background-color: #fff;
     .left-box__section {
       .title {
         font-weight: 700;
-        color: #003d73;
+        color: var(--cascade-main-color);
         border-bottom: 1px solid #cacaca;
         padding: 3px 0;
         margin: auto;
@@ -66,6 +71,12 @@
             display: inline-block;
             height: 11px;
             box-sizing: content-box;
+            rect {
+              fill: #d5d6d6;
+            }
+            .default-fill {
+              fill: var(--main-color);
+            }
           }
         }
         .progress-name {
@@ -93,7 +104,7 @@
       left: 2px;
     }
     .title {
-      color: #003d73;
+      color: var(--cascade-main-color);
       border-bottom: 1px solid #cacaca;
       position: relative;
       svg {
@@ -102,6 +113,9 @@
         top: 10px;
         height: 25px;
         width: 25px;
+        .icon {
+          fill: var(--cascade-main-color);
+        }
       }
     }
     .add-info {
@@ -111,7 +125,7 @@
       }
     }
     .bottom-bg {
-      background: #003d73;
+      background: var(--cascade-main-color);
       bottom: 0;
       box-sizing: border-box;
       color: #fff;
@@ -122,8 +136,8 @@
       right: 0;
       width: 70%;
       &::after {
-        bottom: 59px;
-        color: #003d73;
+        top: -10px;
+        color: var(--cascade-main-color);
         content: '\25C6';
         font-family: 'Century Gothic';
         font-size: 24px;

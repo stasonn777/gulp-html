@@ -1,6 +1,5 @@
-.skin-cubik {
-  font-family: Century Gothic;
-  color: #343434;
+.skin-cubic {
+  color: var(--main-color);
   a {
     color: #343434;
   }
@@ -19,7 +18,7 @@
       padding: 15px;
       .left-box__section {
         .title {
-          color: #373d48;
+          color: var(--main-color);
           font-weight: 700;
           border-bottom: 1px solid #cacaca;
           padding: 3px 0;
@@ -37,6 +36,9 @@
             text-align: right;
             svg {
               height: inherit;
+              .default-fill {
+                fill: var(--main-color);
+              }
             }
           }
           .progress-name {
@@ -48,7 +50,7 @@
     .right-box {
       color: #343434;
       .title {
-        color: #343434;
+        color: var(--main-color);
       }
       .flex-box {
         .duration {

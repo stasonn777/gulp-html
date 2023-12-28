@@ -1,0 +1,38 @@
+.templates-wrapper {
+  @media screen and (max-width: 760px) {
+    overflow-x: scroll;
+  }
+  .templates-scrol {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @media screen and (max-width: 760px) {
+      width: 200%;
+      padding-bottom: 20px;
+      gap: 10px;
+    }
+    .template-item {
+      text-align: center;
+      a {
+        display: block;
+        height: auto;
+        transition: all .2s;
+        &.active {
+          img {
+            border: 3px solid #003d73;
+          }
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+      .template-name {
+        font-weight: 500;
+        @media screen and (max-width: 760px) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

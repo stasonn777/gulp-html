@@ -1,15 +1,36 @@
-// .resume-container {
-//   display: flex;
-//   justify-content: center;
-//   position: relative;
-// }
+:root {
+  --main-color: #373d48;
+  --cascade-main-color: #003d73;
+  --font-size: 13px;
+  --title-font-size: 19px;
+  --font-family: Century Gothic; 
+  --padding-bottom: 0px;
+  --paragraph-spacing: 0px;
+  --line-height: 20px;
+}
+.resume-container {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+.scale-wrapper {
+  @media screen and (max-width: 760px) {
+    height: 500px;
+    overflow-y: scroll;
+    margin-bottom: 50px;
+  }
+}
 .resume {
   margin: auto;
-  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-top: 15px;
   max-width: 707px;
   box-shadow: 0 0 10px rgba(88, 88, 95, 0.12);
   background-color: #fff;
   border: 1px solid #e8ecf0;
+  font-family: var(--font-family);
+  line-height: var(--line-height);
   @media screen and (max-width: 450px) {
     overflow: visible !important;
     width: 595px;
@@ -17,6 +38,7 @@
     top: 0;
     left: 0;
     transform-origin: 0 0 0;
+    height: calc(100vh - 13.2rem);
   }
   img {
     max-width: 100%;
@@ -41,9 +63,10 @@
     width: 207px;
     padding: 15px;
     .left-box__section {
-      font-size: 13px;
+      font-size: var(--font-size);
+      padding-bottom: var(--padding-bottom);
       .title {
-        font-size: 19px;
+        font-size: var(--title-font-size);
         font-weight: 500;
         position: relative;
         margin-left: -15px;
@@ -70,6 +93,7 @@
     .skills {
       .skills-item {
         margin-bottom: 15px;
+        padding-bottom: var(--paragraph-spacing);
         .skills-item__title {
           margin-bottom: 2px;
         }
@@ -83,9 +107,13 @@
     flex-basis: 0;
     flex-grow: 1;
     padding: 50px 15px;
-    font-size: 13px;
+    font-size: var(--font-size);
+    background-color: #fff;
+    .right-box__section {
+      padding-bottom: var(--padding-bottom);
+    }
     .title {
-      font-size: 19px;
+      font-size: var(--title-font-size);
       font-weight: 700;
       padding: 5px 0;
       margin-top: 40px;
@@ -106,6 +134,7 @@
     .education {
       .history-item,
       .education-item {
+        padding-bottom: var(--paragraph-spacing);
         .flex-title {
           font-size: 16px;
           font-weight: 700;
@@ -121,13 +150,14 @@
     .certifications {
       .cert-item {
         margin-bottom: 20px;
+        padding-bottom: var(--paragraph-spacing);
       }
     }
   }
   .top-box {
     display: flex;
     justify-content: space-between;
-    background-color: #373d48;
+    background-color: var(--main-color);
     color: #9b9b9b;
     font-size: 20px;
     .user-name {
