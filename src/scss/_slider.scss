@@ -1,0 +1,100 @@
+.slider-templates {
+  margin-top: 100px;
+  width: 50%;
+  position: relative;
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
+  .slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 280px;
+    @media screen and (max-width: 760px) {
+      height: 450px;
+    }
+    .slider-body {
+      position: absolute;
+      display: flex;
+      .slider-item {
+        width: 155px;
+        height: 256px;
+        max-width: 100vw;
+        padding: 20px;
+        position: absolute;
+        left: 0;
+        transition: all 0.5s;
+        @media screen and (max-width: 760px) {
+          width: 450px;
+          height: 411px;
+        }
+        &.active {
+          .slider-item__body img {
+            border: 3px solid #3983fa;
+            transition: all 0.5s;
+          }
+        }
+        .slider-item__body {
+          height: 100%;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 29px;
+          font-weight: 500;
+          transition: all 0.5s;
+          img {
+            height: 100%;
+            border: 3px solid #ffffff;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 760px) {
+      gap: 268px;
+    }
+    cursor: pointer;
+    .control {
+      width: 15px;
+      height: 15px;
+      background-color: #3983fa;
+      padding: 5px;
+      color: #fff;
+      border-radius: 2px;
+      text-align: center;
+      rotate: 45deg;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: -2px;
+        background-image: url(../img/arrow.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 18px;
+        rotate: 136deg;
+      }
+      &:last-child {
+        &::before {
+          rotate: 316deg;
+          top: -2px;
+          right: -2px;
+          left: unset;
+        }
+      }
+    }
+  }
+}
