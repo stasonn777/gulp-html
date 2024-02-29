@@ -40,7 +40,6 @@ class Slider {
     this.setLeftForSlides();
     this.initActive();
     this.doStatusBar();
-    // debugger;
   }
 
   eventListenners() {
@@ -87,7 +86,7 @@ class Slider {
   }
 
   prevSlide() {
-    const last = this.slidesArr.pop(0);
+    const last = this.slidesArr.pop();
     this.slidesArr.unshift(last);
     this.setLeftForSlides();
     last.style.display = 'none';
@@ -98,7 +97,7 @@ class Slider {
   }
 
   nextSlide() {
-    const first = this.slidesArr.shift(0);
+    const first = this.slidesArr.shift();
     this.slidesArr.push(first);
     this.setLeftForSlides();
     first.style.display = 'none';
