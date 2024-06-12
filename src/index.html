@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,40 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
+
 <body>
-  <header>
-    <h1>Hello</h1>
-    @@include('header.html')
-  </header>
+  @@include('header.html')
   <div class="content">
-    <img src="./img/accord-top.png" alt="">
-    <p>Hello, world!</p>
+    <div class="container">
+      <h1>Аренда техники</h1>
+      <p>Wypożyczaj technologię swoich marzeń! Telefony, laptopy, komputery i więcej. Ciesz się nowoczesnością <br> na wyciągnięcie ręki!</p>
+    </div>
+    <section class="catalogue">
+      <div class="container">
+        <div class="catalogue-wrapper">
+          @@include('item.html')
+          @@include('item.html')
+          @@include('item.html')
+          @@include('item.html')
+          @@include('item.html')
+          @@include('item.html')
+          @@include('item.html')
+          @@include('item.html')
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <h2>Как это работает?</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas explicabo sequi, qui at tempora. Explicabo quibusdam nesciunt in est, sit blanditiis impedit facere placeat maxime nam dicta fugit aliquam repudiandae totam minima odit quisquam! Ratione eligendi nihil repellat nobis recusandae inventore quae labore? Quam doloribus facere tenetur a suscipit eligendi optio ab est, laudantium praesentium veritatis corporis nobis provident ut repellendus omnis fugiat iste, aut velit vero earum dolore. Ea harum laboriosam quasi cupiditate temporibus obcaecati accusamus nostrum in possimus consequuntur expedita, dolore esse amet. Sint laboriosam animi dolore rem, quod in? Ut cupiditate eligendi laboriosam repellat! Iure, ab.</p>
+        <h2>Доставка и оплата</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas explicabo sequi, qui at tempora. Explicabo quibusdam nesciunt in est, sit blanditiis impedit facere placeat maxime nam dicta fugit aliquam repudiandae totam minima odit quisquam! Ratione eligendi nihil repellat nobis recusandae inventore quae labore? Quam doloribus facere tenetur a suscipit eligendi optio ab est, laudantium praesentium veritatis corporis nobis provident ut repellendus omnis fugiat iste, aut velit vero earum dolore. Ea harum laboriosam quasi cupiditate temporibus obcaecati accusamus nostrum in possimus consequuntur expedita, dolore esse amet. Sint laboriosam animi dolore rem, quod in? Ut cupiditate eligendi laboriosam repellat! Iure, ab.</p>
+        <h2>Документы</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas explicabo sequi, qui at tempora. Explicabo quibusdam nesciunt in est, sit blanditiis impedit facere placeat maxime nam dicta fugit aliquam repudiandae totam minima odit quisquam! Ratione eligendi nihil repellat nobis recusandae inventore quae labore? Quam doloribus facere tenetur a suscipit eligendi optio ab est, laudantium praesentium veritatis corporis nobis provident ut repellendus omnis fugiat iste, aut velit vero earum dolore. Ea harum laboriosam quasi cupiditate temporibus obcaecati accusamus nostrum in possimus consequuntur expedita, dolore esse amet. Sint laboriosam animi dolore rem, quod in? Ut cupiditate eligendi laboriosam repellat! Iure, ab.</p>
+      </div>
+    </section>
   </div>
   <script src="./js/index.js"></script>
 </body>
+
 </html>

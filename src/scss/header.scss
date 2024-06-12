@@ -1,0 +1,66 @@
+header {
+
+  .cta {
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(239 239 239);
+    @media screen and (min-width: 940px) {
+      display: none;
+    }
+    .flex-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    img {
+      height: 50px;
+    }
+    .text {
+      width: 50%;
+      p {
+        line-height: 14px;
+      }
+      span {
+        font-size: 12px;
+        color: rgb(135, 135, 135);
+      }
+    }
+  }
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    @media screen and (min-width: 940px) {
+      margin-bottom: 40px;
+    }
+    .logo {
+      padding-right: 15px;
+    }
+    .flex-header {
+      display: flex;
+      gap: 60px;
+      @media screen and (min-width: 940px) {
+        flex-direction: row-reverse;
+        gap: 43px;
+        align-items: center;
+      }
+    }
+    .menu {
+      display: none;
+      @media screen and (min-width: 940px) {
+        display: block;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 35px;
+      }
+    }
+    .burger {
+      width: 20px;
+      @media screen and (min-width: 940px) {
+        display: none;
+      }
+    }
+  }
+}

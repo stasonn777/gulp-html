@@ -1,9 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800);
-
 body {
   background-color: #fff;
-  color: #141232;
-  font-family: 'Open Sans';
+  font-family: Open Sans;
+  color: #3a3a3a;
   font-style: normal;
   font-weight: 400;
   padding: 0;
@@ -13,70 +11,152 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: fit-content;
 }
 
 .container {
   padding: 0 16px;
 }
+
+.container-2 {
+  padding: 0 36px;
+}
+
+.container-3 {
+  padding: 0 1rem;
+}
+
 .flex-box {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 1240px) {
+    flex-direction: row;
+  }
 }
+
 .between {
-  display: flex;
   justify-content: space-between;
 }
+
 .center {
   text-align: center;
 }
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 h1 {
   font-weight: 700;
   font-size: 20px;
+  color: #250455;
 }
+
 h2 {
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
-  text-align: center;
-  color: #141232;
+  // text-align: center;
+  color: #250455;
 }
+
 h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  color: #222222;
+  color: #250455;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: inside;
+}
+strong {
+  font-weight: 700;
+}
+
 .full-width {
   width: 100%;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.button {
+  color: #fff;
+  &.blue {
+    background-color: #0069dc;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  &.green {
+    background-color: #5eb761;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    line-height: 33px;
+    font-size: 13px;
+  }
+}
+
 @media screen and (min-width: 1240px) {
   .container {
-    max-width: 1124px;
-    margin: auto;
+    max-width: 1240px;
+    margin: 0 auto;
     padding: 0;
   }
+
+  .container-2 {
+    max-width: 1195px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .container-3 {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
   .flex-box {
     flex-direction: row;
   }
+
   h1 {
     font-weight: 700;
     font-size: 50px;
   }
+
   h3 {
     font-size: 24px;
     line-height: 32px;
   }
+
   h2 {
     font-size: 46px;
     line-height: 56px;
   }
+
   p {
     font-size: 18px;
     line-height: 26px;
-  }
-  .mobile-break {
-    display: none;
   }
 }
