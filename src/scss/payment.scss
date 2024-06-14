@@ -1,0 +1,164 @@
+.order-payment {
+  button.green {
+    display: inline-block;
+    padding: 10px 40px;
+    line-height: 10px;
+  }
+}
+.order {
+  .button.green {
+    display: inline-block;
+    padding: 10px 40px;
+    line-height: 10px;
+  }
+}
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 45px 26px;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 2;
+  position: relative;
+  @media screen and (min-width: 940px) {
+    flex-direction: row;
+    gap: 72px;
+    > div {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+  }
+  .payment-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.86px;
+    letter-spacing: 0.04em;
+    margin-bottom: 29px;
+  }
+  .bordered {
+    border-radius: 10px;
+    border: 1px solid #5eb761;
+    padding: 27px 17px;
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18.83px;
+      margin-bottom: 10px;
+    }
+    img {
+      margin-bottom: 11px;
+    }
+  }
+}
+
+.green-text,
+.green-text span {
+  color: #00c566 !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.payment__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bank-options {
+  margin-bottom: 20px;
+  position: absolute;
+  width: 100%;
+  &.hide {
+    display: none;
+  }
+}
+
+.bank-wrapper {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bank-body {
+  width: 100%;
+  position: relative;
+}
+
+.select-bank {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-bank img {
+  width: 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.bank-options .option {
+  background: #f7f7f7;
+  padding: 11px 40px;
+  cursor: pointer;
+}
+.bank-options .option:nth-child(even) {
+  background: rgb(249 249 249);
+}
+
+.payment-details {
+  font-size: 14px;
+  @media screen and (min-width: 940px) {
+    margin-bottom: 45px;
+  }
+}
+.payment-details div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(97, 97, 97, 0.1);
+  @media screen and (min-width: 940px) {
+    flex-direction: row;
+    font-size: 16px;
+    padding-bottom: 0;
+  }
+}
+
+.payment-details div span:first-child {
+  color: #929191;
+  @media screen and (min-width: 940px) {
+    color: #16221b;
+  }
+}
+
+.success {
+  @media screen and (min-width: 940px) {
+    max-width: 545px;
+    margin: auto;
+    .bordered {
+      padding: 16px 71px;
+    }
+  }
+  h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38.13px;
+    margin-bottom: 20px;
+  }
+  .button {
+    margin-top: 20px;
+  }
+}

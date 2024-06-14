@@ -8,6 +8,13 @@
     text-align: center;
     padding: 18px 0;
     margin-bottom: 12px;
+    img {
+      max-height: 164px;
+      height: auto;
+      @media screen and (min-width: 940px) {
+        height: auto;
+      }
+    }
   }
   h3 {
     font-size: 13.08px;
@@ -24,31 +31,5 @@
     padding-bottom: 15px;
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 20px;
-  }
-  .price {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19.07px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 9px;
-    span {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 32.68px;
-      text-align: left;
-      color: #ff7e2a;
-    }
-  }
-  .buy {
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 13.62px;
-    letter-spacing: 0.05em;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 8px 0;
   }
 }

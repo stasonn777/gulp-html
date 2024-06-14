@@ -51,7 +51,6 @@ img {
 h1 {
   font-weight: 700;
   font-size: 20px;
-  color: #250455;
 }
 
 h2 {
@@ -114,6 +113,32 @@ strong {
     border-radius: 5px;
     line-height: 33px;
     font-size: 13px;
+  }
+  &.buy {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 13.62px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 0;
+  }
+}
+.price {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 9px;
+  span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.68px;
+    text-align: left;
+    color: #ff7e2a;
   }
 }
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  @@include('header.html')
+  <div class="container order-payment">
+    <div class="flex-box">
+      <div class="text">
+        <div class="payment-title center">Zapłać za pomocą Blue Media</div>
+        <div class="bordered center">
+          <p>Drogi Kliencie! <br class="hide-mobile">
+            Nie ponosisz żadnych kosztów transakcji.</p>
+          <img src="./img/ph_info-light.svg" alt="">
+          <p>Skorzystaj z rozwiązania umożliwiającego <br class="hide-mobile"> natychmiastową spłatę!</p>
+          <button class="button green">Zapłać</button>
+        </div>
+      </div>
+      <div class="payment">
+        <div class="payment-title center">Płatność przelewem</div>
+        <div class="payment__text">
+          <div>
+            <div class="payment__banks">
+              <div class="bank-wrapper">
+                <span>Bank:</span>
+                <div class="bank-body">
+                  <div class="select-bank">
+                    <span>Bank name</span>
+                    <img src="./img/small-arrow.svg" />
+                  </div>
+                  <div class="bank-options hide">
+                    <div class="option">Bank Name</div>
+                    <div class="option">Bank Name</div>
+                    <div class="option">Bank Name</div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-details">
+                <div>
+                  <span>Rachunek Bankowy</span><span>162627289201010101019100001</span>
+                </div>
+                <div>
+                  <span>Nazwa odbiorcy</span><span>Prosta Pożyczka Sp. z o.o.</span>
+                </div>
+                <div>
+                  <span>Adres</span><span>ul. Nowy Świat 33, 00-029 Warszawa</span>
+                </div>
+                <div class="green-text">
+                  <span>Kwota do zapłaty</span><span>160 zł</span>
+                </div>
+                <div>
+                  <span>Tytuł przelewu</span><span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+              </div>
+              <div class="green-text mb-10">Prosimy nie wpisywać żadnych dodatkowych informacji w tytule przelewu</div>
+              <p>Jeśli dokonałeś przelewu międzybankowego, zaksięgowanie kosztów może potrwać kilka godzin. Przelewy międzybankowe zrealizowane po południu będą zaksięgowane następnego dnia roboczego. <br> O zaksięgowaniu poinformujemy wiadomością SMS.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
