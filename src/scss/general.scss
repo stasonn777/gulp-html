@@ -54,11 +54,12 @@ h1 {
 }
 
 h2 {
-  font-weight: 500;
   font-size: 20px;
-  line-height: 32px;
-  // text-align: center;
-  color: #250455;
+  font-weight: 700;
+  line-height: 27.24px;
+  text-align: center;
+  color: #3a3a3a;
+  margin-bottom: 31px;
 }
 
 h3 {
@@ -133,7 +134,13 @@ strong {
   justify-content: center;
   gap: 10px;
   margin-bottom: 9px;
-  span {
+  .regular-price {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    text-decoration: line-through;
+  }
+  .discount-price {
     font-size: 24px;
     font-weight: 700;
     line-height: 32.68px;

@@ -7,6 +7,7 @@
     line-height: 27.24px;
     text-align: left;
     text-transform: uppercase;
+    margin-bottom: 10px;
     @media screen and (min-width: 940px) {
       font-size: 40px;
       line-height: 54.47px;
@@ -22,6 +23,51 @@
       font-size: 16px;
       line-height: 21.79px;
     }
+    &.subtitle {
+      color: #ff7e2a;
+      margin-bottom: 22px;
+    }
+  }
+  .top-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 19px;
+    .icons-item {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16.34px;
+      img {
+        width: 35px;
+      }
+    }
+  }
+  .info {
+    .info-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px 14px;
+      .info-item {
+        flex-basis: 45%;
+        flex-grow: 1;
+        .info-title {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 17px;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 17px;
+        }
+      }
+    }
   }
   .catalogue-wrapper {
     margin-top: 23px;
@@ -32,25 +78,6 @@
     @media screen and (min-width: 940px) {
       flex-direction: row;
       flex-wrap: wrap;
-    }
-  }
-  .info {
-    h2 {
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 27.24px;
-      margin-bottom: 10px;
-      font-size: 32px;
-      @media screen and (min-width: 940px) {
-        margin-top: 42px;
-      }
-    }
-    p {
-      font-size: 14px;
-      padding-bottom: 15px;
-      @media screen and (min-width: 940px) {
-        font-size: 16px;
-      }
     }
   }
 }
