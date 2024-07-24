@@ -48,6 +48,7 @@
     }
   }
   .info {
+    margin-bottom: 31px;
     .info-wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -79,5 +80,35 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
+  }
+}
+.cta {
+  margin-bottom: 32px;
+  .cta-heading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.71px;
+    margin-bottom: 15px;
+  }
+  .cta-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.4px;
+    color: #ff7e2a;
+    margin-bottom: 15px;
+  }
+  .cta-button {
+    padding: 8.39px 9.44px 8.39px 9.44px;
+    border-radius: 2.62px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 13.62px;
+    letter-spacing: 0.05em;
+    background: #ff7e2a;
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
   }
 }
