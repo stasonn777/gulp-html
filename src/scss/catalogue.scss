@@ -167,6 +167,9 @@
           line-height: 17px;
         }
       }
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -199,6 +202,101 @@
       font-size: 12px;
       font-weight: 400;
       line-height: 17px;
+    }
+  }
+}
+
+.how {
+  margin-bottom: 60px;
+  .how-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    .how-item {
+      .item-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27.24px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.07px;
+        margin-bottom: 5px;
+      }
+      a {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.79px;
+        color: #5eb761;
+        display: block;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.faq {
+  margin-bottom: 38px;
+  .faq-accordeon {
+    .accordeon-item,
+    .faq-more {
+      position: relative;
+      border-top: 2px solid #e0e0e0;
+      padding: 25px 59px 25px 0;
+      .item-title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19.07px;
+        cursor: pointer;
+        &::after {
+          content: '+';
+          font-size: 41px;
+          font-weight: 400;
+          color: #5eb761;
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+          right: 0;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .item-text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12.07px;
+        height: 0;
+        overflow: hidden;
+      }
+    }
+    .faq-more {
+      color: #5eb761;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 19.07px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+  }
+}
+
+.adwantages {
+  .adwantages-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    .adwantages-item {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 19.07px;
     }
   }
 }
