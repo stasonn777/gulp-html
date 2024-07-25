@@ -151,7 +151,7 @@ strong {
   }
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 940px) {
   .container {
     max-width: 1240px;
     margin: 0 auto;
@@ -185,8 +185,9 @@ strong {
   }
 
   h2 {
-    font-size: 46px;
-    line-height: 56px;
+    font-size: 32px;
+    line-height: 43.58px;
+    margin-bottom: 42px;
   }
 
   p {

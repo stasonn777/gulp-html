@@ -1,7 +1,6 @@
-const selectBank = document.querySelector('.select-bank')
-const bankOptions = document.querySelector('.bank-options')
-
-selectBank.addEventListener('click', () => {
-  bankOptions.classList.toggle("hide")
+const accordeonItems = document.querySelectorAll('.item-title')
+accordeonItems.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    e.target.parentElement.children[1].classList.toggle('opened');
+  })
 })
-

@@ -35,6 +35,11 @@
     padding-bottom: 19px;
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 19px;
+    @media screen and (min-width: 940px) {
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: none;
+    }
     .icons-item {
       display: flex;
       align-items: center;
@@ -53,6 +58,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 25px 14px;
+      @media screen and (min-width: 940px) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 50px;
+      }
       .info-item {
         flex-basis: 45%;
         flex-grow: 1;
@@ -61,11 +72,20 @@
           font-weight: 600;
           line-height: 17px;
           margin-bottom: 5px;
+          @media screen and (min-width: 940px) {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 12px;
+          }
         }
         p {
           font-size: 12px;
           font-weight: 400;
           line-height: 17px;
+          @media screen and (min-width: 940px) {
+            font-size: 14px;
+            line-height: 19px;
+          }
         }
       }
     }
@@ -76,6 +96,9 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 46px 0;
     @media screen and (min-width: 940px) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -84,11 +107,26 @@
 }
 .cta {
   margin-bottom: 32px;
+  .cta-wrapper {
+    @media screen and (min-width: 940px) {
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      align-items: center;
+      padding-bottom: 40px;
+      div {
+        flex-grow: 1;
+      }
+    }
+  }
   .cta-heading {
     font-size: 16px;
     font-weight: 600;
     line-height: 21.71px;
     margin-bottom: 15px;
+    @media screen and (min-width: 940px) {
+      font-size: 20px;
+      line-height: 27px;
+    }
   }
   .cta-text {
     font-size: 14px;
@@ -96,6 +134,10 @@
     line-height: 15.4px;
     color: #ff7e2a;
     margin-bottom: 15px;
+    @media screen and (min-width: 940px) {
+      font-size: 16px;
+      line-height: 21px;
+    }
   }
   .cta-button {
     padding: 8.39px 9.44px 8.39px 9.44px;
@@ -110,6 +152,9 @@
     width: 100%;
     color: #fff;
     text-transform: uppercase;
+    @media screen and (min-width: 940px) {
+      width: 200px;
+    }
   }
 }
 
@@ -121,9 +166,20 @@
     gap: 33px;
     @media screen and (min-width: 940px) {
       flex-direction: row;
+      align-items: stretch;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #e0e0e0;
     }
     .start-item {
       position: relative;
+      background-color: #5eb761;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media screen and (min-width: 940px) {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
       &::before {
         content: '1';
         position: absolute;
@@ -151,7 +207,6 @@
         }
       }
       .start-item__text {
-        background-color: #5eb761;
         padding: 14px 16px 27px;
         color: #fff;
         h3 {
@@ -160,11 +215,19 @@
           line-height: 17px;
           color: #fff;
           margin-bottom: 10px;
+          @media screen and (min-width: 940px) {
+            font-size: 20px;
+            line-height: 24px;
+          }
         }
         p {
           font-size: 12px;
           font-weight: 400;
           line-height: 17px;
+          @media screen and (min-width: 940px) {
+            font-size: 14px;
+            line-height: 19px;
+          }
         }
       }
       img {
@@ -176,6 +239,10 @@
 
 .benefits {
   margin-bottom: 63px;
+  @media screen and (min-width: 940px) {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+  }
   &-wrapper {
     display: flex;
     flex-direction: column;
@@ -197,11 +264,19 @@
       line-height: 17px;
       color: #3a3a3a;
       margin-bottom: 12px;
+      @media screen and (min-width: 940px) {
+        font-size: 20px;
+        line-height: 27px;
+      }
     }
     p {
       font-size: 12px;
       font-weight: 400;
       line-height: 17px;
+      @media screen and (min-width: 940px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
   }
 }
@@ -222,6 +297,11 @@
         flex-direction: row;
         align-items: center;
         gap: 14px;
+        @media screen and (min-width: 940px) {
+          font-size: 32px;
+          line-height: 43px;
+          gap: 34px;
+        }
       }
       p {
         font-size: 14px;
@@ -236,6 +316,11 @@
         color: #5eb761;
         display: block;
         text-align: right;
+        margin-top: 10px;
+        @media screen and (min-width: 940px) {
+          display: inline;
+          padding-left: 10px;
+        }
       }
     }
   }
@@ -249,10 +334,18 @@
       position: relative;
       border-top: 2px solid #e0e0e0;
       padding: 25px 59px 25px 0;
+      @media screen and (min-width: 940px) {
+        padding-top: 43px;
+        padding-bottom: 35px;
+      }
       .item-title {
         font-size: 14px;
         font-weight: 700;
         line-height: 19.07px;
+        @media screen and (min-width: 940px) {
+          font-size: 20px;
+          line-height: 27.24px;
+        }
         cursor: pointer;
         &::after {
           content: '+';
@@ -271,8 +364,13 @@
         font-size: 12px;
         font-weight: 400;
         line-height: 12.07px;
-        height: 0;
+        height: 0px;
         overflow: hidden;
+        padding-top: 20px;
+        transition: height 0.2s;
+        &.opened {
+          height: 100px;
+        }
       }
     }
     .faq-more {
@@ -281,15 +379,25 @@
       font-weight: 700;
       line-height: 19.07px;
       border-bottom: 2px solid #e0e0e0;
+      @media screen and (min-width: 940px) {
+        font-size: 20px;
+        line-height: 27.24px;
+      }
     }
   }
 }
 
 .adwantages {
+  margin-bottom: 60px;
   .adwantages-wrapper {
     display: flex;
     flex-direction: column;
     gap: 26px;
+    @media screen and (min-width: 940px) {
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 40px;
+    }
     .adwantages-item {
       display: flex;
       gap: 16px;
@@ -297,6 +405,14 @@
       font-size: 14px;
       font-weight: 600;
       line-height: 19.07px;
+      @media screen and (min-width: 940px) {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 20px;
+        line-height: 27px;
+        flex-grow: 1;
+        flex-basis: 0;
+      }
     }
   }
 }

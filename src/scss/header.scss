@@ -1,5 +1,4 @@
 header {
-
   .cta {
     padding: 10px 0;
     border-bottom: 1px solid rgb(239 239 239);
@@ -29,6 +28,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-basis: 0;
+    flex-grow: 1;
     padding: 10px 0;
     @media screen and (min-width: 940px) {
       margin-bottom: 40px;
@@ -38,11 +39,16 @@ header {
     }
     .flex-header {
       display: flex;
-      gap: 60px;
+      justify-content: space-between;
+      align-items: center;
+      flex-basis: 0;
+      flex-grow: 1;
       @media screen and (min-width: 940px) {
         flex-direction: row-reverse;
         gap: 43px;
         align-items: center;
+        flex-basis: auto;
+        flex-grow: unset;
       }
     }
     .menu {
