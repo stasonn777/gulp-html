@@ -328,8 +328,8 @@
 
 .faq {
   margin-bottom: 38px;
-  .faq-accordeon {
-    .accordeon-item,
+  .faq-accordion {
+    .accordion-item,
     .faq-more {
       position: relative;
       border-top: 2px solid #e0e0e0;
@@ -364,12 +364,13 @@
         font-size: 12px;
         font-weight: 400;
         line-height: 12.07px;
-        height: 0px;
+        max-height: 0px;
         overflow: hidden;
         padding-top: 20px;
-        transition: height 0.2s;
-        &.opened {
-          height: 100px;
+        transition: max-height 0.2s;
+        @media screen and (min-width: 940px) {
+          font-size: 14px;
+          line-height: 22px;
         }
       }
     }

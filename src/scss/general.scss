@@ -27,7 +27,9 @@ img {
 .container-3 {
   padding: 0 1rem;
 }
-
+.hide-mobile {
+  display: none;
+}
 .flex-box {
   display: flex;
   flex-direction: column;
@@ -153,23 +155,16 @@ strong {
 
 @media screen and (min-width: 940px) {
   .container {
-    max-width: 1240px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 0;
   }
-
-  .container-2 {
-    max-width: 1195px;
-    margin: 0 auto;
-    padding: 0 2rem;
+  .hide-mobile {
+    display: block;
   }
-
-  .container-3 {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 2rem;
+  .hide-desctop {
+    display: none;
   }
-
   .flex-box {
     flex-direction: row;
   }
@@ -193,5 +188,13 @@ strong {
   p {
     font-size: 18px;
     line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0;
   }
 }

@@ -13,7 +13,7 @@
   @@include('header.html')
   <div class="container">
     <div class="breadcrumbs">
-      Аренда техники / Apple iPhone 13 128GB (Pink)
+      Subskrypcja na sprzęt / Apple iPhone 13 128GB (Pink)
     </div>
     <h1 class="product-title">Apple iPhone 13 128GB (Pink)</h1>
     <div class="product-wrapper">
@@ -21,35 +21,49 @@
         <img src="./img/iphone13_ 1.jpg" alt="">
       </div>
       <div class="product-description">
-        <div class="description-title">Основные характеристики:</div>
+        <div class="description-title">Opis produktu:</div>
         <p>6.7" OLED Super Retina XDR, Triple Rückkamera, 8GB RAM, Apple A17 Pro, 5G</p>
         <hr>
-        <div class="description-title">Выберите минимальный срок аренды</div>
+        <div class="description-title">Wybierz minimalny okres subskrypcji</div>
         <div class="rent-options">
-          <div class="rent-option">
-            <div class="frame"><span>1</span><br>miesiąc</div>
-            <div>
-              <div class="price"><span>675.00 zł</span> / msc.</div>
-              <a href="" class="button green buy">Арендовать</a>
-            </div>
+          <div class="input-wrapper checked">
+            <div class="value">1 <span>miesiąc</span></div>
+            <input type="radio" checked name="month" id="1" value="1">
+            <div class="line"></div>
           </div>
-          <div class="rent-option">
-            <div class="frame"><span>1</span><br>miesiąc</div>
-            <div>
-              <div class="price"><span>450.00 zł</span> / msc.</div>
-              <a href="" class="button green buy">Арендовать</a>
-            </div>
+          <div class="input-wrapper">
+            <div class="value">3 <span>miesiąc</span></div>
+            <input type="radio" name="month" id="3" value="3">
+            <div class="line"></div>
           </div>
-          <div class="rent-option">
-            <div class="frame"><span>1</span><br>miesiąc</div>
-            <div>
-              <div class="price"><span>337.00 zł</span> / msc.</div>
-              <a href="" class="button green buy">Арендовать</a>
-            </div>
+          <div class="input-wrapper">
+            <div class="value">6 <span>miesiąc</span></div>
+            <input type="radio" name="month" id="6" value="6">
+            <div class="line"></div>
+          </div>
+          <div class="input-wrapper">
+            <div class="value">12 <span>miesiąc</span></div>
+            <input type="radio" name="month" id="12" value="12">
+            <div class="line"></div>
+          </div>
+          <div class="input-wrapper">
+            <div class="value">18 <span>miesiąc</span></div>
+            <input type="radio" name="month" id="18" value="18">
+            <div class="line"></div>
+          </div>
+          <div class="input-wrapper">
+            <div class="value">24 <span>miesiąc</span></div>
+            <input type="radio" name="month" id="24" value="24">
+            <div class="line"></div>
           </div>
         </div>
-        <div class="delivery"><img src="./img/solar_delivery-bold.svg" alt="">Доставка в течение 4-6 рабочих дней за 25
-          зл</div>
+        <div class="confirm">
+          <div class="price">od <span class="regular-price">191.90 zł</span> <span class="discount-price" id="price">45.00
+              zł</span> / msc.</div>
+          <a href="" class="button green buy">subskrybuj</a>
+        </div>
+        <div class="delivery"><img src="./img/solar_delivery-bold.svg" alt="">Dostawa w ciągu 4-6 dni roboczych w cenie
+          25 zł</div>
       </div>
     </div>
   </div>
