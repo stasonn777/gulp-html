@@ -25,3 +25,9 @@ radioButtons.forEach((el) => {
     });
   });
 });
+
+function showMore(e) {
+  e.target.parentElement.parentElement.querySelector('.more').style.display = 'contents';
+  e.target.parentElement.parentElement.querySelector('.short').style.display = 'none';
+  e.target.style.display = 'none';
+}

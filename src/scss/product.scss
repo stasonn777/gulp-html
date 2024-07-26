@@ -65,8 +65,8 @@
     }
     .address {
       font-size: 14px;
-      font-weight: 700;
-      line-height: 14px;
+      font-weight: 400;
+      line-height: 19px;
       margin-bottom: 10px;
     }
     .attention {
@@ -248,6 +248,13 @@
     line-height: 14px;
     span {
       color: #ff7e2a;
+    }
+    &.total {
+      font-weight: 700;
+      text-transform: uppercase;
+      div:last-child {
+        text-transform: none;
+      }
     }
   }
 }
