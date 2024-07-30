@@ -64,20 +64,37 @@
         </div>
       </div>
     </section>
-    <section class="catalogue">
+    <section class="categories">
       <div class="container">
-        <h2>Katalog</h2>
-        <div class="catalogue-wrapper">
-          @@include('item.html')
-          @@include('item.html')
-          @@include('item.html')
-          @@include('item.html')
-          @@include('item.html')
-          @@include('item.html')
-          @@include('item.html')
-          @@include('item.html')
+        <h2>Categories</h2>
+        <div class="slider-controls" id="slider-controls">
+          <div class="control" onclick="moveSlide('left')"><img src="./img/ei_arrow-up.png" alt=""></div>
+          <div class="control" onclick="moveSlide('right')"><img src="./img/ei_arrow-up.png" alt=""></div>
+        </div>
+        <div class="categories-body">
+          <div class="caregories-wrapper">
+            <a href="#smartphones"><div class="categories-item"><img src="./img/smartphones.png" alt="">Смартфоны</div></a>
+            <a href="#laptop"><div class="categories-item"><img src="./img/laptops.png" alt="">Ноутбуки</div></a>
+            <a href="#tablets"><div class="categories-item"><img src="./img/tablets.png" alt="">Планшеты</div></a>
+            <a href="#consoles"><div class="categories-item"><img src="./img/consoles.png" alt="">Приставки</div></a>
+            <a href="#headphones"><div class="categories-item"><img src="./img/headphones.png" alt="">Headphones</div></a>
+            <a href="#smart-watch"><div class="categories-item"><img src="./img/smartwatches.png" alt="">Смарт-Часы</div></a>
+            <a href="#smartphones"><div class="categories-item"><img src="./img/smartphones.png" alt="">Смартфоны</div></a>
+            <a href="#laptop"><div class="categories-item"><img src="./img/laptops.png" alt="">Ноутбуки</div></a>
+            <a href="#tablets"><div class="categories-item"><img src="./img/tablets.png" alt="">Планшеты</div></a>
+            <a href="#consoles"><div class="categories-item"><img src="./img/consoles.png" alt="">Приставки</div></a>
+            <a href="#headphones"><div class="categories-item"><img src="./img/headphones.png" alt="">Headphones</div></a>
+            <a href="#smart-watch"><div class="categories-item"><img src="./img/smartwatches.png" alt="">Смарт-Часы</div></a>
+          </div>
+        </div>
+        <div class="control-status">
+          <div class="scrolled"></div>
         </div>
       </div>
+    </section>
+    <section class="catalogue">
+      <h2>Katalog</h2>
+      @@include('category-catalogue.html')
     </section>
     <section class="cta">
       <div class="container">
@@ -163,7 +180,8 @@
               <img src="./img/how1.png" alt="">
               Jak to działa
             </div>
-            <p class="short">Możesz skorzystać z abonamentu, aby korzystać ze sprzętu elektronicznego, o którym...<a onClick="showMore(event)">Ucz się więcej <img src="./img/Vector.svg" alt=""></a></p>
+            <p class="short">Możesz skorzystać z abonamentu, aby korzystać ze sprzętu elektronicznego, o którym...<a
+                onClick="showMore(event)">Ucz się więcej <img src="./img/Vector.svg" alt=""></a></p>
             <div class="more">
               <p>
                 Możesz skorzystać z abonamentu, aby korzystać ze sprzętu elektronicznego, o którym od dawna marzyłeś,
@@ -187,7 +205,7 @@
                 użytku przez inne osoby.
               </p>
             </div>
-            
+
           </div>
           <div class="how-item">
             <div class="item-title">
@@ -205,14 +223,15 @@
               Przykładowo: dla zamówienia 1 lipca i dostawy 7 lipca, pierwsza płatność zostanie dokonana 1 lipca, druga
               płatność 7 sierpnia, trzecia płatność 7 września itd.
             </div>
-            
+
           </div>
           <div class="how-item">
             <div class="item-title">
               <img src="./img/how3.png" alt="">
               Zwroty i naprawy
             </div>
-            <p class="short">Po upływie minimalnego okresu subskrypcji możesz zwrócić produkt do nas pocztą lub...<a onClick="showMore(event)">Ucz się więcej <img src="./img/Vector.svg" alt=""></a></p>
+            <p class="short">Po upływie minimalnego okresu subskrypcji możesz zwrócić produkt do nas pocztą lub...<a
+                onClick="showMore(event)">Ucz się więcej <img src="./img/Vector.svg" alt=""></a></p>
             <div class="more">
               Po upływie minimalnego okresu subskrypcji możesz zwrócić produkt do nas pocztą lub kontynuować korzystanie
               z niego za miesięczną opłatą. Po powrocie Twoje miesięczne płatności zostaną wstrzymane, a umowa
@@ -222,7 +241,7 @@
               W przypadku poważniejszych uszkodzeń, takich jak uszkodzony wyświetlacz, firma może pomóc w pokryciu
               części kosztów, które zostaną poniesione przez Ciebie.
             </div>
-            
+
           </div>
         </div>
       </div>

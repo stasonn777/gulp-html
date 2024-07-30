@@ -31,3 +31,36 @@ function showMore(e) {
   e.target.parentElement.parentElement.querySelector('.short').style.display = 'none';
   e.target.style.display = 'none';
 }
+
+const caregoriesWrapper = document.querySelector('.caregories-wrapper');
+const scrolledElement = document.querySelector('.scrolled');
+let left = 0;
+let scrolled = 50;
+
+function moveSlide(dir) {
+  switch (dir) {
+    case 'left':
+      if (left > 0) {
+        left -= 165;
+        scrolled -= 10;
+        caregoriesWrapper.style.left = `-${left}px`;
+        scrolledElement.style.width = `${scrolled}%`;
+      }
+      break;
+    case 'right':
+      if (left*2 < caregoriesWrapper.offsetWidth) {
+        left += 165;
+        scrolled += 10;
+        caregoriesWrapper.style.left = `-${left}px`;
+        scrolledElement.style.width = `${scrolled}%`
+      }
+  }
+}
+
+function showMoreInCategory(e) {
+  const lazyLoaded = e.target.parentElement.parentElement.querySelector('.more')
+  lazyLoaded.style.display = 'flex';
+  console.log(lazyLoaded.offsetHeight);
+  lazyLoaded.style.height = lazyLoaded.scrollHeight + 'px';
+  e.target.style.display = 'none';
+}
