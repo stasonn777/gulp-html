@@ -23,8 +23,33 @@
       <div class="product-description order">
         <div class="description-title">Opis produktu:</div>
         <p>6.7" OLED Super Retina XDR, Triple Rückkamera, 8GB RAM, Apple A17 Pro, 5G</p>
-        <div class="address">Adres dostawy: <br class="hide-desctop"> <b>63-633, Bydgoszcz, ul.Ciolkowskiegoccnf,nr.32,lok.1</b></div>
-        <div class="attention"><div class="att-icon">!</div>Uwaga! Sprawdź, czy wprowadzony adres jest poprawny. Jeśli adres jest nieprawidłowy, zmień go w swoim profilu przed dokonaniem płatności</div>
+        <div class="delivery-wrapper">
+          <div class="delivery-options">
+            <div class="description-title">Wybierz metodę dostawy:</div>
+            <div class="delivery-select">
+              <label for="courier">
+                <input type="radio" class="select-radio" name="select" id="courier" checked>
+                Kurier na adres
+              </label>
+              <label for="post">
+                <input type="radio" class="select-radio" name="select" id="post">
+                Paczkomat
+              </label>
+            </div>
+          </div>
+          <div class="post">
+            <div class="option-title">Adres poczty:</div>
+            <input type="text" id="post-address" placeholder="Podaj NAZWĘ usługi pocztowej oraz ADRES lub NUMER terminala paczkowego" minlength="5" maxlength="100">
+          </div>
+          <div class="courier">
+            <div class="address"><div class="option-title">Adres dostawy:</div><b>63-633, Bydgoszcz,
+                ul.Ciolkowskiegoccnf,nr.32,lok.1</b></div>
+            <div class="attention">
+              <div class="att-icon">!</div>Uwaga! Sprawdź, czy wprowadzony adres jest poprawny. Jeśli adres jest
+              nieprawidłowy, zmień go w swoim profilu przed dokonaniem płatności
+            </div>
+          </div>
+        </div>
         <div class="description-title">Subskrypcja:</div>
         <div class="order-info">
           <div class="flex-row order-info__item">
@@ -44,11 +69,13 @@
             <div><span>4.9</span> zł</div>
           </div>
         </div>
-        <div class="confirmation"><input type="checkbox" name="" id="">Kliknięcie przycisku „zapłać” i dokonanie płatności oznacza potwierdzenie zawarcia umowy abonamentowej.</div>
+        <div class="confirmation"><input type="checkbox" name="" id="">Kliknięcie przycisku „zapłać” i dokonanie
+          płatności oznacza potwierdzenie zawarcia umowy abonamentowej.</div>
         <div class="flex-center">
           <a href="" class="button green buy">ZAPLACIC ZA SUBSKRYPCJĘ 54.9 zł</a>
         </div>
-        <div class="delivery"><img src="./img/solar_delivery-bold.svg" alt="">Dostawa w ciągu 4-6 dni roboczych w cenie 25 zł</div>
+        <div class="delivery"><img src="./img/solar_delivery-bold.svg" alt="">Dostawa w ciągu 4-6 dni roboczych w cenie
+          25 zł</div>
       </div>
     </div>
   </div>

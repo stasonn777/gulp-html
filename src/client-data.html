@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  @@include('header.html')
+  <div class="new-client form">
+    <h2>Анкета клиента</h2>
+    <form action="" method="post">
+      <div class="new-client__wrapper">
+        <div class="new-client__body">
+          <div class="flex-data">
+            <div>
+              <div class="input-wrapper"><input type="text" id="name" required placeholder="ФИО*">
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.1</div>
+              </div>
+              <div class="input-wrapper"><input type="text" id="pesel" required placeholder="Numer PESEL*">
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.2</div>
+              </div>
+              <div class="input-wrapper"><input type="text" id="social-number" required
+                  placeholder="Numer dowodu osobistego*">
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+            </div>
+            <div>
+              <div class="input-wrapper"><input type="text" id="birth" required placeholder="Дата рождения*">
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+              <div class="input-wrapper"><input type="text" id="address" required placeholder="Adres zameldowania*">
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+              <div class="input-wrapper"><input type="text" id="phone" required placeholder="Numer telefonu*">
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-data">
+            <div>
+              <div class="input-wrapper">
+                <select id="education">
+                  <option selected>Образование*</option>
+                  <option value="1">Lorem, ipsum.</option>
+                  <option value="2">Lorem, ipsum.</option>
+                </select>
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+              <div class="input-wrapper">
+                <select id="marital-status">
+                  <option selected>Семейное положение*</option>
+                  <option value="1">Lorem, ipsum.</option>
+                  <option value="2">Lorem, ipsum.</option>
+                </select>
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+            </div>
+            <div>
+              <div class="input-wrapper">
+                <select id="kids">
+                  <option selected>Наличие детей*</option>
+                  <option value="1">Tak</option>
+                  <option value="2">Lorem, ipsum.</option>
+                </select>
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+              <div class="input-wrapper">
+                <select id="employment-duration">
+                  <option selected>Стаж работы*</option>
+                  <option value="1">Lorem, ipsum.</option>
+                  <option value="2">Lorem, ipsum.</option>
+                </select>
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-data">
+            <div>
+              <div class="input-wrapper">
+                <select id="employment-field">
+                  <option selected>Сфера занятости*</option>
+                  <option value="1">Lorem, ipsum.</option>
+                  <option value="2">Lorem, ipsum.</option>
+                </select>
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+              <div class="input-wrapper"><input type="text" id="type-of-work" required placeholder="Должность*">
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+              <div class="input-wrapper">
+                <select id="employment-status">
+                  <option selected>Статус занятости*</option>
+                  <option value="1">Lorem, ipsum.</option>
+                  <option value="2">Lorem, ipsum.</option>
+                </select>
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+              <div class="input-wrapper"><input type="text" id="income" required placeholder="Чистый доход в месяц*">
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+            </div>
+            <div>
+              <div class="input-wrapper">
+                <select id="real-estate">
+                  <option selected>Наличие недвижимости*</option>
+                  <option value="1">Tak</option>
+                  <option value="2">Nie</option>
+                </select>
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+              <div class="input-wrapper">
+                <select id="car">
+                  <option selected>Наличие автомобиля*</option>
+                  <option value="1">Tak</option>
+                  <option value="2">Nie</option>
+                </select>
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+              <div class="input-wrapper">
+                <select id="obligations">
+                  <option selected>Сумма выплат по обязательствам*</option>
+                  <option value="1">Lorem ipsum dolor</option>
+                  <option value="2">Lorem ipsum dolor</option>
+                </select>
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+              <div class="input-wrapper">
+                <select id="limits">
+                  <option selected>Сумма лимитов по картам*</option>
+                  <option value="1">Lorem ipsum dolor</option>
+                  <option value="2">Lorem ipsum dolor</option>
+                </select>
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+              <div class="input-wrapper">
+                <select id="arrears">
+                  <option selected>Наличие действующих просрочек*</option>
+                  <option value="1">Lorem ipsum dolor</option>
+                  <option value="2">Lorem ipsum dolor</option>
+                </select>
+                <img src="./img/info.png" alt="">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="checkbox-wrapper">
+        <div>
+          <label for="agreement">
+            <input type="checkbox" name="agreement" id="agreement">
+            <div class="fake-checkbox"></div>
+            <p>Zgoda na zapytanie do urzędu i innych alternatywnych źródeł informacji</p>
+          </label>
+          <label for="regulations">
+            <input type="checkbox" name="regulations" id="regulations">
+            <div class="fake-checkbox"></div>
+            <p>
+              Potwierdzam, że zapoznałem-/am się z <a href="">regulaminem świadczenia usług drogą elektroniczną Ekassa
+                Sp.
+                z o.o</a>
+            </p>
+          </label>
+        </div>
+        <div>
+          <label for="newsletter">
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <div class="fake-checkbox"></div>
+            <p> Wyrażam zgodę na otrzymywanie informacji handlowych * (e-mail, telefon, SMS/MMS, WhatsApp)
+            </p>
+          </label>
+          <div class="newsletter-opions">
+            <label for="email">
+              <input type="checkbox" name="email" id="email">
+              <div class="fake-checkbox"></div>
+              <p>e-mail</p>
+            </label>
+            <label for="phone-call">
+              <input type="checkbox" name="phone-call" id="phone-call">
+              <div class="fake-checkbox"></div>
+              <p>telefon</p>
+            </label>
+            <label for="sms">
+              <input type="checkbox" name="sms" id="sms">
+              <div class="fake-checkbox"></div>
+              <p>SMS/MMS</p>
+            </label>
+            <label for="whatsap">
+              <input type="checkbox" name="whatsap" id="whatsap">
+              <div class="fake-checkbox"></div>
+              <p>WhatsApp</p>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <button class="button green" type="submit" disabled>subskrybuj</button>
+      </div>
+    </form>
+  </div>
+  @@include('footer.html')
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

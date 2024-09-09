@@ -96,7 +96,7 @@
     }
     .caregories-wrapper {
       display: flex;
-      gap: 18px;
+      gap: 72px;
       width: max-content;
       position: relative;
       left: 0;
@@ -137,10 +137,11 @@
       height: 3px;
       background-color: #E0E0E0;
       position: relative;
+      overflow: hidden;
       .scrolled {
         position: absolute;
         left: 0;
-        width: 50%;
+        width: 0%;
         height: 3px;
         background-color: #4F4F4F;
         transition: width .3s;
