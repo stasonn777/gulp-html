@@ -51,6 +51,11 @@ h3 {
   width: 100%;
 }
 
+.hide-mobile {
+  display: none;
+}
+
+
 @media screen and (min-width: 1240px) {
   .container {
     max-width: 1124px;
@@ -77,6 +82,12 @@ h3 {
     line-height: 26px;
   }
   .mobile-break {
+    display: none;
+  }
+  .hide-mobile {
+    display: block;
+  }
+  .hide-desctop {
     display: none;
   }
 }
