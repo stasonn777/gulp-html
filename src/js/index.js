@@ -1,1 +1,3 @@
-console.log('Hello gulp');
+function $(selector) {
+  return document.querySelector(selector)
+}

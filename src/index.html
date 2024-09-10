@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,110 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
+
 <body>
-  <header>
-    <h1>Hello</h1>
-    @@include('header.html')
-  </header>
+  @@include('header.html')
   <div class="content">
-    <img src="./img/accord-top.png" alt="">
-    <p>Hello, world!</p>
+    <section class="top-banner">
+      <div class="container">
+        <div class="flex-box">
+          <div class="text">
+            <h1>Gain new <br> knowledge in just <br class="hide-desctop"> <span>20</span> minutes a day!</h1>
+            <p>Dive into expertly crafted plot overviews of the best books, handpicked by experts to enhance your
+              learning experience.</p>
+          </div>
+          <img class="banner-img" src="../img/Gravity-HardCover-Book.png" alt="">
+          <a href="" class="button"><img src="../img/percent-blue.svg" alt="">Get free access to books</a>
+        </div>
+      </div>
+    </section>
+    <section class="summary">
+      <div class="container">
+        <h2><span>Summaries</span> <b>-</b> a <br> summary of the book's<br> key ideas </h2>
+        <div class="summary-wrapper">
+          <div class="summary-item">
+            <div class="title"><img src="../img/question.svg" alt="">Is this book worth <br> reading</div>
+            <img src="../img/book1.png" alt="">
+            <div class="text-arrow"><img src="../img/arrow-left.svg" alt="">a lot of time <br> reading</div>
+            <div class="text-arrow"><img src="../img/arrow-right.svg" alt="">a lot of <br> unnecessary <br> information
+            </div>
+          </div>
+          <div class="devider">
+            <img src="../img/or.svg" alt="">
+            Or
+          </div>
+          <div class="summary-item">
+            <div class="title"><span>+</span>Only the best books are worth reading</div>
+            <img src="../img/book2.png" alt="">
+            <div class="text-arrow"><img src="../img/arrow-left.svg" alt="">Focus on <br> essentials</div>
+            <div class="text-arrow"><img src="../img/arrow-right.svg" alt="">Time- <br> Saving</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="cta">
+        <h3>Join with a <br class="hide-desctop"> promo code</h3>
+        <p>Get started today using your promo code to access book overviews.</p>
+        <a href="" class="button"><img src="../img/percent-blue.svg" alt="">Get free access to books</a>
+      </div>
+    </div>
+    <section class="why">
+      <div class="container">
+        <h2>Why Choose <span>Zubau?</span></h2>
+        <div class="why-wrapper">
+          <div class="why-item">
+            <img src="../img/why1.png" alt="">
+            <h3>Quickly absorb key insights</h3>
+            <p>Effortlessly grasp essential ideas concise and <b>impactful content.</b></p>
+          </div>
+          <div class="why-item">
+            <img src="../img/why2.png" alt="">
+            <h3>Flexible Learning</h3>
+            <p>Whether at home or on the move, access our content in any format, even <b>without an internet
+                connection.</b></b></p>
+          </div>
+          <div class="why-item">
+            <img src="../img/why3.png" alt="">
+            <h3>Maximize Value</h3>
+            <p>Focus on the most impactful books, <b>saving both</b> time and money.</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="titles">
+      <div class="container">
+        <h2><b>Must-Read</b> Titles</h2>
+        <div class="subtitle">Browse an extensive collection of book overviews, handpicked to offer you the best in
+          literature. Immerse yourself in these carefully selected titles and discover new favorites.</div>
+        <div class="titles-wrapper">
+          <div class="titles-item">
+            <img src="../img/title1.png" alt="">
+            <div class="title">The Millionaire Fastlane</div>
+            <div class="author">MJ DeMarko</div>
+          </div>
+          <div class="titles-item">
+            <img src="../img/title2.png" alt="">
+            <div class="title">Becoming</div>
+            <div class="author">Michelle Obama</div>
+          </div>
+          <div class="titles-item">
+            <img src="../img/title3.png" alt="">
+            <div class="title">The 15 Invaluable...</div>
+            <div class="author">John C.Maxwell</div>
+          </div>
+          <div class="titles-item">
+            <img src="../img/title4.png" alt="">
+            <div class="title">Rich Dad Poor Dad</div>
+            <div class="author">Robert T.Kiyosaki</div>
+          </div>
+        </div>
+        <a href="" class="button blue"><img src="../img/percent.svg" alt="">Get free access to books</a>
+      </div>
+    </section>
   </div>
+  @@include('footer.html')
   <script src="./js/index.js"></script>
 </body>
+
 </html>
