@@ -11,6 +11,22 @@
 
 <body>
   @@include('header.html')
+  <section class="slider">
+    <div class="slider-wrapper">
+      <div class="slider-body" id="slider1">
+        <div class="slider-item active"><div class="slider-item__body green">Hello2</div></div>
+        <div class="slider-item"><div class="slider-item__body grey">Hello3</div></div>
+        <div class="slider-item"><div class="slider-item__body yellow">Hello4</div></div>
+        <div class="slider-item"><div class="slider-item__body purple">Hello5</div></div>
+        <div class="slider-item"><div class="slider-item__body black">Hello6</div></div>
+      </div>
+    </div>
+    <div class="slider-controls" id="slider-controls">
+      <div class="control" data-control="left">Left</div>
+      <div class="control" data-control="right">Right</div>
+    </div>
+    </div>
+  </section>
   <div class="content">
     <div class="container">
       <div class="cta">
@@ -52,6 +68,7 @@
   </div>
   @@include('footer.html')
   <script src="./js/index.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>
