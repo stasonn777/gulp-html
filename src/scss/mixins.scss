@@ -31,7 +31,3 @@
     #{$property}: $rtl-value;
   }
 }
-
-.sidebar {
-  @include rtl(float, left, right);
-}

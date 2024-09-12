@@ -6,15 +6,44 @@
       <div class="categorie-item"><img src="../img/carbon_crop-growth.png" alt="">Personal Growth <span>6</span></div>
     </div>
     <ul class="breadcrumbs">
-      <li><a href="#">Main page</a></li>
       <li><a href="#">Books</a></li>
+      <li><a href="#">Finance</a></li>
     </ul>
   </div>
   <div class="content">
-    @@include('finance-books.html')
-    @@include('personal-books.html')
-    @@include('popular-books.html')
     <div class="container">
+      <h2 class="left"><span>Summaries</span><b> finance book</b><sup>4</sup>❯</h2>
+      <p class="categorie-description">Finance books cover various aspects of money management, investing, saving,
+        financial planning, and developing personal well-being. <span class="read-more">They can teach the basics of
+          financial literacy, help you understand markets, investing and risk, and offer strategies for achieving your
+          financial goals. Such books are useful for both beginners and experienced investors.</span><a
+          class="read-more-link" onclick="showMore(event)" href="#">Read more</a></p>
+      <div class="books">
+        <div class="titles-item">
+          <img src="../img/title1.png" alt="">
+          <div class="title">Atomic Habits</div>
+          <div class="author">MJ DeMarko</div>
+          <a href="" class="button blue">Read book</a>
+        </div>
+        <div class="titles-item">
+          <img src="../img/title1.png" alt="">
+          <div class="title">Atomic Habits</div>
+          <div class="author">MJ DeMarko</div>
+          <a href="" class="button blue">Read book</a>
+        </div>
+        <div class="titles-item">
+          <img src="../img/title1.png" alt="">
+          <div class="title">Atomic Habits</div>
+          <div class="author">MJ DeMarko</div>
+          <a href="" class="button blue">Read book</a>
+        </div>
+        <div class="titles-item">
+          <img src="../img/title1.png" alt="">
+          <div class="title">Atomic Habits</div>
+          <div class="author">MJ DeMarko</div>
+          <a href="" class="button blue">Read book</a>
+        </div>
+      </div>
       <div class="cta">
         <div>
           <h3>Join with a <br class="hide-desctop"> promo code</h3>
@@ -55,12 +84,6 @@
   </div>
   @@include('footer.html')
   <script src="./js/index.js"></script>
-  <script src="./js/slider.js"></script>
-  <script>
-    const financeBooks = new Slider('finance');
-    const personalBooks = new Slider('personal');
-    const popularBooks = new Slider('popular');
-  </script>
 </body>
 
 </html>

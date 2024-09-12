@@ -42,8 +42,10 @@
     margin-bottom: 19px;
   }
   .button {
-    position: absolute;
-    bottom: 113px;
+    @media screen and (min-width: 1249px) {
+      position: absolute;
+      bottom: 113px;
+    }
   }
 }
 
@@ -365,5 +367,8 @@
   .button-wrapper {
     display: flex;
     justify-content: center;
+    a {
+      width: 100%;
+    }
   }
 }

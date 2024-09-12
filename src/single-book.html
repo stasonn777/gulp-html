@@ -1,0 +1,68 @@
+
+  @@include('header.html')
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="#">Main page</a></li>
+      <li><a href="#">Books</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="container">
+      <div class="book-flex">
+        <div class="book-wrapper">
+          <div class="book-info">
+            <div class="img-wrapper">
+              <img src="../img/book-info.png" alt="">
+            </div>
+            <div class="book-title">
+              <div>
+                <div class="book-header">
+                  <div class="seen"><img src="../img/seen.svg" alt="">130</div>
+                  <div class="share"><img src="../img/share.svg" alt="">Share</div>
+                </div>
+                <h1>Good to Great. Why Some Companies make the leap...and Others Don’t</h1>
+                <div class="author">Jim Collins</div>
+              </div>
+              <div class="button-wrapper">
+                <div class="time-to-read"><img src="../img/read-outlined.svg" alt="">53min</div>
+                <a href="#" class="button blue">Start reading book</a>
+              </div>
+            </div>
+          </div>
+          <div class="book-summary">
+            <h2>About book</h2>
+            <p>Jim Collins' Good to Great is a seminal work that delves into what it takes for a company to transition from being merely good to truly great. Through meticulous research and analysis, Collins and his team uncover the key factors that enable certain companies to outperform their competitors and sustain success over the long term.</p>
+            <p>The book introduces groundbreaking concepts like the Hedgehog Concept, the Flywheel Effect, and Level 5 Leadership, all of which have become staples in the world of business strategy.</p>
+            <h3>Why Everyone Should Read This Book</h3>
+            <p>“Good to Great” delivers straightforward, research-backed insights into what separates top-performing companies from the rest. It’s not just about business—Collins’ principles on leadership, discipline, and strategy offer valuable lessons for personal growth too. This book strips away the fluff and provides clear, practical advice that can help you achieve real, lasting success in any field. If you’re serious about improving and reaching new heights, this is a must-read.</p>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-item">
+            @@include('read-also.html')
+          </div>
+          <div class="sidebar-item">
+            <h4>Categories</h4>
+            <div class="categories">
+              <div class="categorie-item"><img src="../img/tdesign_money.png" alt="">Finance <span>4</span></div>
+              <div class="categorie-item"><img src="../img/carbon_crop-growth.png" alt="">Personal Growth <span>6</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2><b>Reviews</b> of the book</h2>
+      @@include('reviews.html')
+    </div>
+  </div>
+  @@include('footer.html')
+  <script src="./js/index.js"></script>
+  <script src="./js/slider.js"></script>
+  <script>
+    const readAlso = new Slider('read-also');
+    const reviews = new Slider('reviews');
+  </script>
+</body>
+
+</html>

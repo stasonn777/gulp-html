@@ -14,7 +14,6 @@ class Slider {
   initSlider() {
     this.sliderBody = document.querySelector(`#${this.id} .slider-body`);
     this.sliderControl = document.querySelector(`#${this.id} .slider-controls`);
-
     this.controlLeft = this.sliderControl.children[0];
     this.controlRight = this.sliderControl.children[1];
     this.combineSlides();
@@ -28,7 +27,6 @@ class Slider {
 
   combineSlides() {
     const deviceWidth = window.innerWidth;
-    console.log(deviceWidth);
     this.slidesArr = [...this.sliderBody.children];
     if (this.sliderBody.children.length <= 4) {
       this.slidesArr.forEach((el, i) => {
@@ -38,11 +36,9 @@ class Slider {
       this.slidesArr = [...this.sliderBody.children];
     }
     if (deviceWidth < 600 && this.slidesArr.length % 2 == 0) {
-      console.log('here');
       this.slidesArr.pop();
     }
     if (deviceWidth > 1200 && this.slidesArr.length % 2 !== 0) {
-      console.log('here2');
       this.slidesArr.pop();
     }
   }
@@ -110,7 +106,3 @@ class Slider {
     }, 0);
   }
 }
-
-const financeBooks = new Slider('finance');
-const personalBooks = new Slider('personal');
-const popularBooks = new Slider('popular');
