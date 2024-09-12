@@ -1,64 +1,72 @@
-.slider {
-  margin-top: 100px;
-  .slider-wrapper {
-    overflow: hidden;
-    position: relative;
+.slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  max-width: 500px;
+  margin: auto;
+  @media screen and (min-width: 1249px) {
+    max-width: 1145px;
+  }
+  .slider-body {
+    position: absolute;
     display: flex;
-    justify-content: center;
-    height: 478px;
-    width: 1121px;
-    margin: auto;
-    .slider-body {
+    height: 500px;
+    overflow: hidden;
+    .slider-item {
+      padding: 0 27px;
       position: absolute;
-      display: flex;
-      .slider-item {
+      left: 0;
+      transition: all 0.5s;
+      @media screen and (min-width: 1249px) {
+        padding: 0 25px;
+      }
+      .slider-item__body {
         width: 236px;
         height: 478px;
-        max-width: 100vw;
-        padding: 30px;
-        position: absolute;
-        left: 0;
-        transition: all 0.5s;
-        .slider-item__body {
-          height: 100%;
-          background-color: #165216;
-          border-radius: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: #fff;
-          font-size: 29px;
-          font-weight: 500;
-          transition: all 0.5s;
-          &.black {
-            background-color: black;
-          }
-          &.purple {
-            background-color: purple;
-          }
-          &.grey {
-            background-color: grey;
-          }
-          &.yellow {
-            background-color: yellow;
-          }
+        margin: auto;
+        img {
+          margin-bottom: 12px;
+        }
+        .title {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 30px;
+          color: #4f35c4;
+        }
+        .author {
+          margin-bottom: 12px;
+        }
+        .button {
+          font-size: 16px;
+          padding: 10px 0;
         }
       }
     }
   }
-  .slider-controls {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
-    cursor: pointer;
-    .control {
-      width: 70px;
-      background-color: purple;
-      padding: 5px;
-      color: #fff;
-      border-radius: 5px;
-      text-align: center;
-    }
+}
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin: auto;
+  position: relative;
+  top: 0;
+  width: 236px;
+  margin-bottom: 36px;
+  @media screen and (min-width: 1249px) {
+    width: 1250px;
+    top: -304px;
+    margin-bottom: 0;
+  }
+  cursor: pointer;
+  .control {
+    width: 70px;
+    background-color: purple;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
   }
 }

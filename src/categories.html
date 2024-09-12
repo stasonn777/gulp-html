@@ -11,23 +11,20 @@
 
 <body>
   @@include('header.html')
-  <section class="slider">
-    <div class="slider-wrapper">
-      <div class="slider-body" id="slider1">
-        <div class="slider-item active"><div class="slider-item__body green">Hello2</div></div>
-        <div class="slider-item"><div class="slider-item__body grey">Hello3</div></div>
-        <div class="slider-item"><div class="slider-item__body yellow">Hello4</div></div>
-        <div class="slider-item"><div class="slider-item__body purple">Hello5</div></div>
-        <div class="slider-item"><div class="slider-item__body black">Hello6</div></div>
-      </div>
+  <div class="container">
+    <div class="categories">
+      <div class="categorie-item"><img src="../img/tdesign_money.png" alt="">Finance <span>4</span></div>
+      <div class="categorie-item"><img src="../img/carbon_crop-growth.png" alt="">Personal Growth <span>6</span></div>
     </div>
-    <div class="slider-controls" id="slider-controls">
-      <div class="control" data-control="left">Left</div>
-      <div class="control" data-control="right">Right</div>
-    </div>
-    </div>
-  </section>
+    <ul class="breadcrumbs">
+      <li><a href="#">Main page</a></li>
+      <li><a href="#">Books</a></li>
+    </ul>
+  </div>
   <div class="content">
+    @@include('finance-books.html')
+    @@include('personal-books.html')
+    @@include('popular-books.html')
     <div class="container">
       <div class="cta">
         <div>
@@ -37,30 +34,31 @@
         <a href="" class="button"><img src="../img/percent-blue.svg" alt="">Get free access to books</a>
       </div>
     </div>
-    <section class="titles">
+    <section class="why">
       <div class="container">
-        <h2><b>Must-Read</b> Titles</h2>
-        <div class="subtitle">Browse an extensive collection of book overviews, handpicked to offer you the best in <br class="hide-mobile"> literature. Immerse yourself in these carefully selected titles and discover new favorites.</div>
-        <div class="titles-wrapper">
-          <div class="titles-item">
-            <img src="../img/title1.png" alt="">
-            <div class="title">The Millionaire Fastlane</div>
-            <div class="author">MJ DeMarko</div>
+        <h2>Why Choose <span>Zubau?</span></h2>
+        <div class="why-wrapper">
+          <div class="why-item">
+            <div class="img-wrapper"><img src="../img/why1.png" alt=""></div>
+            <div>
+              <h3>Quickly absorb key insights</h3>
+              <p>Effortlessly grasp essential ideas concise and <b>impactful content.</b></p>
+            </div>
           </div>
-          <div class="titles-item">
-            <img src="../img/title2.png" alt="">
-            <div class="title">Becoming</div>
-            <div class="author">Michelle Obama</div>
+          <div class="why-item">
+            <div class="img-wrapper"><img src="../img/why2.png" alt=""></div>
+            <div>
+              <h3>Flexible Learning</h3>
+              <p>Whether at home or on the move, access our content in any format, even <b>without an internet
+                  connection.</b></b></p>
+            </div>
           </div>
-          <div class="titles-item">
-            <img src="../img/title3.png" alt="">
-            <div class="title">The 15 Invaluable...</div>
-            <div class="author">John C.Maxwell</div>
-          </div>
-          <div class="titles-item">
-            <img src="../img/title4.png" alt="">
-            <div class="title">Rich Dad Poor Dad</div>
-            <div class="author">Robert T.Kiyosaki</div>
+          <div class="why-item">
+            <div class="img-wrapper"><img src="../img/why3.png" alt=""></div>
+            <div>
+              <h3>Maximize Value</h3>
+              <p>Focus on the most impactful books, <b>saving both</b> time and money.</b></p>
+            </div>
           </div>
         </div>
       </div>
