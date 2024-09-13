@@ -20,7 +20,7 @@
           <h3>Join with a <br class="hide-desctop"> promo code</h3>
           <p>Get started today using your promo code to access book overviews.</p>
         </div>
-        <a href="" class="button"><img src="../img/percent-blue.svg" alt="">Get free access to books</a>
+        <a href="" class="button" onclick="openForm(event)"><img src="../img/percent-blue.svg" alt="">Get free access to books</a>
       </div>
     </div>
     <section class="why">
@@ -57,9 +57,9 @@
   <script src="./js/index.js"></script>
   <script src="./js/slider.js"></script>
   <script>
-    const financeBooks = new Slider('finance');
-    const personalBooks = new Slider('personal');
-    const popularBooks = new Slider('popular');
+    const financeBooks = new Slider('finance', true);
+    const personalBooks = new Slider('personal', true);
+    const popularBooks = new Slider('popular', true);
   </script>
 </body>
 

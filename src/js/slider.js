@@ -6,14 +6,19 @@ class Slider {
   sliderWidth = 0;
   controlLeft;
   controlRight;
+  activeSlide = {};
   statusBullets = [];
-  constructor(id) {
+  activeBullet = {};
+  constructor(id, clone) {
+    this.clone = clone;
     this.id = id;
     this.initSlider();
   }
   initSlider() {
     this.sliderBody = document.querySelector(`#${this.id} .slider-body`);
     this.sliderControl = document.querySelector(`#${this.id} .slider-controls`);
+    this.sliderStatus = document.querySelector(`#${this.id} .control-status`);
+
     this.controlLeft = this.sliderControl.children[0];
     this.controlRight = this.sliderControl.children[1];
     this.combineSlides();
@@ -23,23 +28,31 @@ class Slider {
 
     this.eventListenners();
     this.setLeftForSlides();
+    this.initActive();
+    this.doStatusBar();
   }
 
   combineSlides() {
     const deviceWidth = window.innerWidth;
     this.slidesArr = [...this.sliderBody.children];
-    if (this.sliderBody.children.length <= 4) {
+    if (this.sliderBody.children.length <= 4 && this.clone) {
       this.slidesArr.forEach((el, i) => {
         const clonedEl = el.cloneNode(true);
         this.sliderBody.appendChild(clonedEl);
       });
       this.slidesArr = [...this.sliderBody.children];
     }
+    const clone = this.slidesArr[1].cloneNode(true)
     if (deviceWidth < 600 && this.slidesArr.length % 2 == 0) {
-      this.slidesArr.pop();
+      console.log(clone);
+      this.sliderBody.appendChild(clone);
+      this.slidesArr.push(clone);
+      this.slidesArr = [...this.sliderBody.children];
     }
-    if (deviceWidth > 1200 && this.slidesArr.length % 2 !== 0) {
-      this.slidesArr.pop();
+    if (deviceWidth > 1200 && this.slidesArr.length % 2 !== 0 && this.clone) {
+      this.sliderBody.appendChild(clone);
+      this.slidesArr.push(clone);
+      this.slidesArr = [...this.sliderBody.children];
     }
   }
 
@@ -83,6 +96,7 @@ class Slider {
     setTimeout(() => {
       last.style.display = 'block';
     }, 0);
+    this.setActive(false);
   }
 
   doControl(e) {
@@ -104,5 +118,56 @@ class Slider {
     setTimeout(() => {
       first.style.display = 'block';
     }, 0);
+    this.setActive(true);
+  }
+
+  initActive() {
+    this.activeSlide.obj = this.slidesArr.find((sl) =>
+      sl.classList.contains('active')
+    );
+    this.activeSlide.index = this.slidesArr.indexOf(this.activeSlide.obj);
+
+    this.activeBullet.obj = this.statusBullets.find((sb) =>
+      sb.classList.contains('active')
+    );
+    this.activeBullet.index = this.statusBullets.indexOf(this.activeBullet.obj);
+  }
+
+  setActive(isNext) {
+    this.initActive();
+    this.activeSlide.obj.classList.remove('active');
+    this.activeBullet.obj.classList.remove('active');
+    if (isNext) {
+      this.slidesArr[this.activeSlide.index + 1].classList.add('active');
+      if (this.statusBullets[this.activeBullet.index + 1]) {
+        this.statusBullets[this.activeBullet.index + 1].classList.add('active');
+      } else {
+        this.statusBullets[0].classList.add('active');
+      }
+    } else {
+      this.slidesArr[this.activeSlide.index - 1].classList.add('active');
+      if (this.statusBullets[this.activeBullet.index - 1]) {
+        this.statusBullets[this.activeBullet.index - 1].classList.add('active');
+      } else {
+        this.statusBullets[this.statusBullets.length - 1].classList.add(
+          'active'
+        );
+      }
+    }
+    // debugger
+  }
+
+  doStatusBar() {
+    for (let i = 0; i < this.slidesArr.length; i++) {
+      const bullet = document.createElement('div');
+      bullet.classList.add('control-status__item');
+      if (i == this.activeSlide.index) {
+        bullet.classList.add('active');
+        this.activeBullet.index = i;
+        this.activeBullet.obj = bullet;
+      }
+      this.sliderStatus.appendChild(bullet);
+      this.statusBullets.push(bullet);
+    }
   }
 }

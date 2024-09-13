@@ -67,11 +67,21 @@ footer {
               width: 175px;
               text-align: left;
             }
-            &:nth-child(1) { order: 1; }
-            &:nth-child(2) { order: 3; }
-            &:nth-child(3) { order: 1; }
-            &:nth-child(4) { order: 3; }
-            &:nth-child(5) { order: 1; }
+            &:nth-child(1) {
+              order: 1;
+            }
+            &:nth-child(2) {
+              order: 3;
+            }
+            &:nth-child(3) {
+              order: 1;
+            }
+            &:nth-child(4) {
+              order: 3;
+            }
+            &:nth-child(5) {
+              order: 1;
+            }
           }
         }
       }
@@ -81,6 +91,85 @@ footer {
     @media screen and (min-width: 1249px) {
       text-align: left;
       font-size: 20px;
+    }
+  }
+  .promocode-form {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+    @media screen and (min-width: 1249px) {
+      top: 200px;
+    }
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      @media screen and (min-width: 1249px) {
+        top: 200px;
+        right: 23px;
+        top: 23px;
+      }
+    }
+    .promocode-wrapper {
+      position: relative;
+      width: 90%;
+      margin: auto;
+      padding: 37px 21px 21px;
+      border: 2px solid #4f35c4;
+      border-radius: 15px;
+      background-color: #fff;
+      color: #333333;
+      text-align: left;
+      @media screen and (min-width: 1249px) {
+        width: 664px;
+        text-align: center;
+        padding: 36px 81px;
+      }
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #4f35c4;
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 34px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        input {
+          margin-bottom: 51px;
+          padding: 7px 3px;
+          border: 1px solid #828282;
+          border-top: none;
+          border-image: linear-gradient(to bottom, #ffffff 50%, #828282 50%);
+          border-image-slice: 1;
+        }
+        .error {
+          display: none;
+          color: #eb5757;
+          position: absolute;
+          top: 40px;
+          font-family: Poppins;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14.4px;
+        }
+        button {
+          border: none;
+          cursor: pointer;
+          @media screen and (min-width: 1249px) {
+            top: 200px;
+            width: max-content;
+            margin: auto;
+          }
+        }
+      }
     }
   }
 }

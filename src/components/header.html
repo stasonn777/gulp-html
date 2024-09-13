@@ -10,32 +10,49 @@
 </head>
 
 <body>
-<header>
-  <div class="container header-container">
-    <div class="header-wrapper">
-      <div class="logo">
-        <img src="../img/zubau.png" alt="">
-      </div>
-      <div class="navigation">
-        <div class="burger-button">
-          <img src="../img/burger.svg" alt="">
+  <header>
+    <div class="container header-container">
+      <div class="header-wrapper">
+        <div class="logo">
+          <img src="../img/zubau.png" alt="">
         </div>
-        <div class="navigation-wrapper">
-          <nav>
-            <ul>
-              <li><a href="">Book summaries</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">About</a></li>
-            </ul>
-          </nav>
-          <div class="lang-switcher">
-            <a href="">PL</a>
-            <div class="vertical-line"></div>
-            <a href="" class="active">ENG</a>
+        <div class="navigation">
+          <div class="burger-button">
+            <img src="../img/burger.svg" alt="">
           </div>
-            <a href="" class="button blue"><img src="../img/percent.svg" alt="">Get free</a>
+          <div class="navigation-wrapper">
+            <nav>
+              <ul>
+                <li><a href="">Book summaries</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+              </ul>
+            </nav>
+            <div class="lang-switcher">
+              <a href="">PL</a>
+              <div class="vertical-line"></div>
+              <a href="" class="active">ENG</a>
+            </div>
+            <a href="" class="button blue" onclick="openForm(event)"><img src="../img/percent.svg" alt="">Get free</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+    <div class="mobile-menu">
+      <nav>
+        <ul>
+          <li><a href="">Streszczenia książek</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Kontakt</a></li>
+          <li><a href="">Polityka prywatności</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switcher">
+        <a href="">PL</a>
+        <div class="vertical-line"></div>
+        <a href="" class="active">ENG</a>
+      </div>
+      <a href="" class="button" onclick="openForm(event)"><img src="../img/percent.svg" alt="">Get free</a>
+    </div>
+  </header>

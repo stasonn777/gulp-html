@@ -54,7 +54,7 @@ header {
               a {
                 color: #000000;
                 &.active {
-                  color: #4F35C4;
+                  color: #4f35c4;
                 }
               }
               .vertical-line {
@@ -65,5 +65,31 @@ header {
         }
       }
     }
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  left: 0;
+  top: 61px;
+  width: 100%;
+  background-color: #4f35c4;
+  padding: 30px;
+  display: none;
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: 33px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+  .lang-switcher {
+    justify-content: flex-start;
+    margin-bottom: 108px;
   }
 }
