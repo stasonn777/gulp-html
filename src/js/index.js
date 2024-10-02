@@ -130,3 +130,7 @@ allOptions.forEach(option => {
     document.querySelector('#newsletter').checked = false;
   })
 })
+
+function showFullSpecs() {
+  document.querySelector('.product-specs').classList.toggle('expand');
+}

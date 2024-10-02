@@ -50,6 +50,7 @@
     }
   }
   .product-description {
+    overflow: hidden;
     @media screen and (min-width: 940px) {
       flex-grow: 1;
       flex-basis: 0;
@@ -163,6 +164,8 @@
       justify-content: space-between;
       margin-bottom: 22px;
       margin-top: 20px;
+      width: 96%;
+      margin: auto;
       @media screen and (min-width: 940px) {
       }
       input {
@@ -284,7 +287,91 @@
       font-weight: 500;
       line-height: 14px;
       color: #ff7e2a;
-      margin-bottom: 100px;
+      margin-bottom: 32px;
+    }
+  }
+}
+.product-specs {
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 14px 12px;
+  margin-bottom: 44px;
+  @media screen and (min-width: 940px) {
+    padding: 25px;
+  }
+  h2 {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 22px;
+    @media screen and (min-width: 940px) {
+      font-size: 24px;
+    }
+  }
+  .specs-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 544px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 30px;
+    @media screen and (min-width: 940px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 56px;
+      max-height: none;
+      padding-bottom: 84px;
+    }
+    .specs-item {
+      @media screen and (min-width: 940px) {
+        flex-grow: 1;
+        flex-basis: auto;
+        width: 45%;
+      }
+      p,
+      b {
+        font-size: 14px;
+        line-height: 19.07px;
+        @media screen and (min-width: 940px) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 14%,
+        #ffffff 86%
+      );
+      pointer-events: none;
+      @media screen and (min-width: 940px) {
+        content: none;
+      }
+    }
+  }
+  .show-all {
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 940px) {
+      display: none;
+    }
+  }
+  &.expand {
+    .specs-flex {
+      max-height: unset;
+      &::after {
+        content: none;
+      }
+    }
+    .show-all {
+      transform: scaleY(-1);
     }
   }
 }

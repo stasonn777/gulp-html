@@ -13,6 +13,14 @@
       display: flex;
       justify-content: space-between;
     }
+    .flex-name {
+      display: flex;
+      flex-direction: column;
+      @media screen and (min-width: 940px) {
+        flex-direction: row;
+        width: 374px;
+      }
+    }
     .input-wrapper {
       display: flex;
       align-items: center;
