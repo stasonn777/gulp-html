@@ -369,6 +369,9 @@
     justify-content: center;
     a {
       width: 100%;
+      @media screen and (min-width: 1249px) {
+        width: auto;
+      }
     }
   }
 }

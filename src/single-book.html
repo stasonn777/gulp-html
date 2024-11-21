@@ -17,7 +17,15 @@
             <div>
               <div class="book-header">
                 <div class="seen"><img src="../img/seen.svg" alt="">130</div>
-                <div class="share"><img src="../img/share.svg" alt="">Share</div>
+                <div class="share">
+                  <div class="share-head"><img src="../img/share.svg" alt="">Share</div>
+                  <ul class="share-list">
+                    <li><a href=""><img src="./img/fb.png">Facebook</a></li>
+                    <li><a href=""><img src="./img/linkedin.png">Linkedin</a></li>
+                    <li><a href=""><img src="./img/x.png">X</a></li>
+                    <li><a href=""><img src="./img/copy.png">Copy link</a></li>
+                  </ul>
+                </div>
               </div>
               <h1>Good to Great. Why Some Companies make the leap...and Others Don’t</h1>
               <div class="author">Jim Collins</div>
@@ -64,8 +72,18 @@
   </div>
   @@include('reviews.html')
   <div class="container">
-    <div class="leave-reviev">
-      <a href="" class="button blue">Leave a review</a>
+    <div class="leave-review">
+      <a href="" class="button blue" onclick="showHidePopuup('.review-form-wrapper', event, 'block')">Leave a review</a>
+      <div class="review-form-wrapper">
+        <img src="../img/close.png" class="close" onclick="showHidePopuup('.review-form-wrapper', event, 'none')">
+        <h2>review form</h2>
+        <form action="">
+          <input type="text" placeholder="Your name">
+          <input type="text" placeholder="City">
+          <textarea name="" id="" cols="30" rows="9" placeholder="Type a review..."></textarea>
+          <button type="submit" class="button blue">Leave a review</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>

@@ -206,10 +206,13 @@
 .reviews {
   margin-bottom: 23px;
   .slider-wrapper {
-    height: 217px;
+    height: 235px;
     @media screen and (min-width: 1249px) {
       height: 300px;
       max-width: unset;
+    }
+    .slider-body {
+      padding-top: 15px;
     }
     .slider-item {
       @media screen and (min-width: 1249px) {
@@ -248,8 +251,7 @@
     .review-body {
       @media screen and (min-width: 1249px) {
         flex: 2;
-        padding: 23px 27px;
-        padding-left: 0;
+        padding: 23px 48px;
         font-size: 20px;
         line-height: 26.4px;
       }

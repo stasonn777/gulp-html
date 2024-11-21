@@ -23,10 +23,15 @@ function closeMenu() {
   menuWrapper.style.display = 'none';
 }
 
-function openForm(e) {
-  document.querySelector('.promocode-form').style.display = 'block';
+// function openForm(e) {
+//   document.querySelector('.promocode-form').style.display = 'block';
+//   e.preventDefault();
+// }
+// function closeForm() {
+//   document.querySelector('.promocode-form').style.display = 'none';
+// }
+
+function showHidePopuup(className, e, style) {
+  document.querySelector(className).style.display = style;
   e.preventDefault();
-}
-function closeForm() {
-  document.querySelector('.promocode-form').style.display = 'none';
 }
