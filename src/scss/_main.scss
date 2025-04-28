@@ -7,27 +7,93 @@
   background-position: 111px -110px;
   margin-bottom: 43px;
 
+  @media screen and (min-width: $laptopWidth ) {
+    background-image: none;
+    padding-bottom: 100px;
+  }
+
+  &__wrapper {
+    @media screen and (min-width: $laptopWidth ) {
+      position: relative;
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: $laptopWidth ) {
+      width: 609px;
+    }
+  }
+
   h1 {
     padding-top: 123px;
     margin-bottom: 10px;
+
+    @media screen and (min-width: $laptopWidth ) {
+      font-size: 54px;
+      line-height: 66px;
+    }
+
   }
 
   p {
     margin-bottom: 27px;
+
+    @media screen and (min-width: $laptopWidth ) {
+      line-height: 30px;
+      margin-bottom: 39px;
+    }
+  }
+
+  img {
+    display: none;
+
+    @media screen and (min-width: $laptopWidth ) {
+      display: block;
+      position: absolute;
+      top: -500px;
+      right: -483px;
+      width: 1180px;
+      height: 1180px;
+    }
+  }
+
+  .cta-button {
+    @media screen and (min-width: $laptopWidth ) {
+      width: 322px;
+    }
   }
 }
 
 .why {
   margin-bottom: 70px;
 
+  @media screen and (min-width: $laptopWidth ) {
+    margin-bottom: 226px;
+  }
+
   h2 {
     margin-bottom: 30px;
+
+    @media screen and (min-width: $laptopWidth ) {
+      margin-bottom: 91px;
+    }
+  }
+
+  .flex-box {
+    @media screen and (min-width: $laptopWidth ) {
+      gap: 79px;
+    }
   }
 
   .icon-box {
     column-gap: 12px;
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (min-width: $laptopWidth ) {
+      flex: 1;
+      justify-content: space-between;
+    }
 
     .icon-item {
       width: 45%;
@@ -36,8 +102,17 @@
       line-height: 22px;
       letter-spacing: 0%;
 
+      @media screen and (min-width: $laptopWidth ) {
+        font-size: 18px;
+        line-height: 27px;
+      }
+
       img {
         margin-bottom: 12px;
+
+        @media screen and (min-width: $laptopWidth ) {
+          margin-bottom: 27px;
+        }
       }
     }
   }
@@ -47,18 +122,29 @@
 
     img {
       width: 100%;
+      border-radius: 20px;
+      border: 3px solid #fff;
     }
 
     &::before {
       content: "";
       position: absolute;
-      width: 280px;
-      height: 198px;
+      width: 76%;
+      height: 73%;
       transform: rotate(-30.5deg);
-      background-color: $mainColor;
+      background-color: #8566FF;
       z-index: -1;
       border-radius: 30px;
-      top: 22px;
+      top: 36px;
+      left: 2px;
+
+      @media screen and (min-width: $laptopWidth ) {
+        width: 435px;
+        height: 454px;
+        top: unset;
+        bottom: -51px;
+        right: 54px;
+      }
     }
   }
 }
@@ -71,6 +157,14 @@
   background-repeat: no-repeat;
   background-size: 149%;
   background-position: -83px 118%;
+
+  @media screen and (min-width: $laptopWidth ) {
+    padding-top: 67px;
+    padding-bottom: 109px;
+    background-size: 50%;
+    background-position: -64px 50%;
+    margin-bottom: 80px;
+  }
 
   h2 {
     color: #fff;
@@ -88,9 +182,23 @@
     flex-direction: column;
     gap: 10px;
 
+    @media screen and (min-width: $laptopWidth ) {
+      flex-direction: row;
+      gap: 20px;
+    }
+
     .card-wrapper {
       display: flex;
       gap: 10px;
+
+      @media screen and (min-width: $laptopWidth ) {
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        flex: 1;
+        gap: 74px;
+      }
 
       .number {
         background-color: $mainColor;
@@ -104,6 +212,12 @@
         border-radius: 50%;
         color: #fff;
 
+        @media screen and (min-width: $laptopWidth ) {
+          height: 40px;
+          width: 40px;
+          font-size: 20px;
+        }
+
         &::after {
           content: "";
           position: absolute;
@@ -111,6 +225,13 @@
           height: 162px;
           background-color: #fff;
           top: 34px;
+
+          @media screen and (min-width: $laptopWidth ) {
+            height: 2px;
+            width: 250px;
+            top: auto;
+            left: 36px;
+          }
         }
       }
 
@@ -135,7 +256,11 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 24px;
-          letter-spacing: 0%;
+
+          @media screen and (min-width: $laptopWidth ) {
+            font-size: 17px;
+            line-height: 27px;
+          }
 
           b {
             border-bottom: 2px solid $ctaColor;
@@ -150,29 +275,122 @@
   padding-top: 45px;
   overflow: hidden;
 
-  h2 {
-    margin-bottom: 30px;
+  @media screen and (min-width: $laptopWidth ) {
+    margin-bottom: 151px;
   }
 
-  .target-wrapper {
-    display: flex;
-    gap: 15px;
+  h2 {
+    margin-bottom: 30px;
 
-    &__item {
-      background-color: #F6F5FB;
-      flex: 1 0 100%;
-      text-align: center;
-      padding: 34px 25px;
+    @media screen and (min-width: $laptopWidth ) {
+      margin-bottom: 44px;
+    }
+  }
+}
 
-      img {
-        margin-bottom: 23px;
+.cta-banner {
+  margin-bottom: 39px;
+
+  @media screen and (min-width: $laptopWidth ) {
+    margin-bottom: 54px;
+  }
+
+  .cta-wraper {
+    position: relative;
+    border-radius: 6px;
+    padding: 26px 17px;
+
+    @media screen and (min-width: $laptopWidth ) {
+      padding: 47px 44px 35px;
+    }
+
+    &::before {
+      content: '';
+      border-radius: 6px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $mainColor;
+      opacity: 0.8;
+    }
+
+    background-image: url(../img/cta-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 76%;
+
+    img {
+      position: absolute;
+      right: -10px;
+      bottom: 0;
+      height: 203px;
+
+      @media screen and (min-width: $laptopWidth ) {
+        right: unset;
+        left: 0;
+        height: 226px;
+      }
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 3;
+      width: 70%;
+
+      @media screen and (min-width: $laptopWidth ) {
+        width: auto;
+        padding-left: 203px;
       }
 
-      .text {
-        font-weight: 500;
+      h3 {
+        font-weight: 700;
         font-size: 24px;
-        line-height: 32px;
-        letter-spacing: 0%;
+        color: #01163E;
+        margin-bottom: 14px;
+
+        @media screen and (min-width: $laptopWidth ) {
+          font-size: 38px;
+          margin-bottom: 14px;
+        }
+      }
+
+      .cta-text {
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 20px;
+        line-height: 24px;
+
+        @media screen and (min-width: $laptopWidth ) {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 0;
+        }
+
+        a {
+          color: #fff;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          text-decoration: underline;
+        }
+      }
+
+      .banner-button {
+        width: 190px;
+        font-size: 18px;
+        padding: 11px 14px;
+        line-height: 100%;
+        
+        @media screen and (min-width: $laptopWidth ) {
+          width: 233px;
+          position: absolute;
+          right: 0;
+          top: 25%;
+          font-size: 20px;
+        }
       }
     }
   }

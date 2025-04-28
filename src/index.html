@@ -11,19 +11,19 @@
 </head>
 
 <body>
-  @@include('header.html')
-
   <section class="top-banner">
-    <div class="top-img">
-      <div class="bg-wrapper"></div>
-    </div>
-    <div class="container">
-      <h1>Dołącz do <br class="hide-desctop"> partnerów Ekassa <br class="hide-desctop"> i zarabiaj do 200 zł <br
-          class="hide-desctop"> za klienta</h1>
-      <p>Masz stronę internetową, prowadzisz media społecznościowe, tworzysz e-mail marketing lub zarabiasz na reklamie
-        banerowej? Dołącz do partnerów Ekassa i monetyzuj swój ruch w sieci! Nasz program partnerski pozwala zarabiać na
-        polecaniu pożyczek dla JDG oraz osób fizycznych.</p>
-      <a href="" class="cta-button">Zarejestruj się teraz</a>
+    <div class="container ">
+      <div class="top-banner__wrapper">
+        <div class="top-banner__text">
+          <h1>Dołącz do <br class="hide-on-desktop"> partnerów <br class="hide-on-mobile"> Ekassa <br class="hide-on-desktop"> i zarabiaj do <br class="hide-on-mobile">200 zł <br
+              class="hide-on-desktop"> za klienta</h1>
+          <p>Masz stronę internetową, prowadzisz media społecznościowe, tworzysz e-mail marketing lub zarabiasz na reklamie
+            banerowej? Dołącz do partnerów Ekassa i monetyzuj swój ruch w sieci! Nasz program partnerski pozwala zarabiać na
+            polecaniu pożyczek dla JDG oraz osób fizycznych.</p>
+          <a href="" class="cta-button">Zarejestruj się teraz</a>
+        </div>
+        <img src="./img/top-desktop.png" alt="">
+      </div>
     </div>
   </section>
 
@@ -31,7 +31,7 @@
     <div class="container">
       <h2>Dlaczego warto <br> współpracować z Ekassa?</h2>
       <div class="flex-box">
-        <div class="hide-mobile why-img">
+        <div class="hide-on-mobile why-img">
           <img src="./img/why.jpg">
         </div>
         <div class="icon-box">
@@ -43,24 +43,17 @@
             </div>
           </div>
           <div class="icon-item">
+            <img src="./img/check.svg" alt="">
+            <div class="icon-text">
+              <b>Stabilność i doświadczenie –</b> <a href="https://ekassa.pl/">Ekassa.pl</a> prowadzi program partnerski już ponad 5 lat,
+              co świadczy o stabilności i profesjonalizmie w branży finansowej.
+            </div>
+          </div>
+          <div class="icon-item">
             <img src="./img/case.svg" alt="">
             <div class="icon-text">
               <b>Elastyczne warunki współpracy –</b> Promujesz ofertę tak, jak chcesz: poprzez stronę internetową,
               reklamy, media społecznościowe czy e-mail marketing.
-            </div>
-          </div>
-          <div class="icon-item">
-            <img src="./img/icon3.svg" alt="">
-            <div class="icon-text">
-              <b>Pełny pakiet narzędzi marketingowych –</b> Otrzymasz dostęp do banerów, gotowych treści, linków
-              afiliacyjnych i dedykowanej analityki
-            </div>
-          </div>
-          <div class="icon-item">
-            <img src="./img/check.svg" alt="">
-            <div class="icon-text">
-              <b>Stabilność i doświadczenie –</b> <a href="">Ekassa.pl</a> prowadzi program partnerski już ponad 5 lat,
-              co świadczy o stabilności i profesjonalizmie w branży finansowej.
             </div>
           </div>
           <div class="icon-item">
@@ -71,6 +64,13 @@
             </div>
           </div>
           <div class="icon-item">
+            <img src="./img/icon3.svg" alt="">
+            <div class="icon-text">
+              <b>Pełny pakiet narzędzi marketingowych –</b> Otrzymasz dostęp do banerów, gotowych treści, linków
+              afiliacyjnych i dedykowanej analityki
+            </div>
+          </div>
+          <div class="icon-item">
             <img src="./img/wallet.svg" alt="">
             <div class="icon-text">
               <b>Regularne wypłaty – </b>Twoje wynagrodzenie wypłacamy terminowo, co pozwala Ci cieszyć się stabilnym
@@ -78,7 +78,7 @@
             </div>
           </div>
         </div>
-        <div class="hide-desctop why-img">
+        <div class="hide-on-desktop why-img">
           <img src="./img/why-mob.jpg">
         </div>
       </div>
@@ -103,20 +103,20 @@
               <img src="./img/like2.svg" alt="">
               <div class="text"><b>Wybór narzędzi </b>– Skorzystaj z naszych gotowych rozwiązań promocyjnych: linków,
                 banerów, mailingów.</div>
-              </div>
             </div>
-            <div class="card-wrapper">
-              <div class="number">3</div>
-              <div class="card-item">
-                <img src="./img/check2.svg" alt="">
-                <div class="text"><b>Promowanie pożyczek Ekassa </b>– Udostępnij linki na swojej stronie, w mediach
-                  społecznościowych, newsletterze lub reklamach.</div>
-                </div>
-              </div>
-              <div class="card-wrapper">
-                <div class="number">4</div>
-                <div class="card-item">
-                  <img src="./img/credit.svg" alt="">
+          </div>
+          <div class="card-wrapper">
+            <div class="number">3</div>
+            <div class="card-item">
+              <img src="./img/check2.svg" alt="">
+              <div class="text"><b>Promowanie pożyczek Ekassa </b>– Udostępnij linki na swojej stronie, w mediach
+                społecznościowych, newsletterze lub reklamach.</div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <div class="number">4</div>
+            <div class="card-item">
+              <img src="./img/credit.svg" alt="">
               <div class="text"><b>Zarabianie </b>– Otrzymujesz prowizję za każdego klienta, który skutecznie skorzysta
                 z pożyczki.</div>
             </div>
@@ -127,43 +127,76 @@
   </section>
 
   <section class="target">
-    <div class="container">
+    <div class="container slider">
       <h2>Dla kogo jest ten program?</h2>
-      <div class="target-wrapper">
-        <div class="target-wrapper__item">
-          <img src="./img/target1.png" alt="">
-          <div class="text"><b>Właścicieli stron internetowych i blogów</b></div>
-        </div>
-        <div class="target-wrapper__item">
-          <img src="./img/target2.png" alt="">
-          <div class="text"><b>Twórców treści w mediach społecznościowych</b></div>
-        </div>
-        <div class="target-wrapper__item">
-          <img src="./img/target3.png" alt="">
-          <div class="text"><b>Specjalistów ds. marketingu afiliacyjnego</b></div>
+      <div class="slider-wrapper">
+        <div class="slider-body" id="slider1">
+          <div class="slider-item">
+            <div class="slider-item__body">
+              <img src="./img/target2.png" alt="">
+              <div class="text"><b>Twórców treści w mediach społecznościowych</b></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-item__body">
+              <img src="./img/target3.png" alt="">
+              <div class="text"><b>Specjalistów ds. marketingu afiliacyjnego</b></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-item__body">
+              <img src="./img/target4.png" alt="">
+              <div class="text"><b>Firm zajmujących się lead generation</b></div>
+            </div>
+          </div>
+          <div class="slider-item active">
+            <div class="slider-item__body">
+              <img src="./img/target1.png" alt="">
+              <div class="text"><b>Właścicieli stron internetowych i blogów</b></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-item__body">
+              <img src="./img/target5.png" alt="">
+              <div class="text"><b>Osób prowadzących e-mail marketing</b></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-item__body">
+              <img src="./img/target6.png" alt="">
+              <div class="text"><b>Każdego, kto chce zarabiać online bez inwestycji!</b></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-item__body">
+              <img src="./img/target2.png" alt="">
+              <div class="text"><b>Twórców treści w mediach społecznościowych</b></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="arrow-wrapper">
-        <div class="left"></div>
-        <div class="right"></div>
+      <div class="slider-controls" id="slider-controls">
+        <div class="control" data-control="left"></div>
+        <div class="control-status" id="control-status"></div>
+        <div class="control" data-control="right"></div>
       </div>
-    </div>
   </section>
 
   <section class="cta-banner">
     <div class="container">
-      <img src="./img/person.png" alt="">
-      <h3>Masz pytania?</h3>
-      <div class="cta-text">Skontaktuj się z nami poprzez e-mail: <a href="mailto:info@ekassa.pl">info@ekassa.pl</a>
+      <div class="cta-wraper">
+        <img src="./img/person.png" alt="">
+        <div class="cta-content">
+          <h3>Masz pytania?</h3>
+          <div class="cta-text">Skontaktuj się z nami poprzez e-mail: <a href="mailto:info@ekassa.pl">info@ekassa.pl</a>
+          </div>
+          <a href="" class="cta-button banner-button">Zarejestruj się teraz</a>
+        </div>
       </div>
-      <a href="" class="cta-button">Zarejestruj się teraz</a>
     </div>
   </section>
 
-  @@include('footer.html')
-  <script src="./js/index.js"></script>
-  <!-- <script src="./js/reviews.js"></script>
-  <script src="./js/slider.js"></script> -->
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>

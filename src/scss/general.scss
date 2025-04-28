@@ -135,11 +135,10 @@ b {
     margin-top: 10px;
   }
 }
-@media screen and (max-width: $laptopWidth ) {
-  .hide-mobile {
-    display: none!important;
-  }
+.hide-on-mobile {
+  display: none;
 }
+
 @media screen and (min-width: $laptopWidth ) {
   .container {
     max-width: 1124px;
@@ -181,8 +180,11 @@ b {
     font-size: 20px;
     line-height: 23px;
   }
-  .hide-desctop {
-    display: none!important;
+  .hide-on-desktop {
+    display: none;
+  }
+  .hide-on-mobile {
+    display: block;
   }
   .contact-item {
     display: flex;
