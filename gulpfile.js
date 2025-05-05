@@ -13,6 +13,7 @@ gulp.task('connect', function () {
   connect.server({
     root: 'dist',
     livereload: true,
+    host: '0.0.0.0', // Allow access from local network
   });
 });
 

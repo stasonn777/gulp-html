@@ -32,10 +32,17 @@ header {
         }
       }
     }
-    .cta-button {
-      width: auto;
-      font-weight: 500;
-    }
+  }
+  .button {
+    background: #f85459;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 23px;
+    border-radius: 4px;
   }
 }
 
@@ -71,7 +78,7 @@ header {
             color: #01163e;
             text-decoration: none;
             &.active {
-              color: #F85459;
+              color: #f85459;
               font-weight: 600;
             }
           }
@@ -80,7 +87,7 @@ header {
     }
   }
 }
-@media screen and (min-width: $laptopWidth ) {
+@media screen and (min-width: $laptopWidth) {
   header {
     box-shadow: none;
     background: #fff;
@@ -94,16 +101,17 @@ header {
         position: relative;
         .header__menu-list {
           display: flex;
-          gap: 17px;
+          gap: 20px;
           li {
             list-style: none;
             a {
               font-family: Roboto;
-              font-weight: 400;
+              font-weight: 900;
               font-size: 14px;
               line-height: 17px;
               color: #01163e;
               text-decoration: none;
+              text-transform: uppercase;
               &.active {
                 color: #f85459;
                 font-weight: 600;
@@ -112,8 +120,10 @@ header {
           }
         }
       }
-      .cta-button {
-        padding: 13px 46px;
+      .button {
+        font-weight: 900;
+        font-size: 18px;
+        border-radius: 16px;
       }
     }
   }
