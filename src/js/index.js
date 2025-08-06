@@ -47,8 +47,9 @@ const targetIconWrapper = document.querySelector('.target-icon__wrapper');
 const statusBarItems = document.querySelectorAll('.status-bar__item');
 let touchStart = 0;
 let touchEnd = 0;
-let left = 0;
-let bulletIndex = 0;
+let currentIndex = 0;
+const totalSlides = 6;
+
 targetWrapper.addEventListener(
   'touchstart',
   (e) => (touchStart = e.touches[0].clientX)
@@ -58,20 +59,19 @@ targetWrapper.addEventListener(
   (e) => (touchEnd = e.touches[0].clientX)
 );
 targetWrapper.addEventListener('touchend', (e) => {
-  if (touchStart < touchEnd && left > 0) {
-    left = left - 325;
-    bulletIndex = bulletIndex - 1;
+  if (touchStart < touchEnd) {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     setActiveSlide();
-  } else if (touchStart > touchEnd && left < 1625) {
-    left = left + 325;
-    bulletIndex = bulletIndex + 1;
+  } else if (touchStart > touchEnd) {
+    currentIndex = (currentIndex + 1) % totalSlides;
     setActiveSlide();
   }
 });
 
 function setActiveSlide() {
-  targetImgWrapper.style.left = `-${left}px`;
-  targetIconWrapper.style.left = `-${left}px`;
+  const offset = currentIndex * 100;
+  targetImgWrapper.style.left = `-${offset}%`;
+  targetIconWrapper.style.left = `-${offset}%`;
   statusBarItems.forEach((item) => item.classList.remove('active'));
-  statusBarItems[bulletIndex].classList.add('active');
+  statusBarItems[currentIndex].classList.add('active');
 }
