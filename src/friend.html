@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  @@include('header.html')
+
+  <section class="top-buttons">
+    <div class="container">
+      <div class="buttons-wrapper">
+        <a href="">Moja pożyczka</a>
+        <a href="" class="highlighted new">Zaproś znajomego</a>
+      </div>
+    </div>
+  </section>
+  <section class="invite-friend">
+    <div class="container">
+      <div class="flex-box invite-friend_flex">
+        <div class="invitation">
+          <h2>Zaproś znajomego – <br class="hide-desktop"> zgarnij bonus!</h2>
+          <p class="center">Za każdą osobę, która weźmie pożyczkę z Twojego polecenia: <br class="hide-mobile"> Ty i
+            Twój znajomy dostaniecie po
+            {} zł na spłatę
+            %% oraz prowizji <br>
+             <b>Więcej poleceń = więcej zniżek</b></p>
+          <div class="progress">
+            <h3 class="center">Twój postęp:</h3>
+            <div class="progress-calc">
+              <div>Zaproszonych znajomych:</div>
+              <div><b>2</b></div>
+            </div>
+            <div class="progress-calc">
+              <div>Otrzymane bonusy:</div>
+              <div><b>100 zl</b></div>
+            </div>
+            <a href="">Zapłać bonusami</a>
+          </div>
+        </div>
+        <div class="conditions">
+          <h2>Jak zdobyć bonus za <br class="hide-mobile"> zaproszenie znajomego?</h2>
+          <div class="conditions-wrapper">
+            <div class="conditions-item">
+              <img src="./img/icons/llink.png" alt="">
+              <div>Zaproś znajomego za pomocą swojego linku</div>
+            </div>
+            <div class="conditions-item">
+              <img src="./img/icons/file.png" alt="">
+              <div>Znajomy zarejestruje się, złoży wniosek i otrzyma pożyczkę</div>
+            </div>
+            <div class="conditions-item">
+              <img src="./img/icons/gift.png" alt="">
+              <div>Ty i Twój znajomy dostaniecie po {} zł w formie bonusu</div>
+            </div>
+          </div>
+          <button class="button" id="showShare">Zaproś znajomego</button>
+          <div class="share-wrapper">
+            <div class="pd">
+              <div class="link-wrapper">
+                <h3 class="center">Udostępnij link</h3>
+                <div class="copy-link">https://localhost/FrontOffice/referral/3E8</div>
+                <div class="copied">Link skopiowany</div>
+              </div>
+              <div class="mobile-share">
+                <a href=""><img src="./img/icons/whatsap.png" alt=""></a>
+                <a href=""><img src="./img/icons/message.png" alt=""></a>
+                <a href=""><img src="./img/icons/gmail.png" alt=""></a>
+                <a href="" id="qr"><img src="./img/icons/qr.png" alt=""></a>
+                <a href=""><img src="./img/icons/options.png" alt=""></a>
+              </div>
+              <div class="send-to">
+                <form action="">
+                  <label for="email">E-mail znajomego</label>
+                  <div class="flex-box">
+                    <input type="email" name="email" id="email" placeholder="hi@gmail.com">
+                    <button type="submit">Wysłać</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="info">
+              <h3>Treść zaproszenia:</h3>
+              <ol>
+                <li>Zarejestruj się przez ten link</li>
+                <li>Weź pożyczkę</li>
+                <li>Zgarnij 50 zł bonusu</li>
+              </ol>
+              <img src="./img/icons/copy_light-col.svg" alt="">
+            </div>
+            <div class="popup-wrapper">
+              <div class="qr-popup">
+                <div class="close"><img src="./img/icons/close.svg" alt=""></div>
+                <h3>Zarejestruj się na <span>ekassa.pl</span></h3>
+                <div class="subtitle">Zaprasza {%FirstName%}</div>
+                <div class="qr-wrapper">
+                  <img src="./img/icons/qrcode.png" alt="">
+                </div>
+                <div class="center"><img class="logo" src="./img/logo-white.svg" alt=""></div>
+                <button class="share">Udostępnij kod QR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('footer.html')
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  @@include('header.html')
+
+  <section class="top-buttons">
+    <div class="container">
+      <div class="buttons-wrapper">
+        <a href="">Moja pożyczka</a>
+        <a href="" class="highlighted">Zaproś znajomego</a>
+        <a href="" class="new">Zaproś znajomego</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-tables">
+    <div class="container">
+      <div class="flex-box info-tables_flex">
+        <div class="conditions-wrapper">
+          <img class="bonus" src="./img/icons/bonus.png" alt="">
+          <h3>Jak zdobyć bonus</h3>
+          <div class="conditions-item">
+            <img src="./img/icons/llink-w.png" alt="">
+            <div>Zaproś znajomego za pomocą swojego linku</div>
+          </div>
+          <div class="conditions-item">
+            <img src="./img/icons/file-w.png" alt="">
+            <div>Znajomy zarejestruje się, złoży wniosek i otrzyma pożyczkę</div>
+          </div>
+          <div class="conditions-item">
+            <img src="./img/icons/gift-w.png" alt="">
+            <div>Ty i Twój znajomy dostaniecie po {} zł w formie bonusu</div>
+          </div>
+        </div>
+        <div class="info-table">
+          <h3>Ogólna informacja</h3>
+          <div class="table-row highlighted">
+            <div>Kwota pożyczki</div><div>100 zł</div>
+          </div>
+          <div class="table-row">
+            <div>Okres spłaty</div><div>{6} {miesięcy}</div>
+          </div>
+          <div class="table-row">
+            <div>Kapitału zapłacono</div><div>100 zł</div>
+          </div>
+          <div class="table-row">
+            <div>Kwota przeterminowanego zadłużenia</div><div class="red">100 zł</div>
+          </div>
+          <div class="table-row">
+            <div>Opóżnienie w spłacie, (dni)</div><div class="red">100</div>
+          </div>
+          <div class="table-row highlighted">
+            <div>Całkowita kwota do spłaty</div><div>100 zł</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('footer.html')
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
