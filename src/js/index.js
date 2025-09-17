@@ -92,7 +92,6 @@ $('#qr').addEventListener('click', (e)=> {
 
 // Copy url
 $('.copy-link').addEventListener('click', (e) => {
-  console.log(e.target.textContent);
   navigator.clipboard.writeText(e.target.textContent);
   $('.copied').style.display = 'block';
   setTimeout(() => {
@@ -104,4 +103,10 @@ $('.copy-link').addEventListener('click', (e) => {
 $('#showShare').addEventListener('click', (e) => {
   e.target.style.opacity = '80%';
   $('.share-wrapper').style.display = 'block';
+})
+
+// Show how-to
+$('#how-to').addEventListener('click', (e) => {
+  e.preventDefault();
+  $('.info').style.display = 'block';
 })
