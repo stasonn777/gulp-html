@@ -76,37 +76,96 @@
 //   statusBarItems[currentIndex].classList.add('active');
 // }
 
-function $(selector) {
-  return document.querySelector(selector);
-}
+// function $(selector) {
+//   return document.querySelector(selector);
+// }
 
-// Close popup
-$('.close').addEventListener('click', ()=> {
-  $('.popup-wrapper').style.display = 'none';
-})
-// Show popup
-$('#qr').addEventListener('click', (e)=> {
-  e.preventDefault();
-  $('.popup-wrapper').style.display = 'block';
-})
+// // Close popup
+// $('.close').addEventListener('click', ()=> {
+//   $('.popup-wrapper').style.display = 'none';
+// })
+// // Show popup
+// $('#qr').addEventListener('click', (e)=> {
+//   e.preventDefault();
+//   $('.popup-wrapper').style.display = 'block';
+// })
 
-// Copy url
-$('.copy-link').addEventListener('click', (e) => {
-  navigator.clipboard.writeText(e.target.textContent);
-  $('.copied').style.display = 'block';
-  setTimeout(() => {
-    $('.copied').style.display = 'none';
-  }, 2000);
-})
+// // Copy url
+// $('.copy-link').addEventListener('click', (e) => {
+//   navigator.clipboard.writeText(e.target.textContent);
+//   $('.copied').style.display = 'block';
+//   setTimeout(() => {
+//     $('.copied').style.display = 'none';
+//   }, 2000);
+// })
 
-// Show share
-$('#showShare').addEventListener('click', (e) => {
-  e.target.style.opacity = '80%';
-  $('.share-wrapper').style.display = 'block';
-})
+// // Show share
+// $('#showShare').addEventListener('click', (e) => {
+//   e.target.style.opacity = '80%';
+//   $('.share-wrapper').style.display = 'block';
+// })
 
-// Show how-to
-$('#how-to').addEventListener('click', (e) => {
-  e.preventDefault();
-  $('.info').style.display = 'block';
-})
+// // Show how-to
+// $('#how-to').addEventListener('click', (e) => {
+//   e.preventDefault();
+//   $('.info').style.display = 'block';
+// })
+
+// Icons simple slider (mobile only)
+(function () {
+  const viewport = document.querySelector('.icons-viewport');
+  const track = document.querySelector('.icons-track');
+  const items = document.querySelectorAll('.icons-track .icons-item');
+  if (!viewport || !track || items.length === 0) return;
+
+  let index = 0;
+  let startX = 0;
+  let deltaX = 0;
+
+  function isDesktop() {
+    return window.matchMedia('(min-width: 1203px)').matches;
+  }
+
+  function slideTo(i) {
+    index = i;
+    const item = items[0];
+    const style = window.getComputedStyle(track);
+    const gap = parseFloat(style.gap) || 0;
+    const itemWidth = item.getBoundingClientRect().width;
+    const offset = i * (itemWidth + gap);
+    track.style.transform = 'translateX(' + (-offset) + 'px)';
+  }
+
+  function update() {
+    if (isDesktop()) {
+      track.style.transform = '';
+      return;
+    }
+    slideTo(index);
+  }
+
+  function clamp(val, min, max) {
+    return Math.max(min, Math.min(max, val));
+  }
+
+  // Touch handlers
+  viewport.addEventListener('touchstart', function (e) {
+    startX = e.touches[0].clientX;
+    deltaX = 0;
+  }, { passive: true });
+
+  viewport.addEventListener('touchmove', function (e) {
+    deltaX = e.touches[0].clientX - startX;
+  }, { passive: true });
+
+  viewport.addEventListener('touchend', function () {
+    if (Math.abs(deltaX) > 40) {
+      if (deltaX < 0) index = clamp(index + 1, 0, items.length - 1);
+      else index = clamp(index - 1, 0, items.length - 1);
+    }
+    update();
+  });
+
+  window.addEventListener('resize', update);
+  update();
+})();
