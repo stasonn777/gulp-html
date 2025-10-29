@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,90 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
+
 <body>
   <header>
     <h1>Hello</h1>
     @@include('header.html')
   </header>
   <div class="content">
-    <img src="./img/accord-top.png" alt="">
-    <p>Hello, world!</p>
+    <div class="top-banner">
+      <div class="container">
+        <div class="flex-box">
+          <div class="text">
+            <h1>Pożyczki online <br> w 15 minut</h1>
+            <p>Nie możesz otrzymać pożyczki ze względu na złą historię kredytową czy jej brak?</p>
+          </div>
+          <img src="./img/smiling-positive.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <section class="steps">
+      <div class="container">
+        <div class="title">
+          <h1>Otrzymać pożyczkę w 3 kroki</h1>
+          <p>Pilnie potrzebujesz pieniędzy?! Prosty i wygodny sposób otrzymania pożyczki na konto na dowolny cel!</p>
+        </div>
+        <div class="icons">
+          <div class="icon-item">
+            <img src="./img/icon1.svg" alt="">
+            <div class="icon-text">
+              Wybierz potrzebną kwotę i okres do zapłaty
+            </div>
+          </div>
+          <div class="icon-item">
+            <img src="./img/icon2.svg" alt="">
+            <div class="icon-text">
+              zupełnij krótki wniosek
+            </div>
+          </div>
+          <div class="icon-item">
+            <img src="./img/icon3.svg" alt="">
+            <div class="icon-text">
+              Otrzymaj pieniądze na konto
+            </div>
+          </div>
+        </div>
+        <a href="" class="button">Sprawdź ofertę</a>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <div class="flex-box">
+          <div class="text">
+            <h2>Zalety</h2>
+            <p>W celach Twojej wygody korzystania stworzyliśmy wygodny i zrozumiały serwis, by każdy mógł dostać
+              pieniądze.</p>
+            <ul>
+              <li>Przejrzyste warunki</li>
+              <li>Bez wysyłania dokumentów i zbędnych rozmów telefonicznych</li>
+              <li>Gwarantujemy ochronę danych osobowych</li>
+            </ul>
+          </div>
+          <img src="./img/adv.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="title">
+          <h2>15,000 + zadowolonych klientów</h2>
+          <div class="average">
+            <div class="rating">
+              <img src="star-gold.svg" alt="">
+              <img src="star-gold.svg" alt="">
+              <img src="star-gold.svg" alt="">
+              <img src="star-gold.svg" alt="">
+              <img src="star-gold.svg" alt="">
+            </div>
+            <b>4.5 średnia ocena klientów serwisu</b>
+          </div>
+        </div>
+        <div class="slider"></div>
+      </div>
+    </section>
   </div>
   <script src="./js/index.js"></script>
 </body>
+
 </html>
