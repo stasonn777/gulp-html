@@ -1,20 +1,23 @@
 /* Normalize
 --------------------------------------------- */
-@import "generic/normalize";
+@use "generic/normalize";
 
 /* Box sizing
 --------------------------------------------- */
-@import "generic/box-sizing";
+@use "generic/box-sizing";
 
 /* Variables
 --------------------------------------------- */
-@import "generic/variables";
+@use "generic/variables";
 
 /* Mixins
 --------------------------------------------- */
-@import "mixins";
+@use "mixins";
 
 /* General
 --------------------------------------------- */
-@import "general";
+@use "general";
 
+/* Header
+--------------------------------------------- */
+@use "header";

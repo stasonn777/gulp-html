@@ -11,7 +11,6 @@
 
 <body>
   <header>
-    <h1>Hello</h1>
     @@include('header.html')
   </header>
   <div class="content">
@@ -20,39 +19,41 @@
         <div class="flex-box">
           <div class="text">
             <h1>Pożyczki online <br> w 15 minut</h1>
-            <p>Nie możesz otrzymać pożyczki ze względu na złą historię kredytową czy jej brak?</p>
+            <p>Nie możesz otrzymać pożyczki <br class="hide-mobile"> ze względu na złą historię <br class="hide-mobile"> kredytową czy jej brak?</p>
           </div>
-          <img src="./img/smiling-positive.jpg" alt="">
+          <img src="./img/smiling-positive.png" alt="">
         </div>
       </div>
     </div>
     <section class="steps">
       <div class="container">
-        <div class="title">
-          <h1>Otrzymać pożyczkę w 3 kroki</h1>
-          <p>Pilnie potrzebujesz pieniędzy?! Prosty i wygodny sposób otrzymania pożyczki na konto na dowolny cel!</p>
+        <div class="flex">
+          <div class="title">
+            <h2>Otrzymać pożyczkę w 3 kroki</h2>
+            <p>Pilnie potrzebujesz pieniędzy?! Prosty i <br class="hide-desctop"> wygodny sposób otrzymania pożyczki na <br class="hide-desctop"> konto na dowolny <br class="hide-mobile"> cel!</p>
+          </div>
+          <div class="icons">
+            <div class="icon-item">
+              <div class="icon-wrapper"><img src="./img/icon1.svg" alt=""></div>
+              <div class="icon-text">
+                Wybierz potrzebną kwotę <br> i okres do zapłaty
+              </div>
+            </div>
+            <div class="icon-item">
+              <div class="icon-wrapper"><img src="./img/icon2.svg" alt=""></div>
+              <div class="icon-text">
+                zupełnij krótki wniosek
+              </div>
+            </div>
+            <div class="icon-item">
+              <div class="icon-wrapper"><img src="./img/icon3.svg" alt=""></div>
+              <div class="icon-text">
+                Otrzymaj pieniądze na <br> konto
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="icons">
-          <div class="icon-item">
-            <img src="./img/icon1.svg" alt="">
-            <div class="icon-text">
-              Wybierz potrzebną kwotę i okres do zapłaty
-            </div>
-          </div>
-          <div class="icon-item">
-            <img src="./img/icon2.svg" alt="">
-            <div class="icon-text">
-              zupełnij krótki wniosek
-            </div>
-          </div>
-          <div class="icon-item">
-            <img src="./img/icon3.svg" alt="">
-            <div class="icon-text">
-              Otrzymaj pieniądze na konto
-            </div>
-          </div>
-        </div>
-        <a href="" class="button">Sprawdź ofertę</a>
+        <a href="" class="button wide">Sprawdź ofertę</a>
       </div>
     </section>
     <section class="advantages">
@@ -64,33 +65,192 @@
               pieniądze.</p>
             <ul>
               <li>Przejrzyste warunki</li>
-              <li>Bez wysyłania dokumentów i zbędnych rozmów telefonicznych</li>
-              <li>Gwarantujemy ochronę danych osobowych</li>
+              <li>Bez wysyłania dokumentów i zbędnych <br class="hide-mobile"> rozmów telefonicznych</li>
+              <li>Gwarantujemy ochronę danych <br class="hide-mobile"> osobowych</li>
             </ul>
           </div>
-          <img src="./img/adv.jpg" alt="">
+          <div class="img-wrapper">
+            <img src="./img/adv.jpg" alt="">
+          </div>
         </div>
       </div>
     </section>
     <section class="reviews">
       <div class="container">
         <div class="title">
-          <h2>15,000 + zadowolonych klientów</h2>
+          <h2>15,000 + zadowolonych <br class="hide-desctop"> klientów</h2>
           <div class="average">
             <div class="rating">
-              <img src="star-gold.svg" alt="">
-              <img src="star-gold.svg" alt="">
-              <img src="star-gold.svg" alt="">
-              <img src="star-gold.svg" alt="">
-              <img src="star-gold.svg" alt="">
+              <img src="./img/star-gold.svg" alt="">
+              <img src="./img/star-gold.svg" alt="">
+              <img src="./img/star-gold.svg" alt="">
+              <img src="./img/star-gold.svg" alt="">
+              <img src="./img/star-grey.svg" alt="">
             </div>
             <b>4.5 średnia ocena klientów serwisu</b>
           </div>
         </div>
-        <div class="slider"></div>
+        <div class="slider">
+          <div class="slider-wrapper">
+            <div class="slide">
+              <div class="slide-header">
+                <div class="user">
+                  <div class="avatar yelow">L</div>
+                  <div class="user-data">
+                    <div class="name">Misiek</div>
+                    <div class="date">27.10.2022</div>
+                  </div>
+                </div>
+                <div class="rating">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-gold.svg" alt="">
+                </div>
+              </div>
+              <div class="slide-text">Wszystko się spodobało, potrzebowałem pieniędzy na już mi w tym pomogła. Dodam że
+                analiza wniosku trwała do 15 minut maksymalnie i jak dostałem pozytywną decyzję nawet nie zauważyłem że
+                już miałem przelew na koncie :)</div>
+            </div>
+            <div class="slide">
+              <div class="slide-header">
+                <div class="user">
+                  <div class="avatar yelow">L</div>
+                  <div class="user-data">
+                    <div class="name">Janusz</div>
+                    <div class="date">09.11.2022</div>
+                  </div>
+                </div>
+                <div class="rating">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-grey.svg" alt="">
+                </div>
+              </div>
+              <div class="slide-text">Łatwo udało się wypełnić formularz i otrzymać pożyczkę. Przed rejestracją przeczytałem opinie klientów i zrozumiałem że serwis jest rzetelny i przejrzysty. Oczywiście pożyczkę należy spłacać na czas, w moim przypadku miałem kilka dni opóźnienia ale nikt nie wydzwaniał po sto razy dziennie.</div>
+            </div>
+            <div class="slide">
+              <div class="slide-header">
+                <div class="user">
+                  <div class="avatar yelow">L</div>
+                  <div class="user-data">
+                    <div class="name">Jula</div>
+                    <div class="date">04.11.2022</div>
+                  </div>
+                </div>
+                <div class="rating">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-gold.svg" alt="">
+                  <img src="./img/star-gold.svg" alt="">
+                </div>
+              </div>
+              <div class="slide-text">Przez zatrzymaną wypłatę w pracy musiałam pilnie załatwić pieniędzy i w tej sprawie bardzo mi pomógł ten serwis. Jak dla pierwszej pożyczki wszystko jest super. Poleciłam ten serwis swojej koleżance, która też została zadowolona</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-control">
+          <div class="left"><img src="./img/arrow-left.svg" alt=""></div>
+          <div class="number">1/3</div>
+          <div class="right"><img src="./img/arrow-right.svg" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="container">
+        <h2>Oferuje</h2>
+        <div class="img-wrapper">
+          <img src="./img/woman.jpg" alt="">
+        </div>
+        <p>
+          <img src="./img/woman-1.jpg" alt="">
+          Pożyczki na raty miesięczne przez Internet to rodzaj kredytu, który można zaciągnąć online, a następnie
+          spłacać zadłużenie w ratach, w danym okresie kredytowania. Pożyczki ratalne pozwalają zmniejszyć obciążenie
+          budżetu i w przeciwieństwie do chwilówek, są łatwiejsze do spłaty. Pożyczki przez Internet na raty są
+          pośrednią formą między chwilówkami online, które także zaciąga się przez Internet, jednak zwykle spłaca
+          jednorazowo, w okresie 30 dni a kredytem w banku, który jest zaciągany na większą kwotę i spłacany w czasie
+          kilku miesięcy.
+          Zaciągając pożyczki online warto pamiętać, że im dłuższy termin spłaty, tym większy ogólny koszt danej
+          pożyczki, nawet pomimo pozornie niskich rat. Z drugiej strony wydłużony termin spłaty pozwala łatwiej
+          zaplanować budżet i zapewnić terminową spłatę zobowiązania, co pozytywnie wpływa na zdolność i historię
+          kredytową klienta. Chwilówka na raty online wyróżnia się:
+        </p>
+        <ul>
+          <li>dużym wyborem ofert od różnych firm pozabankowych,</li>
+          <li>wyższą kwotą niż ma to miejsce w przypadku zwykłej chwilówki,</li>
+          <li>możliwością dopasowania ilości rat do własnych potrzeb,</li>
+          <li>minimum formalności,</li>
+          <li>w niektórych firmach jest dostępna darmowa pożyczka dla nowych klientów,</li>
+          <li>z takiej pożyczki mogą skorzystać także osoby z niską zdolnością kredytową,</li>
+          <li>niektóre firmy oferują pożyczkę w 5 minut na konto,</li>
+          <li>Większość firm pozabankowych pracuje w weekendy, a także w nocy i oferuje pożyczkę 24/7.</li>
+        </ul>
+        <p>Pożyczka na raty pozabankowa to więc dobry wybór dla osób, które chcą zaciągnąć kredyt a spłacać zadłużenie w
+          ratach, ale z różnych powodów nie mogą uzyskać zgody na kredyt w banku.</p>
       </div>
     </section>
   </div>
+  <footer>
+    <div class="container">
+      <div class="center">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">3 kroki</a></li>
+            <li><a href="#">Zalety</a></li>
+            <li><a href="#">Ocena</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="text">
+        <p>
+          Właścicielem serwisu freezl.pl jest Ranto sp. z o.o. z siedzibą w Warszawie pod adresem: ul. Nowy Świat 33/13,
+          00-029 Warszawa, wpisaną do Krajowego Rejestru Sądowego pod numerem 0001027071.
+        </p>
+
+        <p>
+          Serwis freezl.pl współpracuje z instytucjami pośrednictwa finansowego, firmami pożyczkowymi w celu
+          umożliwienia
+          użytkownikom serwisu porównania ofert produktów finansowych podmiotów współpracujących z Ranto sp. z o.o.
+        </p>
+
+        <p>
+          Przedstawione w serwisie freezl.pl przykłady nie stanowią oferty w rozumieniu przepisów Kodeksu Cywilnego.
+          Ostateczna wysokość opłat i całkowity koszt produktów przedstawiony zostanie przez podmiot zawierający umowę z
+          użytkownikiem serwisu w ramach tej umowy. Za ewentualne różnice pomiędzy przykładami przedstawionymi w
+          serwisie
+          a umową zawartą przez użytkownika Ranto sp. z o.o. nie ponosi odpowiedzialności.
+        </p>
+
+        <p>Użytkownicy korzystają z serwisu freezl.pl zgodnie z jego polityką prywatności oraz regulaminem serwisu.</p>
+
+        <p>
+          Administratorem danych osobowych jest Ranto sp. z o.o. z siedzibą w Warszawie pod adresem: ul. Nowy Świat
+          33/13,
+          00-029 Warszawa, wpisaną do Krajowego Rejestru Sądowego pod numerem 0001027071. Dane osobowe są przekazane
+          dobrowolnie i będą przetwarzane w celach marketingowych przez Ranto sp. z o.o..
+        </p>
+
+        <p>
+          W razie wyrażenia zgody, dane osobowe mogą być przetwarzane w celach marketingowych związanych z
+          przedstawieniem
+          oferty, udostępnianie podmiotom współpracującym z Ranto sp. z o.o. Dane osobowe mogą być również udostępniane
+          podmiotom upoważnionym na podstawie przepisów prawa. Posiada Pani/Pan prawo dostępu do treści swoich danych
+          oraz
+          ich poprawiania.
+        </p>
+
+        <p>Kontakt z Inspektorem Ochrony Danych pod adresem e-mail info@e-ranto.pl</p>
+      </div>
+    </div>
+    <div class="subfooter center">
+      <div class="copyright">freezl © 2025</div>
+    </div>
+  </footer>
   <script src="./js/index.js"></script>
 </body>
 
