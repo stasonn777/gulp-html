@@ -9,12 +9,64 @@
 </head>
 <body>
   <header>
-    <h1>Hello</h1>
     @@include('header.html')
   </header>
   <div class="content">
-    <img src="./img/accord-top.png" alt="">
-    <p>Hello, world!</p>
+    <section class="top-banner">
+      <div class="container">
+        <h1>Fin<span>Rada</span> – niezależna porównywarka usług finansowych!</h1>
+        <p class="subtitle">Porównujemy, żebyście wybierali lepiej!</p>
+        <a href="" class="button">Zobacz oferty</a>
+        <p class="note"><small>Najlepsi pożyczkodawcy pożyczek osobistych</small></p>
+      </div>
+    </section>
+    <section class="offers">
+      <div class="container">
+        <div class="filters">
+          <div class="range-filters">
+            <div class="filter amount-filter">
+              <div class="filter-header">
+                <div>Kwota</div>
+                <div class="amount"><span>150 000</span><b>zł</b></div>
+              </div>
+              <input type="range" name="" id="">
+              <div class="filter-footer">
+                <div>1000 zł</div>
+                <div>150 000 zł</div>
+              </div>
+            </div>
+            <div class="filter amount-filter">
+              <div class="filter-header">
+                <div>Okres spłaty</div>
+                <div class="amount"><span>12</span><b>miesiące</b></div>
+              </div>
+              <input type="range" name="" id="">
+              <div class="filter-footer">
+                <div>1 miesiąc </div>
+                <div>60 miesięcy</div>
+              </div>
+            </div>
+            <div class="apply-filter"><button>Oblicz</button></div>
+          </div>
+          <div class="sorting-filters">
+            <div class="free-filter">
+              <span class="hide-mobile">Filtruj: </span>
+              <input type="checkbox" name="" id="">
+              darmowa pierwsza pożyczka
+            </div>
+            <div class="sorting dropdown">
+              Sortuj chwilówki wg:
+              <select name="" id="">
+                <option value="">Rata rosnaco</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="offers-wrapper">
+          
+        </div>
+      </div>
+    </section>
   </div>
   <script src="./js/index.js"></script>
 </body>
