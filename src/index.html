@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
+
 <body>
   <header>
     @@include('header.html')
@@ -14,8 +16,8 @@
   <div class="content">
     <section class="top-banner">
       <div class="container">
-        <h1>Fin<span>Rada</span> – niezależna porównywarka usług finansowych!</h1>
-        <p class="subtitle">Porównujemy, żebyście wybierali lepiej!</p>
+        <h1>Fin<span>Rada</span> – niezależna <br> porównywarka usług <br> finansowych!</h1>
+        <p class="subtitle">Porównujemy, żebyście <br class="hide-desctop"> wybierali lepiej!</p>
         <a href="" class="button">Zobacz oferty</a>
         <p class="note"><small>Najlepsi pożyczkodawcy pożyczek osobistych</small></p>
       </div>
@@ -24,29 +26,31 @@
       <div class="container">
         <div class="filters">
           <div class="range-filters">
-            <div class="filter amount-filter">
-              <div class="filter-header">
-                <div>Kwota</div>
-                <div class="amount"><span>150 000</span><b>zł</b></div>
+            <div class="range-filters-wrapper">
+              <div class="filter amount-filter">
+                <div class="filter-header">
+                  <div>Kwota</div>
+                  <div class="amount"><span>150 000</span><b>zł</b></div>
+                </div>
+                <input type="range" name="" id="">
+                <div class="filter-footer">
+                  <div>1000 zł</div>
+                  <div>150 000 zł</div>
+                </div>
               </div>
-              <input type="range" name="" id="">
-              <div class="filter-footer">
-                <div>1000 zł</div>
-                <div>150 000 zł</div>
+              <div class="filter amount-filter">
+                <div class="filter-header">
+                  <div>Okres spłaty</div>
+                  <div class="amount"><span>12</span><b>miesiące</b></div>
+                </div>
+                <input type="range" name="" id="">
+                <div class="filter-footer">
+                  <div>1 miesiąc </div>
+                  <div>60 miesięcy</div>
+                </div>
               </div>
+              <div class="apply-filter"><button>Oblicz</button></div>
             </div>
-            <div class="filter amount-filter">
-              <div class="filter-header">
-                <div>Okres spłaty</div>
-                <div class="amount"><span>12</span><b>miesiące</b></div>
-              </div>
-              <input type="range" name="" id="">
-              <div class="filter-footer">
-                <div>1 miesiąc </div>
-                <div>60 miesięcy</div>
-              </div>
-            </div>
-            <div class="apply-filter"><button>Oblicz</button></div>
           </div>
           <div class="sorting-filters">
             <div class="free-filter">
@@ -63,11 +67,147 @@
           </div>
         </div>
         <div class="offers-wrapper">
-          
+          @@include('offer.html', {top: true})
+          @@include('offer.html')
+          @@include('offer.html')
+          @@include('offer.html')
+          @@include('offer.html')
+          @@include('offer.html')
+          @@include('offer.html')
+        </div>
+        <div class="pagination">
+
         </div>
       </div>
     </section>
-  </div>
-  <script src="./js/index.js"></script>
+    <section class="why">
+      <div class="container">
+        <h2>Dlaczego Fin<span>Rada</span></h2>
+        <div class="why-wrapper">
+          <div class="why-item">
+            <div class="why-item-icon"><img src="./img/why-1.png" alt=""></div>
+            <div class="why-item-content">
+              <h3>Uczciwe porównania</h3>
+              <p>Pokazujemy prawdę o kredytach, byś mógł wybrać to, co naprawdę pasuje do Twoich potrzeb, a nie to, co
+                ktoś chce Ci sprzedać.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon"><img src="./img/why-2.png" alt=""></div>
+            <div class="why-item-content">
+              <h3>Aktualne dane</h3>
+              <p>Wszystkie oferty są codziennie weryfikowane i aktualizowane.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon"><img src="./img/why-3.png" alt=""></div>
+            <div class="why-item-content">
+              <h3>Prawdziwe opinie</h3>
+              <p>Autentyczne głosy prawdziwych klientów, a nie reklamowe slogany.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon"><img src="./img/why-4.png" alt=""></div>
+            <div class="why-item-content">
+              <h3>Spersonalizowany wybór</h3>
+              <p>Wyświetlamy oferty tylko firm, które spełniają Twoje kryteria wyszukiwania. Nic więcej – po prostu
+                precyzyjny wybór!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="posts">
+      <div class="container">
+        <h2>FinRada Radzi</h2>
+        <div class="posts-wrapper">
+          <div class="posts-item">
+            <a href="">
+              <img src="./img/post-1.png" alt="">
+              <div class="posts-item-content">
+                <p>Dlaczego warto składać wnioski o pożyczkę w kilku firmach jednocześnie?</p>
+                <div class="posts-item-date">4 dni temu</div>
+              </div>
+            </a>
+          </div>
+          <div class="posts-item">
+            <a href="">
+              <img src="./img/post-2.png" alt="">
+              <div class="posts-item-content">
+                <p>Dlaczego warto składać wnioski o pożyczkę w kilku firmach jednocześnie?</p>
+                <div class="posts-item-date">4 dni temu</div>
+              </div>
+            </a>
+          </div>
+          <div class="posts-item">
+            <a href="">
+              <img src="./img/post-3.png" alt="">
+              <div class="posts-item-content">
+                <p>Więcej wniosków – większe szanse: strategia skutecznego ubiegania się o pożyczkę</p>
+                <div class="posts-item-date">4 dni temu</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="subscribe">
+          <h3>Dołącz do społeczności FinRada! Bądź na bieżąco z najważniejszymi wiadomościami ze świata finansów</h3>
+          <form action="">
+            <div class="flex">
+              <input type="text" placeholder="Wpisz swoje imię">
+              <input type="email" placeholder="Wpisz swój adres e-mail">
+              <button type="submit">Podpisać</button>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="subscribe-checkbox">
+              <label for="subscribe-checkbox">Wyrażam zgodę na przechowywanie moich danych zgodnie z <a href="">Polityką Prywatności.</a></label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <h2>Najczęściej zadawane pytania</h2>
+        <div class="faq-accordion">
+          <div class="faq-accordion-item">
+            <div class="faq-accordion-item-header">
+              <h3>Jak mogę ubiegać się o kredyt w banku?</h3>
+            </div>
+            <div class="faq-accordion-item-content">
+              <p>FinRada to niezależna porównywarka usług finansowych, która pomaga ułatwić wybór najlepszej oferty dla Twoich potrzeb.</p>
+            </div>
+          </div>
+          <div class="faq-accordion-item">
+            <div class="faq-accordion-item-header">
+              <h3>Jak mogę ubiegać się o kredyt w banku?</h3>
+            </div>
+            <div class="faq-accordion-item-content">
+              <p>FinRada to niezależna porównywarka usług finansowych, która pomaga ułatwić wybór najlepszej oferty dla Twoich potrzeb.</p>
+            </div>
+          </div>
+          <div class="faq-accordion-item">
+            <div class="faq-accordion-item-header">
+              <h3>Jak mogę ubiegać się o kredyt w banku?</h3>
+            </div>
+            <div class="faq-accordion-item-content">
+              <p>FinRada to niezależna porównywarka usług finansowych, która pomaga ułatwić wybór najlepszej oferty dla Twoich potrzeb.</p>
+            </div>
+          </div>
+          <div class="faq-accordion-item">
+            <div class="faq-accordion-item-header">
+              <h3>Jak mogę ubiegać się o kredyt w banku?</h3>
+            </div>
+            <div class="faq-accordion-item-content">
+              <p>FinRada to niezależna porównywarka usług finansowych, która pomaga ułatwić wybór najlepszej oferty dla Twoich potrzeb.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      @@include('footer.html')
+    </footer>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

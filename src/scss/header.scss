@@ -1,0 +1,44 @@
+/* stylelint-disable block-no-empty */
+
+.header-wrapper {
+  height: 50px;
+  z-index: 1;
+  position: relative;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-left {
+    img {
+    }
+  }
+
+  .header-center {
+    display: none;
+    ul {
+      li {
+        a {
+        }
+      }
+    }
+  }
+
+  .header-right {
+    .search-wrapper {
+      display: none;
+      input[type="text"] {
+      }
+
+      img {
+      }
+    }
+
+    .burger-wrapper {
+      img {
+      }
+    }
+  }
+}
+
+/* stylelint-enable block-no-empty */
+
