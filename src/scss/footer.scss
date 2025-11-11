@@ -1,0 +1,63 @@
+@use 'generic/variables' as *;
+
+footer {
+  background-color: #F4F8F5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: initial;
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    li {
+      a {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 140%;
+        color: #000;
+        text-decoration: none;
+        &.active {
+          color: $primaryColor;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .footer-left {
+
+    }
+
+    .footer-right {
+      text-align: right;
+      .footer-social {
+        display: none;
+      }
+    }
+    
+  }
+  .footer-social {
+    display: flex;
+    gap: 18px;
+  }
+  .footer-bottom {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: right;
+    color: #9B9B9B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

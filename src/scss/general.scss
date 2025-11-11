@@ -20,22 +20,27 @@ img {
 .container {
   padding: 0 16px;
 }
+
 .flex-box {
   display: flex;
   flex-direction: column;
 }
+
 .between {
   display: flex;
   justify-content: space-between;
 }
+
 .center {
   text-align: center;
 }
+
 h1 {
   font-weight: 500;
   font-size: 24px;
   line-height: 110%;
 }
+
 h2 {
   font-weight: 500;
   font-size: 20px;
@@ -43,12 +48,14 @@ h2 {
   text-align: center;
   color: #141232;
 }
+
 h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
   color: #222222;
 }
+
 .full-width {
   width: 100%;
 }
@@ -67,17 +74,16 @@ input[type='range'] {
   cursor: pointer;
   position: relative;
   margin-bottom: 16px;
+
   // Track styles - WebKit (Chrome, Safari)
   &::-webkit-slider-runnable-track {
     width: 100%;
     height: 8px;
-    background: linear-gradient(
-      to right,
-      #459179 0%,
-      #459179 var(--range-progress, 50%),
-      #d9d9d9 var(--range-progress, 50%),
-      #d9d9d9 100%
-    );
+    background: linear-gradient(to right,
+        #459179 0%,
+        #459179 var(--range-progress, 50%),
+        #d9d9d9 var(--range-progress, 50%),
+        #d9d9d9 100%);
     border-radius: 4px;
   }
 
@@ -166,8 +172,88 @@ input[type='checkbox'] {
   -webkit-appearance: none;
   appearance: none;
   margin-right: 6px;
+
   &:checked {
-    background: #E8961D;
+    background-image: url(../img/checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.subscribe-form {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    input {
+      padding: 16px 48px;
+      border-radius: 12px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: -0.02em;
+      color: #141F1B;
+      &:focus,
+      &:focus-visible,
+      &:active {
+        outline: none;
+        border-color: inherit;
+        box-shadow: none;
+      }
+    }
+
+    input[type='text'] {
+      background-image: url(../img/user.svg);
+      background-repeat: no-repeat;
+      background-position: 16px center;
+      border: 2px solid #459179;
+    }
+
+    input[type='email'] {
+      background-image: url(../img/envelope.svg);
+      background-repeat: no-repeat;
+      background-position: 16px center;
+      border: 2px solid #9B9B9B;
+    }
+
+    button[type='submit'] {
+      background-color: #459179;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 100%;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 0;
+      border: none;
+      border-radius: 12px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 0 15px;
+    input[type='checkbox'] {
+      width: 23px;
+      height: 23px;
+      border-radius: 8px;
+      margin-right: 0;
+    }
+
+    label {
+      flex: 1;
+      font-size: 10px;
+      line-height: 100%;
+      letter-spacing: 0.02em;
+      a {
+        color: #000;
+      }
+    }
   }
 }
 
@@ -178,31 +264,39 @@ input[type='checkbox'] {
     margin: auto;
     padding: 0;
   }
+
   .flex-box {
     flex-direction: row;
   }
+
   h1 {
     font-weight: 700;
     font-size: 50px;
   }
+
   h3 {
     font-size: 24px;
     line-height: 32px;
   }
+
   h2 {
     font-size: 46px;
     line-height: 56px;
   }
+
   p {
     font-size: 18px;
     line-height: 26px;
   }
+
   .mobile-break {
     display: none;
   }
+
   .hide-mobile {
     display: block;
   }
+
   .hide-desctop {
     display: none;
   }
