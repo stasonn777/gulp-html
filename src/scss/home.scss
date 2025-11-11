@@ -1,4 +1,4 @@
-@use "generic/variables" as *;
+@use 'generic/variables' as *;
 
 .top-banner {
   padding-top: 130px;
@@ -55,188 +55,175 @@
       font-weight: 400;
       font-size: 10px;
       line-height: 100%;
-      color: #F5FFF7;
+      color: #f5fff7;
       opacity: 0.5;
     }
   }
-
 }
 
 .offers {
   padding-top: 40px;
   .filters {
     .range-filters {
-      background-color: #F4F8F5;
+      background-color: #f4f8f5;
       padding: 8px;
       border-radius: 20px;
       .range-filters-wrapper {
-        background-color: #fff;
-        border-radius: 20px;
-        padding: 8px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
         .filter {
-          &.amount-filter {
-            .filter-header {
-              display: flex;
-              justify-content: space-between;
-              div {}
-  
-              .amount {
-                span {}
-  
-                b {}
+          background-color: #fff;
+          padding: 8px 20px;
+          border-radius: 20px;
+          .filter-header {
+            display: flex;
+            justify-content: space-between;
+            line-height: 100%;
+            margin-bottom: 14px;
+            margin-top: 8px;
+            div {
+            }
+
+            .amount {
+              font-weight: 600;
+              span {
+                border: 1px solid var(--Grey, rgba(217, 217, 217, 1));
+                padding: 4px 15.5px;
+                border-radius: 12px;
+                margin-right: 8px;
               }
             }
-  
-            input[type="range"] {
-              width: 100%;
-              height: 8px;
-              -webkit-appearance: none;
-              appearance: none;
-              background: transparent;
-              cursor: pointer;
-              position: relative;
+          }
 
-              // Track styles - WebKit (Chrome, Safari)
+          .filter-footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            line-height: 100%;
+            letter-spacing: 0.02em;
+            div {
+            }
+          }
+          &.period-filter {
+            padding-bottom: 19px;
+            input[type='range'] {
               &::-webkit-slider-runnable-track {
-                width: 100%;
-                height: 8px;
-                background: linear-gradient(to right, #459179 0%, #459179 var(--range-progress, 50%), #D9D9D9 var(--range-progress, 50%), #D9D9D9 100%);
-                border-radius: 4px;
+                background: linear-gradient(
+                  to right,
+                  #e8961d 0%,
+                  #e8961d var(--range-progress, 50%),
+                  #d9d9d9 var(--range-progress, 50%),
+                  #d9d9d9 100%
+                );
               }
-
-              // Track styles - Firefox
-              &::-moz-range-track {
-                width: 100%;
-                height: 8px;
-                background: #D9D9D9;
-                border-radius: 4px;
-                border: none;
-              }
-
-              // Filled area for Firefox
               &::-moz-range-progress {
-                background: #459179;
-                height: 8px;
-                border-radius: 4px;
+                background: #e8961d;
               }
-
-              // Track styles - IE/Edge
-              &::-ms-track {
-                width: 100%;
-                height: 8px;
-                background: transparent;
-                border-color: transparent;
-                color: transparent;
-              }
-
-              // Filled area for IE/Edge
               &::-ms-fill-lower {
-                background: #459179;
-                border-radius: 4px;
+                background: #e8961d;
               }
-
-              &::-ms-fill-upper {
-                background: #D9D9D9;
-                border-radius: 4px;
-              }
-
-              // Thumb (button) styles - WebKit
               &::-webkit-slider-thumb {
-                -webkit-appearance: none;
-                appearance: none;
-                width: 32px;
-                height: 32px;
-                background: #459179;
-                border: 4px solid #EBEBEB;
-                border-radius: 50px;
-                cursor: pointer;
-                margin-top: -12px;
-                position: relative;
-                z-index: 1;
-                box-shadow: 0px 0px 4px 0px #00000040;
+                background: #e8961d;
               }
-
-              // Thumb (button) styles - Firefox
               &::-moz-range-thumb {
-                width: 32px;
-                height: 32px;
-                background: #459179;
-                border: 4px solid #EBEBEB;
-                border-radius: 50px;
-                cursor: pointer;
-                box-sizing: border-box;
-                box-shadow: 0px 0px 4px 0px #00000040;
+                background: #e8961d;
               }
-
-              // Thumb (button) styles - IE/Edge
               &::-ms-thumb {
-                width: 32px;
-                height: 32px;
-                background: #459179;
-                border: 4px solid #EBEBEB;
-                border-radius: 50px;
-                cursor: pointer;
-                box-shadow: 0px 0px 4px 0px #00000040;
+                background: #e8961d;
               }
-            }
-  
-            .filter-footer {
-              display: flex;
-              justify-content: space-between;
-              div {}
             }
           }
         }
-  
+
         .apply-filter {
-          button {}
+          button {
+            background-color: $primaryColor;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            width: 100%;
+            padding: 10px;
+          }
         }
       }
     }
 
     .sorting-filters {
+      margin-top: 8px;
+      background-color: #f4f8f5;
+      padding: 8px;
+      border-radius: 20px;
+      text-align: center;
       .free-filter {
-        .hide-mobile {}
-
-        input[type="checkbox"] {}
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        color: rgba(20, 31, 27, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
       }
 
       .sorting {
+        font-size: 12px;
+        line-height: 100%;
+        color: rgba(155, 155, 155, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
         &.dropdown {
           select {
-            option {}
+            border: 2px solid var(--Grey, rgba(217, 217, 217, 1));
+            background: rgba(244, 248, 245, 1);
+            font-size: 16px;
+            font-weight: 500;
+            padding: 14px 16px;
+            border-radius: 12px;
+            -webkit-appearance: none;
+            appearance: none;
+            background-image: url(../img/vector.svg);
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            background-size: 13px 8px;
+            option {
+            }
           }
         }
       }
     }
   }
 
-  .offers-wrapper {
-    .offer {
-      &--top {}
-    }
+  .pagination {
   }
-
-  .pagination {}
-
 }
 
 .why {
   .container {
     h2 {
-      span {}
+      span {
+      }
     }
 
     .why-wrapper {
       .why-item {
         .why-item-icon {
-          img {}
+          img {
+          }
         }
 
         .why-item-content {
-          h3 {}
+          h3 {
+          }
 
-          p {}
+          p {
+          }
         }
       }
     }
@@ -245,39 +232,49 @@
 
 .posts {
   .container {
-    h2 {}
+    h2 {
+    }
 
     .posts-wrapper {
       .posts-item {
         a {
-          img {}
+          img {
+          }
 
           .posts-item-content {
-            p {}
+            p {
+            }
 
-            .posts-item-date {}
+            .posts-item-date {
+            }
           }
         }
       }
     }
 
     .subscribe {
-      h3 {}
+      h3 {
+      }
 
       form {
         .flex {
-          input[type="text"] {}
+          input[type='text'] {
+          }
 
-          input[type="email"] {}
+          input[type='email'] {
+          }
 
-          button[type="submit"] {}
+          button[type='submit'] {
+          }
         }
 
         .checkbox {
-          input[type="checkbox"] {}
+          input[type='checkbox'] {
+          }
 
           label {
-            a {}
+            a {
+            }
           }
         }
       }
@@ -287,22 +284,23 @@
 
 .faq {
   .container {
-    h2 {}
+    h2 {
+    }
 
     .faq-accordion {
       .faq-accordion-item {
         .faq-accordion-item-header {
-          h3 {}
+          h3 {
+          }
         }
 
         .faq-accordion-item-content {
-          p {}
+          p {
+          }
         }
       }
     }
   }
 }
-
-
 
 /* stylelint-enable block-no-empty */

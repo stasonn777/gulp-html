@@ -58,6 +58,120 @@ h3 {
 }
 
 
+input[type='range'] {
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 16px;
+  // Track styles - WebKit (Chrome, Safari)
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(
+      to right,
+      #459179 0%,
+      #459179 var(--range-progress, 50%),
+      #d9d9d9 var(--range-progress, 50%),
+      #d9d9d9 100%
+    );
+    border-radius: 4px;
+  }
+
+  // Track styles - Firefox
+  &::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: #d9d9d9;
+    border-radius: 4px;
+    border: none;
+  }
+
+  // Filled area for Firefox
+  &::-moz-range-progress {
+    background: #459179;
+    height: 8px;
+    border-radius: 4px;
+  }
+
+  // Track styles - IE/Edge
+  &::-ms-track {
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  // Filled area for IE/Edge
+  &::-ms-fill-lower {
+    background: #459179;
+    border-radius: 4px;
+  }
+
+  &::-ms-fill-upper {
+    background: #d9d9d9;
+    border-radius: 4px;
+  }
+
+  // Thumb (button) styles - WebKit
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    background: #459179;
+    border: 4px solid #ebebeb;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: -12px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 4px 0px #00000040;
+  }
+
+  // Thumb (button) styles - Firefox
+  &::-moz-range-thumb {
+    width: 32px;
+    height: 32px;
+    background: #459179;
+    border: 4px solid #ebebeb;
+    border-radius: 50px;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px 0px #00000040;
+  }
+
+  // Thumb (button) styles - IE/Edge
+  &::-ms-thumb {
+    width: 32px;
+    height: 32px;
+    background: #459179;
+    border: 4px solid #ebebeb;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 0px #00000040;
+  }
+}
+
+input[type='checkbox'] {
+  width: 32px;
+  height: 32px;
+  background: rgba(244, 248, 245, 1);
+  border: 2px solid var(--Grey, rgba(217, 217, 217, 1));
+  border-radius: 12px;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-right: 6px;
+  &:checked {
+    background: #E8961D;
+  }
+}
+
+
 @media screen and (min-width: 1240px) {
   .container {
     max-width: 1160px;
