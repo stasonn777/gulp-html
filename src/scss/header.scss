@@ -1,5 +1,5 @@
-@use 'generic/variables' as *;
 /* stylelint-disable block-no-empty */
+@use 'generic/variables' as *;
 
 .header-wrapper {
   height: 50px;
@@ -11,10 +11,17 @@
   align-items: center;
   @include desktop {
     padding-top: 20px;
+    max-width: $bp-desktop;
+    margin: auto;
   }
 
   .header-left {
-    img {}
+    img {
+      width: 90px;
+      @include desktop {
+        width: 125px;
+      }
+    }
   }
 
   .header-center {
@@ -47,14 +54,21 @@
   .header-right {
     .search-wrapper {
       display: none;
+      @include desktop {
+        display: block;
+      }
 
-      input[type="text"] {}
+      input[type="text"] {
+        display: none;
+      }
 
       img {}
     }
 
     .burger-wrapper {
-      img {}
+      @include desktop {
+        display: none;
+      }
     }
   }
 }

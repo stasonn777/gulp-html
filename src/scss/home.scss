@@ -8,7 +8,12 @@
   margin-top: -50px;
   overflow: hidden;
 
-  &::after {
+  @include desktop {
+    padding-top: 163px;
+    padding-bottom: 137px;
+  }
+
+  .container::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -19,12 +24,26 @@
     background-size: 95%;
     background-repeat: no-repeat;
     background-position: 0 101%;
+
+    @include desktop {
+      background-size: 100%;
+      background-position: right;
+      top: 52%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 439px;
+      height: 651px;
+    }
   }
 
   h1 {
     color: #fff;
     margin-bottom: 8px;
     letter-spacing: -0.04em;
+
+    @include desktop {
+      margin-bottom: 20px;
+    }
 
     span {
       color: $secondaryColor;
@@ -37,6 +56,19 @@
     font-size: 16px;
     line-height: 100%;
     margin-bottom: 40px;
+
+    @include desktop {
+      font-size: 32px;
+      margin-bottom: 33px;
+    }
+  }
+
+  .flex {
+    @include desktop {
+      display: flex;
+      gap: 33px;
+      align-items: center;
+    }
   }
 
   .button {
@@ -50,6 +82,10 @@
     text-decoration: none;
     color: #fff;
     margin-bottom: 6px;
+
+    @include desktop {
+      font-size: 32px;
+    }
   }
 
   .note {
@@ -60,6 +96,12 @@
       line-height: 100%;
       color: #f5fff7;
       opacity: 0.5;
+
+      @include desktop {
+        font-size: 16px;
+        color: $white;
+        opacity: 1;
+      }
     }
   }
 }
@@ -70,21 +112,37 @@
 
   .filters {
     margin-bottom: 40px;
+    @include desktop {
+      max-width: 980px;
+      margin: auto;
+      margin-bottom: 56px;
+    }
+    
 
     .range-filters {
       background-color: #f4f8f5;
       padding: 8px;
       border-radius: 20px;
+      @include desktop {
+        margin-bottom: 24px;
+      }
 
       .range-filters-wrapper {
         display: flex;
         flex-direction: column;
         gap: 8px;
+        @include desktop {
+          flex-direction: row;
+          justify-content: space-between;
+        }
 
         .filter {
           background-color: #fff;
           padding: 8px 20px;
           border-radius: 20px;
+          @include desktop {
+            flex: 1;
+          }
 
           .filter-header {
             display: flex;
@@ -97,17 +155,20 @@
               font-weight: 600;
               display: flex;
               align-items: center;
+
               span {
                 border: 1px solid var(--Grey, rgba(217, 217, 217, 1));
                 border-radius: 12px;
                 margin-right: 8px;
                 text-align: center;
               }
+
               #amount {
                 display: block;
                 width: 94px;
                 padding: 4px 15.5px;
               }
+
               #period {
                 padding: 4px 8px;
                 width: 39px;
@@ -174,6 +235,12 @@
             border-radius: 20px;
             width: 100%;
             padding: 10px;
+            @include desktop {
+              height: 100%;
+              width: 191px;
+              font-size: 32px;
+              letter-spacing: 0;
+            }
           }
         }
       }
@@ -185,6 +252,11 @@
       padding: 8px;
       border-radius: 20px;
       text-align: center;
+      @include desktop {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 8px 8px 29px;
+      }
 
       .free-filter {
         font-weight: 400;
@@ -195,6 +267,13 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 10px;
+        @include desktop {
+          font-size: 16px;
+          input {
+            margin-left: 20px;
+            margin-right: 12px;
+          }
+        }
       }
 
       .sorting {
@@ -204,6 +283,12 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+        @include desktop {
+          flex-direction: row;
+          align-items: center;
+          font-size: 16px;
+          color: #141F1B;
+        }
 
         &.dropdown {
           select {
@@ -219,6 +304,10 @@
             background-repeat: no-repeat;
             background-position: right 16px center;
             background-size: 13px 8px;
+            @include desktop {
+              width: 292px;
+              font-size: 20px;
+            }
 
             option {}
           }

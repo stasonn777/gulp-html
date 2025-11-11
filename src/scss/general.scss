@@ -1,3 +1,4 @@
+@use 'generic/variables' as *;
 @import url(https://fonts.googleapis.com/css?family=Instrument+Sans:regular,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Helvetica+Neue:regular,500,600,700);
 
@@ -258,11 +259,12 @@ input[type='checkbox'] {
 }
 
 
-@media screen and (min-width: 1240px) {
+@include desktop {
   .container {
     max-width: 1160px;
     margin: auto;
     padding: 0;
+    position: relative;
   }
 
   .flex-box {
@@ -270,8 +272,10 @@ input[type='checkbox'] {
   }
 
   h1 {
-    font-weight: 700;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 90%;
+    letter-spacing: -0.04em;
   }
 
   h3 {
