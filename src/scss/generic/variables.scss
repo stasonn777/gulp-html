@@ -5,3 +5,12 @@
 // $mw3: 996;
 // $generalColor: #3683dd;
 // $secondaryColor: #FF5151;
+
+// variables.scss
+$bp-desktop: 1240px;
+
+@mixin desktop {
+  @media screen and (min-width: $bp-desktop) {
+    @content;
+  }
+}

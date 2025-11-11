@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800);
 
+@use 'generic/variables' as *;
+
 body {
   background-color: #fff;
   color: #141232;
@@ -56,7 +58,7 @@ h3 {
 }
 
 
-@media screen and (min-width: 1240px) {
+@include desktop {
   .container {
     max-width: 1124px;
     margin: auto;
