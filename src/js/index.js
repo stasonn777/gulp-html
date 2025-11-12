@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const formatAmount = (num) => {
     const n = Number(num) || 0;
-    return n.toLocaleString('pl-PL'); // e.g., 150 000
+    return n.toString();
   };
 
   const syncAmount = () => {

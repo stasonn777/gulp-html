@@ -5,8 +5,15 @@ footer {
   padding-top: 30px;
   padding-bottom: 30px;
   position: initial;
+  @include desktop {
+    padding: 80px 0;
+  }
   .logo {
     margin-bottom: 30px;
+    @include desktop {
+      width: 133px;
+      margin-bottom: 40px;
+    }
   }
 
   ul {
@@ -14,6 +21,9 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    @include desktop {
+      gap: unset;
+    }
 
     li {
       a {
@@ -22,6 +32,9 @@ footer {
         line-height: 140%;
         color: #000;
         text-decoration: none;
+        @include desktop {
+          font-size: 24px;
+        }
         &.active {
           color: $primaryColor;
           text-decoration: underline;
@@ -34,22 +47,26 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    .footer-left {
-
-    }
 
     .footer-right {
       text-align: right;
+      @include desktop {
+        text-align: left;
+      }
       .footer-social {
         display: none;
+        @include desktop {
+          margin-top: 19px;
+          display: flex;
+          img {
+            width: 22px;
+          }
+        }
       }
     }
     
   }
-  .footer-social {
-    display: flex;
-    gap: 18px;
-  }
+  
   .footer-bottom {
     font-weight: 400;
     font-size: 12px;
@@ -59,5 +76,16 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include desktop {
+      font-size: 24px;
+      justify-content: end;
+      .footer-social {
+        display: none;
+      }
+    }
+  }
+  .footer-social {
+    display: flex;
+    gap: 18px;
   }
 }

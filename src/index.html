@@ -155,7 +155,8 @@
           </div>
         </div>
         <div class="subscribe">
-          <h3>Dołącz do społeczności FinRada! <br> Bądź na bieżąco z najważniejszymi wiadomościami ze świata finansów
+          <h3>Dołącz do społeczności FinRada! <br class="hide-desctop"> Bądź na bieżąco z <br class="hide-mobile">
+            najważniejszymi wiadomościami ze świata finansów
           </h3>
           <form class="subscribe-form" action="">
             <div class="flex">
@@ -163,7 +164,7 @@
               <input type="email" placeholder="Wpisz swój adres e-mail" id="email" autocomplete="email">
               <button type="submit">Podpisać</button>
             </div>
-            <div class="checkbox">
+            <div class="checkbox-wrapper">
               <input type="checkbox" name="" id="subscribe-checkbox">
               <label for="subscribe-checkbox">Wyrażam zgodę na przechowywanie moich danych zgodnie z <a href="">Polityką
                   Prywatności.</a></label>
@@ -217,6 +218,7 @@
     </section>
     @@include('footer.html')
     <script src="./js/index.js"></script>
+  </div>
 </body>
 
 </html>

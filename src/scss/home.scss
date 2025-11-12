@@ -110,19 +110,26 @@
   padding-top: 40px;
   margin-bottom: 60px;
 
+  @include desktop {
+    padding-top: 80px;
+    margin-bottom: 100px;
+  }
+
   .filters {
     margin-bottom: 40px;
+
     @include desktop {
       max-width: 980px;
       margin: auto;
       margin-bottom: 56px;
     }
-    
+
 
     .range-filters {
       background-color: #f4f8f5;
       padding: 8px;
       border-radius: 20px;
+
       @include desktop {
         margin-bottom: 24px;
       }
@@ -131,6 +138,7 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+
         @include desktop {
           flex-direction: row;
           justify-content: space-between;
@@ -140,6 +148,7 @@
           background-color: #fff;
           padding: 8px 20px;
           border-radius: 20px;
+
           @include desktop {
             flex: 1;
           }
@@ -150,6 +159,10 @@
             line-height: 100%;
             margin-bottom: 14px;
             margin-top: 8px;
+
+            @include desktop {
+              font-size: 20px;
+            }
 
             .amount {
               font-weight: 600;
@@ -167,6 +180,10 @@
                 display: block;
                 width: 94px;
                 padding: 4px 15.5px;
+
+                @include desktop {
+                  padding: 4px 8px;
+                }
               }
 
               #period {
@@ -184,7 +201,9 @@
             line-height: 100%;
             letter-spacing: 0.02em;
 
-            div {}
+            @include desktop {
+              font-size: 12px;
+            }
           }
 
           &.period-filter {
@@ -193,30 +212,30 @@
             input[type='range'] {
               &::-webkit-slider-runnable-track {
                 background: linear-gradient(to right,
-                    #e8961d 0%,
-                    #e8961d var(--range-progress, 50%),
+                    $secondaryColor 0%,
+                    $secondaryColor var(--range-progress, 50%),
                     #d9d9d9 var(--range-progress, 50%),
                     #d9d9d9 100%);
               }
 
               &::-moz-range-progress {
-                background: #e8961d;
+                background: $secondaryColor;
               }
 
               &::-ms-fill-lower {
-                background: #e8961d;
+                background: $secondaryColor;
               }
 
               &::-webkit-slider-thumb {
-                background: #e8961d;
+                background: $secondaryColor;
               }
 
               &::-moz-range-thumb {
-                background: #e8961d;
+                background: $secondaryColor;
               }
 
               &::-ms-thumb {
-                background: #e8961d;
+                background: $secondaryColor;
               }
             }
           }
@@ -235,6 +254,7 @@
             border-radius: 20px;
             width: 100%;
             padding: 10px;
+
             @include desktop {
               height: 100%;
               width: 191px;
@@ -252,6 +272,7 @@
       padding: 8px;
       border-radius: 20px;
       text-align: center;
+
       @include desktop {
         display: flex;
         justify-content: space-between;
@@ -267,8 +288,10 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 10px;
+
         @include desktop {
           font-size: 16px;
+
           input {
             margin-left: 20px;
             margin-right: 12px;
@@ -283,6 +306,7 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+
         @include desktop {
           flex-direction: row;
           align-items: center;
@@ -304,6 +328,7 @@
             background-repeat: no-repeat;
             background-position: right 16px center;
             background-size: 13px 8px;
+
             @include desktop {
               width: 292px;
               font-size: 20px;
@@ -327,6 +352,11 @@ h2 {
   text-align: center;
   margin-bottom: 40px;
 
+  @include desktop {
+    font-size: 64px;
+    margin-bottom: 60px;
+  }
+
   span {
     color: $secondaryColor;
   }
@@ -335,28 +365,67 @@ h2 {
 .why {
   margin-bottom: 60px;
 
+  @include desktop {
+    margin-bottom: 100px;
+  }
+
   .why-wrapper {
     display: flex;
     flex-direction: column;
     gap: 30px;
 
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 50px;
+      column-gap: 74px;
+    }
+
     .why-item {
       text-align: center;
+
+      @include desktop {
+        flex: 45%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
 
       .why-item-icon {
         img {
           width: 80px;
           height: 80px;
           margin-bottom: 12px;
+
+          @include desktop {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 0;
+          }
         }
       }
 
       .why-item-content {
+        @include desktop {
+          flex: 1;
+        }
+
         h3 {
           font-weight: 500;
           font-size: 24px;
           line-height: 100%;
           margin-bottom: 8px;
+
+          @include desktop {
+            flex: 1;
+          }
+        }
+
+        p {
+          @include desktop {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -366,10 +435,19 @@ h2 {
 .posts {
   margin-bottom: 60px;
 
+  @include desktop {
+    margin-bottom: 100px;
+  }
+
   .container {
     background-color: #F4F8F5;
     padding-bottom: 30px;
     padding-top: 50px;
+
+    @include desktop {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
 
     .posts-wrapper {
       display: flex;
@@ -377,7 +455,18 @@ h2 {
       gap: 30px;
       margin-bottom: 40px;
 
+      @include desktop {
+        padding: 0 54px;
+        margin-bottom: 60px;
+        flex-direction: row;
+        gap: 26px;
+      }
+
       .posts-item {
+        @include desktop {
+          flex: 1;
+        }
+
         a {
           text-decoration: none;
 
@@ -407,6 +496,10 @@ h2 {
     }
 
     .subscribe {
+      @include desktop {
+        padding: 0 100px;
+      }
+
       h3 {
         font-weight: 500;
         font-size: 16px;
@@ -414,6 +507,11 @@ h2 {
         letter-spacing: -0.02em;
         text-align: center;
         margin-bottom: 16px;
+
+        @include desktop {
+          font-size: 32px;
+          margin-bottom: 40px;
+        }
       }
     }
   }
@@ -422,12 +520,21 @@ h2 {
 .faq {
   margin-bottom: 65px;
 
+  @include desktop {
+    margin-bottom: 100px;
+  }
+
   h2 {
     font-weight: 500;
     font-size: 20px;
     line-height: 110%;
     letter-spacing: -0.04em;
     margin-bottom: 30px;
+
+    @include desktop {
+      font-size: 64px;
+      margin-bottom: 60px;
+    }
   }
 
   .faq-accordion {
@@ -435,12 +542,20 @@ h2 {
     flex-direction: column;
     gap: 12px;
 
+    @include desktop {
+      gap: 8px;
+    }
+
     .faq-accordion-item {
       background: #EBEBEB;
       color: #000;
       border-radius: 12px;
       overflow: hidden;
       transition: background-color 200ms ease, color 200ms ease;
+      @include desktop {
+        border-radius: 20px;
+      }
+  
 
       .faq-accordion-item-header {
         display: flex;
@@ -453,17 +568,32 @@ h2 {
         font-size: 12px;
         line-height: 110%;
 
+        @include desktop {
+          padding: 36px 41px;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 100%;
+        }
+
         // plus/minus icon on the right using two bars
         &::after {
           content: "";
           position: absolute;
           right: 16px;
-          width: 14px;
+          top: 12px;
           height: 14px;
+          width: 14px;
           background-image: url(../img/open-acc.svg);
           background-repeat: no-repeat;
           border-radius: 2px;
           transition: transform 200ms ease, opacity 200ms ease;
+
+          @include desktop {
+            top: 16px;
+            right: 21px;
+            height: 18px;
+            width: 18px;
+          }
         }
       }
 
@@ -480,6 +610,11 @@ h2 {
           font-weight: 400;
           font-size: 12px;
           line-height: 140%;
+          @include desktop {
+            font-size: 20px;
+            line-height: 100%;
+            padding: 0 28px 25px;
+          }
         }
       }
 
@@ -492,6 +627,11 @@ h2 {
             background-image: url(../img/close-acc.svg);
             width: 11px;
             height: 11px;
+            @include desktop {
+              right: 21px;
+              height: 18px;
+              width: 18px;
+            }
           }
         }
 
