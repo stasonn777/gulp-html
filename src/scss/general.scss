@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800);
-
 @use 'generic/variables' as *;
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,600,700);
+
 
 body {
   background-color: #fff;
   color: #141232;
-  font-family: 'Open Sans';
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   padding: 0;
@@ -16,6 +16,55 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(20, 18, 50, 0.08);
+  padding: 16px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo span {
+  color: $primaryColor;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #141232;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.language {
+  display: flex;
+  gap: 8px;
+  font-weight: 600;
+  color: rgba(20, 18, 50, 0.6);
+  a {
+    text-decoration: none;
+    color: rgba(20, 18, 50, 0.6);
+  }
+  a:hover {
+    color: $primaryColor;
+  }
 }
 
 .container {
@@ -31,6 +80,56 @@ img {
 }
 .center {
   text-align: center;
+}
+.top-block {
+  background-color: $primaryColor;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.top-block .text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.top-block h1 {
+  color: #fff;
+}
+.top-block p {
+  color: rgba(255, 255, 255, 0.9);
+}
+.top-block .image {
+  text-align: center;
+}
+.top-block img {
+  border-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+}
+.about {
+  background-color: #f2efec;
+  padding: 40px 0;
+}
+.about .image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.about .image a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  background-color: #dddddd;
+}
+.about .image img {
+  object-fit: contain;
 }
 h1 {
   font-weight: 700;
@@ -66,10 +165,11 @@ h3 {
   }
   .flex-box {
     flex-direction: row;
+    gap: 40px;
   }
   h1 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
   }
   h3 {
     font-size: 24px;
@@ -91,5 +191,34 @@ h3 {
   }
   .hide-desctop {
     display: none;
+  }
+  .header-content {
+    gap: 32px;
+  }
+  nav a {
+    font-size: 16px;
+  }
+  .language {
+    gap: 12px;
+    font-size: 16px;
+  }
+  .top-block {
+    flex-direction: row;
+    align-items: center;
+    padding: 48px;
+    gap: 48px;
+  }
+  .top-block .text {
+    flex: 1;
+  }
+  .top-block .image {
+    flex: 1;
+  }
+  .about {
+    padding: 80px 0;
+  }
+  .about .image a {
+    height: 170px;
+    width: 170px;
   }
 }
