@@ -1,6 +1,21 @@
 /* stylelint-disable block-no-empty */
 @use 'generic/variables' as *;
 
+header {
+  background-color: $primaryColor;
+}
+.entry-header {
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 80px;
+  }
+}
+
 .header-wrapper {
   height: 50px;
   z-index: 1;

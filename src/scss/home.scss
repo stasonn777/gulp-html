@@ -254,6 +254,7 @@
             border-radius: 20px;
             width: 100%;
             padding: 10px;
+            cursor: pointer;
 
             @include desktop {
               height: 100%;
@@ -321,6 +322,7 @@
             font-size: 16px;
             font-weight: 500;
             padding: 14px 16px;
+            padding-right: 42px;
             border-radius: 12px;
             -webkit-appearance: none;
             appearance: none;
@@ -340,8 +342,6 @@
       }
     }
   }
-
-  .pagination {}
 }
 
 h2 {
@@ -473,6 +473,7 @@ h2 {
           img {
             width: 100%;
             margin-bottom: 16px;
+            border-radius: 12px;
           }
 
           .posts-item-content {

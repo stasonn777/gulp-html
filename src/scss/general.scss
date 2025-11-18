@@ -65,6 +65,43 @@ h3 {
   display: none;
 }
 
+.pagination {
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    list-style: none;
+    @include desktop {
+      gap: 12px;
+    }
+    li {
+      a {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(217, 217, 217, 1);
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 16px;
+        color: rgba(155, 155, 155, 1);
+        text-decoration: none;
+        @include desktop {
+         width: 55px;
+         height: 50px;
+         border-radius: 20px;
+         font-size: 20px;
+        }
+        &.is-active {
+          color: $primaryColor;
+          border: 2px solid rgba(155, 155, 155, 1)
+        }
+      }
+    }
+  }
+}
+
 @include desktop {
   .container {
     max-width: 1160px;

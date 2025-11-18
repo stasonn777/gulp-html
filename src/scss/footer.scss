@@ -26,6 +26,10 @@ footer {
     }
 
     li {
+      &.active a {
+        color: $primaryColor;
+        text-decoration: underline;
+      }
       a {
         font-weight: 500;
         font-size: 12px;
@@ -34,10 +38,6 @@ footer {
         text-decoration: none;
         @include desktop {
           font-size: 24px;
-        }
-        &.active {
-          color: $primaryColor;
-          text-decoration: underline;
         }
       }
     }

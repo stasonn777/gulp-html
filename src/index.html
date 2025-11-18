@@ -80,8 +80,13 @@
           @@include('offer.html')
           @@include('offer.html')
         </div>
-        <div class="pagination">
-
+        <div class="pagination js-loans-pagination" data-current-page="1" data-total-pages="2">
+          <nav class="loans-pagination" aria-label="Loans pagination">
+            <ul>
+              <li><a href="#" class="pagination-link is-active" data-page="1">1</a></li>
+              <li><a href="#" class="pagination-link" data-page="2">2</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </section>
@@ -128,7 +133,9 @@
         <div class="posts-wrapper">
           <div class="posts-item">
             <a href="">
-              <img src="./img/post.png" alt="">
+              <div class="posts-item-image">
+                <img src="./img/resize.jpeg" alt="">
+              </div>
               <div class="posts-item-content">
                 <p>Dlaczego warto składać wnioski o pożyczkę w kilku firmach jednocześnie?</p>
                 <div class="posts-item-date">4 dni temu</div>
@@ -137,7 +144,9 @@
           </div>
           <div class="posts-item">
             <a href="">
-              <img src="./img/post.png" alt="">
+              <div class="posts-item-image">
+                <img src="./img/post.png" alt="">
+              </div>
               <div class="posts-item-content">
                 <p>Dlaczego warto składać wnioski o pożyczkę w kilku firmach jednocześnie?</p>
                 <div class="posts-item-date">4 dni temu</div>
@@ -146,7 +155,9 @@
           </div>
           <div class="posts-item">
             <a href="">
-              <img src="./img/post.png" alt="">
+              <div class="posts-item-image">
+                <img src="./img/resize.jpeg" alt="">
+              </div>
               <div class="posts-item-content">
                 <p>Więcej wniosków – większe szanse: strategia skutecznego ubiegania się o pożyczkę</p>
                 <div class="posts-item-date">4 dni temu</div>
@@ -222,3 +233,5 @@
 </body>
 
 </html>
+
+
